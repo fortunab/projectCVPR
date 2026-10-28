@@ -1,0 +1,5 @@
+target_sample_id,source_sample_id,heldout_center,seed,prototype_class,prototype,selection
+02c221726f843202b34be9c0a01a1279b1cd5644,a34ca4c7db4a6ee4e0eb8bee0c1f65a14fed09f7,C2,17,1,0,"first errors by sample ID, prefer distinct sequences; nearest source to winning prototype"
+f9c6dea2405ca235d8f916034a349f0108b849b2,ff79fd03dc29fb957d0350c097e37bc870272881,C2,17,0,0,"first errors by sample ID, prefer distinct sequences; nearest source to winning prototype"
+001cf2aed4053521c9f6bc297227986025a1f693,1714d8a5c04e3dc0459f822611be2646e77c5c21,C5,17,1,1,"first errors by sample ID, prefer distinct sequences; nearest source to winning prototype"
+00aef3668d4779f842533403fd7febb0bb3da59d,d13cc1c7a61085a4ee8750e80eb618221ffb0404,C5,17,0,1,"first errors by sample ID, prefer distinct sequences; nearest source to winning prototype"

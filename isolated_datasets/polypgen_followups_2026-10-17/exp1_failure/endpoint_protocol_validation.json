@@ -1,0 +1,872 @@
+{
+  "n_controls": 108,
+  "all_unchanged": true,
+  "scope": "Exact upper endpoint=max(source margin), lower endpoint=nextafter(min,-inf); checked from saved source OOF margins, no refitting",
+  "target_decisions_unchanged": true,
+  "checks": [
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "cbmp",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "multi_prototype_unbalanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "linear_logistic",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "trainable_cosine",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "linear_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "cosine_group_center_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "single_centroid_group_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "single_centroid_center_balanced",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "method": "single_centroid_image_weighted",
+      "threshold_unchanged": true,
+      "source_objective_unchanged": true,
+      "candidate_count_unchanged": true
+    }
+  ]
+}

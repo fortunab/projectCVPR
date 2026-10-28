@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "elapsed_seconds": 192.6321789000649,
+  "n_threshold_controls": 108,
+  "n_centers": 4,
+  "n_methods": 9,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "validation": {
+    "status": "passed",
+    "checks": 25,
+    "scope": "threshold zero/tie/endpoints, cumulative sweep vs exhaustive BA, single-class rejection, effective group count, undefined sequence AUROC"
+  },
+  "exploratory": true,
+  "exact_protocol_endpoints_validated_on_cached_oof": true
+}
