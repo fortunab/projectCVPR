@@ -1,0 +1,338 @@
+Committed plan 881d19f91e749381a0eac66e70cbd87609149a546d44cf25ae7587843ecc6513: 48/48 feasible conditions
+DONE C2_f050_composition_s101 cbmp bAcc=0.6766
+DONE C2_f050_composition_s101 multi_prototype_unbalanced bAcc=0.6766
+DONE C2_f050_composition_s101 linear_logistic bAcc=0.7926
+DONE C2_f050_composition_s101 trainable_cosine bAcc=0.7873
+DONE C2_f050_composition_s101 linear_group_center_weighted bAcc=0.7400
+DONE C2_f050_composition_s101 single_centroid_group_weighted bAcc=0.6564
+PROGRESS 1/48; elapsed=70.1s cache={'unique_fits': 110, 'fit_cache_hits': 1, 'score_cache_hits': 15, 'cached_models': 110, 'cached_source_score_arrays': 105}
+DONE C2_f050_matched_scarcity_s101 cbmp bAcc=0.5924
+DONE C2_f050_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.6707
+DONE C2_f050_matched_scarcity_s101 linear_logistic bAcc=0.7844
+DONE C2_f050_matched_scarcity_s101 trainable_cosine bAcc=0.7487
+DONE C2_f050_matched_scarcity_s101 linear_group_center_weighted bAcc=0.8302
+DONE C2_f050_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.5827
+PROGRESS 2/48; elapsed=136.0s cache={'unique_fits': 221, 'fit_cache_hits': 1, 'score_cache_hits': 30, 'cached_models': 221, 'cached_source_score_arrays': 210}
+DONE C2_f050_composition_s211 cbmp bAcc=0.6348
+DONE C2_f050_composition_s211 multi_prototype_unbalanced bAcc=0.6348
+DONE C2_f050_composition_s211 linear_logistic bAcc=0.7674
+DONE C2_f050_composition_s211 trainable_cosine bAcc=0.5359
+DONE C2_f050_composition_s211 linear_group_center_weighted bAcc=0.6422
+DONE C2_f050_composition_s211 single_centroid_group_weighted bAcc=0.6348
+PROGRESS 3/48; elapsed=171.3s cache={'unique_fits': 295, 'fit_cache_hits': 38, 'score_cache_hits': 45, 'cached_models': 295, 'cached_source_score_arrays': 315}
+DONE C2_f050_matched_scarcity_s211 cbmp bAcc=0.6023
+DONE C2_f050_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.6023
+DONE C2_f050_matched_scarcity_s211 linear_logistic bAcc=0.6275
+DONE C2_f050_matched_scarcity_s211 trainable_cosine bAcc=0.5827
+DONE C2_f050_matched_scarcity_s211 linear_group_center_weighted bAcc=0.6687
+DONE C2_f050_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6023
+PROGRESS 4/48; elapsed=203.0s cache={'unique_fits': 404, 'fit_cache_hits': 40, 'score_cache_hits': 60, 'cached_models': 404, 'cached_source_score_arrays': 420}
+DONE C2_f050_composition_s307 cbmp bAcc=0.6042
+DONE C2_f050_composition_s307 multi_prototype_unbalanced bAcc=0.6042
+DONE C2_f050_composition_s307 linear_logistic bAcc=0.8173
+DONE C2_f050_composition_s307 trainable_cosine bAcc=0.5673
+DONE C2_f050_composition_s307 linear_group_center_weighted bAcc=0.8427
+DONE C2_f050_composition_s307 single_centroid_group_weighted bAcc=0.5914
+PROGRESS 5/48; elapsed=225.1s cache={'unique_fits': 479, 'fit_cache_hits': 76, 'score_cache_hits': 75, 'cached_models': 479, 'cached_source_score_arrays': 525}
+DONE C2_f050_matched_scarcity_s307 cbmp bAcc=0.5665
+DONE C2_f050_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6529
+DONE C2_f050_matched_scarcity_s307 linear_logistic bAcc=0.7768
+DONE C2_f050_matched_scarcity_s307 trainable_cosine bAcc=0.5760
+DONE C2_f050_matched_scarcity_s307 linear_group_center_weighted bAcc=0.6714
+DONE C2_f050_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.5849
+PROGRESS 6/48; elapsed=257.9s cache={'unique_fits': 590, 'fit_cache_hits': 76, 'score_cache_hits': 90, 'cached_models': 590, 'cached_source_score_arrays': 630}
+DONE C2_f025_composition_s101 cbmp bAcc=0.4021
+DONE C2_f025_composition_s101 multi_prototype_unbalanced bAcc=0.4021
+DONE C2_f025_composition_s101 linear_logistic bAcc=0.8236
+DONE C2_f025_composition_s101 trainable_cosine bAcc=0.6705
+DONE C2_f025_composition_s101 linear_group_center_weighted bAcc=0.8271
+DONE C2_f025_composition_s101 single_centroid_group_weighted bAcc=0.7398
+PROGRESS 7/48; elapsed=274.1s cache={'unique_fits': 665, 'fit_cache_hits': 112, 'score_cache_hits': 105, 'cached_models': 665, 'cached_source_score_arrays': 735}
+DONE C2_f025_matched_scarcity_s101 cbmp bAcc=0.5838
+DONE C2_f025_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.5838
+DONE C2_f025_matched_scarcity_s101 linear_logistic bAcc=0.6783
+DONE C2_f025_matched_scarcity_s101 trainable_cosine bAcc=0.6604
+DONE C2_f025_matched_scarcity_s101 linear_group_center_weighted bAcc=0.5804
+DONE C2_f025_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.5838
+PROGRESS 8/48; elapsed=298.6s cache={'unique_fits': 774, 'fit_cache_hits': 114, 'score_cache_hits': 120, 'cached_models': 774, 'cached_source_score_arrays': 840}
+DONE C2_f025_composition_s211 cbmp bAcc=0.6283
+DONE C2_f025_composition_s211 multi_prototype_unbalanced bAcc=0.6673
+DONE C2_f025_composition_s211 linear_logistic bAcc=0.7982
+DONE C2_f025_composition_s211 trainable_cosine bAcc=0.7559
+DONE C2_f025_composition_s211 linear_group_center_weighted bAcc=0.7108
+DONE C2_f025_composition_s211 single_centroid_group_weighted bAcc=0.6673
+PROGRESS 9/48; elapsed=314.5s cache={'unique_fits': 849, 'fit_cache_hits': 150, 'score_cache_hits': 135, 'cached_models': 849, 'cached_source_score_arrays': 945}
+DONE C2_f025_matched_scarcity_s211 cbmp bAcc=0.4788
+DONE C2_f025_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.6121
+DONE C2_f025_matched_scarcity_s211 linear_logistic bAcc=0.8476
+DONE C2_f025_matched_scarcity_s211 trainable_cosine bAcc=0.6043
+DONE C2_f025_matched_scarcity_s211 linear_group_center_weighted bAcc=0.7939
+DONE C2_f025_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6121
+PROGRESS 10/48; elapsed=338.2s cache={'unique_fits': 959, 'fit_cache_hits': 151, 'score_cache_hits': 150, 'cached_models': 959, 'cached_source_score_arrays': 1050}
+DONE C2_f025_composition_s307 cbmp bAcc=0.5843
+DONE C2_f025_composition_s307 multi_prototype_unbalanced bAcc=0.7013
+DONE C2_f025_composition_s307 linear_logistic bAcc=0.7750
+DONE C2_f025_composition_s307 trainable_cosine bAcc=0.5065
+DONE C2_f025_composition_s307 linear_group_center_weighted bAcc=0.6319
+DONE C2_f025_composition_s307 single_centroid_group_weighted bAcc=0.5758
+PROGRESS 11/48; elapsed=353.8s cache={'unique_fits': 1035, 'fit_cache_hits': 186, 'score_cache_hits': 165, 'cached_models': 1035, 'cached_source_score_arrays': 1155}
+DONE C2_f025_matched_scarcity_s307 cbmp bAcc=0.3232
+DONE C2_f025_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.5567
+DONE C2_f025_matched_scarcity_s307 linear_logistic bAcc=0.7055
+DONE C2_f025_matched_scarcity_s307 trainable_cosine bAcc=0.5968
+DONE C2_f025_matched_scarcity_s307 linear_group_center_weighted bAcc=0.7155
+DONE C2_f025_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.5771
+PROGRESS 12/48; elapsed=378.9s cache={'unique_fits': 1146, 'fit_cache_hits': 186, 'score_cache_hits': 180, 'cached_models': 1146, 'cached_source_score_arrays': 1260}
+DONE C4_f050_composition_s101 cbmp bAcc=0.7020
+DONE C4_f050_composition_s101 multi_prototype_unbalanced bAcc=0.7020
+DONE C4_f050_composition_s101 linear_logistic bAcc=0.7134
+DONE C4_f050_composition_s101 trainable_cosine bAcc=0.6839
+DONE C4_f050_composition_s101 linear_group_center_weighted bAcc=0.7129
+DONE C4_f050_composition_s101 single_centroid_group_weighted bAcc=0.6356
+PROGRESS 13/48; elapsed=392.8s cache={'unique_fits': 1221, 'fit_cache_hits': 222, 'score_cache_hits': 195, 'cached_models': 1221, 'cached_source_score_arrays': 1365}
+DONE C4_f050_matched_scarcity_s101 cbmp bAcc=0.6829
+DONE C4_f050_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.6246
+DONE C4_f050_matched_scarcity_s101 linear_logistic bAcc=0.6823
+DONE C4_f050_matched_scarcity_s101 trainable_cosine bAcc=0.6191
+DONE C4_f050_matched_scarcity_s101 linear_group_center_weighted bAcc=0.6635
+DONE C4_f050_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.6246
+PROGRESS 14/48; elapsed=414.8s cache={'unique_fits': 1331, 'fit_cache_hits': 223, 'score_cache_hits': 210, 'cached_models': 1331, 'cached_source_score_arrays': 1470}
+DONE C4_f050_composition_s211 cbmp bAcc=0.6364
+DONE C4_f050_composition_s211 multi_prototype_unbalanced bAcc=0.6364
+DONE C4_f050_composition_s211 linear_logistic bAcc=0.7317
+DONE C4_f050_composition_s211 trainable_cosine bAcc=0.6659
+DONE C4_f050_composition_s211 linear_group_center_weighted bAcc=0.7263
+DONE C4_f050_composition_s211 single_centroid_group_weighted bAcc=0.6364
+PROGRESS 15/48; elapsed=423.0s cache={'unique_fits': 1370, 'fit_cache_hits': 295, 'score_cache_hits': 225, 'cached_models': 1370, 'cached_source_score_arrays': 1575}
+DONE C4_f050_matched_scarcity_s211 cbmp bAcc=0.6631
+DONE C4_f050_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.6631
+DONE C4_f050_matched_scarcity_s211 linear_logistic bAcc=0.6510
+DONE C4_f050_matched_scarcity_s211 trainable_cosine bAcc=0.6423
+DONE C4_f050_matched_scarcity_s211 linear_group_center_weighted bAcc=0.6654
+DONE C4_f050_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6288
+PROGRESS 16/48; elapsed=440.1s cache={'unique_fits': 1480, 'fit_cache_hits': 296, 'score_cache_hits': 240, 'cached_models': 1480, 'cached_source_score_arrays': 1680}
+DONE C4_f050_composition_s307 cbmp bAcc=0.6888
+DONE C4_f050_composition_s307 multi_prototype_unbalanced bAcc=0.6888
+DONE C4_f050_composition_s307 linear_logistic bAcc=0.7320
+DONE C4_f050_composition_s307 trainable_cosine bAcc=0.6922
+DONE C4_f050_composition_s307 linear_group_center_weighted bAcc=0.7389
+DONE C4_f050_composition_s307 single_centroid_group_weighted bAcc=0.6285
+PROGRESS 17/48; elapsed=448.2s cache={'unique_fits': 1520, 'fit_cache_hits': 367, 'score_cache_hits': 255, 'cached_models': 1520, 'cached_source_score_arrays': 1785}
+DONE C4_f050_matched_scarcity_s307 cbmp bAcc=0.6668
+DONE C4_f050_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6668
+DONE C4_f050_matched_scarcity_s307 linear_logistic bAcc=0.6898
+DONE C4_f050_matched_scarcity_s307 trainable_cosine bAcc=0.6964
+DONE C4_f050_matched_scarcity_s307 linear_group_center_weighted bAcc=0.7383
+DONE C4_f050_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.6309
+PROGRESS 18/48; elapsed=468.5s cache={'unique_fits': 1630, 'fit_cache_hits': 368, 'score_cache_hits': 270, 'cached_models': 1630, 'cached_source_score_arrays': 1890}
+DONE C4_f025_composition_s101 cbmp bAcc=0.7385
+DONE C4_f025_composition_s101 multi_prototype_unbalanced bAcc=0.7385
+DONE C4_f025_composition_s101 linear_logistic bAcc=0.7499
+DONE C4_f025_composition_s101 trainable_cosine bAcc=0.6864
+DONE C4_f025_composition_s101 linear_group_center_weighted bAcc=0.7519
+DONE C4_f025_composition_s101 single_centroid_group_weighted bAcc=0.6914
+PROGRESS 19/48; elapsed=473.2s cache={'unique_fits': 1670, 'fit_cache_hits': 439, 'score_cache_hits': 285, 'cached_models': 1670, 'cached_source_score_arrays': 1995}
+DONE C4_f025_matched_scarcity_s101 cbmp bAcc=0.6542
+DONE C4_f025_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.6542
+DONE C4_f025_matched_scarcity_s101 linear_logistic bAcc=0.5570
+DONE C4_f025_matched_scarcity_s101 trainable_cosine bAcc=0.5448
+DONE C4_f025_matched_scarcity_s101 linear_group_center_weighted bAcc=0.5806
+DONE C4_f025_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.6221
+PROGRESS 20/48; elapsed=486.6s cache={'unique_fits': 1780, 'fit_cache_hits': 440, 'score_cache_hits': 300, 'cached_models': 1780, 'cached_source_score_arrays': 2100}
+DONE C4_f025_composition_s211 cbmp bAcc=0.6795
+DONE C4_f025_composition_s211 multi_prototype_unbalanced bAcc=0.6795
+DONE C4_f025_composition_s211 linear_logistic bAcc=0.7313
+DONE C4_f025_composition_s211 trainable_cosine bAcc=0.6646
+DONE C4_f025_composition_s211 linear_group_center_weighted bAcc=0.7116
+DONE C4_f025_composition_s211 single_centroid_group_weighted bAcc=0.6161
+PROGRESS 21/48; elapsed=491.5s cache={'unique_fits': 1820, 'fit_cache_hits': 511, 'score_cache_hits': 315, 'cached_models': 1820, 'cached_source_score_arrays': 2205}
+DONE C4_f025_matched_scarcity_s211 cbmp bAcc=0.6626
+DONE C4_f025_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.6614
+DONE C4_f025_matched_scarcity_s211 linear_logistic bAcc=0.5659
+DONE C4_f025_matched_scarcity_s211 trainable_cosine bAcc=0.6111
+DONE C4_f025_matched_scarcity_s211 linear_group_center_weighted bAcc=0.5551
+DONE C4_f025_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6231
+PROGRESS 22/48; elapsed=504.8s cache={'unique_fits': 1896, 'fit_cache_hits': 546, 'score_cache_hits': 330, 'cached_models': 1896, 'cached_source_score_arrays': 2310}
+DONE C4_f025_composition_s307 cbmp bAcc=0.6940
+DONE C4_f025_composition_s307 multi_prototype_unbalanced bAcc=0.6940
+DONE C4_f025_composition_s307 linear_logistic bAcc=0.7546
+DONE C4_f025_composition_s307 trainable_cosine bAcc=0.6815
+DONE C4_f025_composition_s307 linear_group_center_weighted bAcc=0.7241
+DONE C4_f025_composition_s307 single_centroid_group_weighted bAcc=0.6422
+PROGRESS 23/48; elapsed=509.0s cache={'unique_fits': 1936, 'fit_cache_hits': 617, 'score_cache_hits': 345, 'cached_models': 1936, 'cached_source_score_arrays': 2415}
+DONE C4_f025_matched_scarcity_s307 cbmp bAcc=0.6927
+DONE C4_f025_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6792
+DONE C4_f025_matched_scarcity_s307 linear_logistic bAcc=0.6399
+DONE C4_f025_matched_scarcity_s307 trainable_cosine bAcc=0.6304
+DONE C4_f025_matched_scarcity_s307 linear_group_center_weighted bAcc=0.6462
+DONE C4_f025_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.6205
+PROGRESS 24/48; elapsed=522.9s cache={'unique_fits': 2047, 'fit_cache_hits': 617, 'score_cache_hits': 360, 'cached_models': 2047, 'cached_source_score_arrays': 2520}
+DONE C5_f050_composition_s101 cbmp bAcc=0.3704
+DONE C5_f050_composition_s101 multi_prototype_unbalanced bAcc=0.4697
+DONE C5_f050_composition_s101 linear_logistic bAcc=0.5654
+DONE C5_f050_composition_s101 trainable_cosine bAcc=0.5092
+DONE C5_f050_composition_s101 linear_group_center_weighted bAcc=0.4365
+DONE C5_f050_composition_s101 single_centroid_group_weighted bAcc=0.5168
+PROGRESS 25/48; elapsed=546.2s cache={'unique_fits': 2123, 'fit_cache_hits': 652, 'score_cache_hits': 375, 'cached_models': 2123, 'cached_source_score_arrays': 2625}
+DONE C5_f050_matched_scarcity_s101 cbmp bAcc=0.4241
+DONE C5_f050_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.5478
+DONE C5_f050_matched_scarcity_s101 linear_logistic bAcc=0.5840
+DONE C5_f050_matched_scarcity_s101 trainable_cosine bAcc=0.5555
+DONE C5_f050_matched_scarcity_s101 linear_group_center_weighted bAcc=0.4905
+DONE C5_f050_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.6000
+PROGRESS 26/48; elapsed=573.4s cache={'unique_fits': 2234, 'fit_cache_hits': 652, 'score_cache_hits': 390, 'cached_models': 2234, 'cached_source_score_arrays': 2730}
+DONE C5_f050_composition_s211 cbmp bAcc=0.3816
+DONE C5_f050_composition_s211 multi_prototype_unbalanced bAcc=0.5223
+DONE C5_f050_composition_s211 linear_logistic bAcc=0.6082
+DONE C5_f050_composition_s211 trainable_cosine bAcc=0.5876
+DONE C5_f050_composition_s211 linear_group_center_weighted bAcc=0.4762
+DONE C5_f050_composition_s211 single_centroid_group_weighted bAcc=0.5858
+PROGRESS 27/48; elapsed=589.5s cache={'unique_fits': 2275, 'fit_cache_hits': 722, 'score_cache_hits': 405, 'cached_models': 2275, 'cached_source_score_arrays': 2835}
+DONE C5_f050_matched_scarcity_s211 cbmp bAcc=0.4721
+DONE C5_f050_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.4872
+DONE C5_f050_matched_scarcity_s211 linear_logistic bAcc=0.5840
+DONE C5_f050_matched_scarcity_s211 trainable_cosine bAcc=0.5868
+DONE C5_f050_matched_scarcity_s211 linear_group_center_weighted bAcc=0.3967
+DONE C5_f050_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6131
+PROGRESS 28/48; elapsed=616.1s cache={'unique_fits': 2386, 'fit_cache_hits': 722, 'score_cache_hits': 420, 'cached_models': 2386, 'cached_source_score_arrays': 2940}
+DONE C5_f050_composition_s307 cbmp bAcc=0.4584
+DONE C5_f050_composition_s307 multi_prototype_unbalanced bAcc=0.5123
+DONE C5_f050_composition_s307 linear_logistic bAcc=0.5584
+DONE C5_f050_composition_s307 trainable_cosine bAcc=0.5603
+DONE C5_f050_composition_s307 linear_group_center_weighted bAcc=0.4380
+DONE C5_f050_composition_s307 single_centroid_group_weighted bAcc=0.5830
+PROGRESS 29/48; elapsed=629.7s cache={'unique_fits': 2427, 'fit_cache_hits': 792, 'score_cache_hits': 435, 'cached_models': 2427, 'cached_source_score_arrays': 3045}
+DONE C5_f050_matched_scarcity_s307 cbmp bAcc=0.3905
+DONE C5_f050_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.5617
+DONE C5_f050_matched_scarcity_s307 linear_logistic bAcc=0.5980
+DONE C5_f050_matched_scarcity_s307 trainable_cosine bAcc=0.6113
+DONE C5_f050_matched_scarcity_s307 linear_group_center_weighted bAcc=0.4528
+DONE C5_f050_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.5617
+PROGRESS 30/48; elapsed=655.0s cache={'unique_fits': 2537, 'fit_cache_hits': 793, 'score_cache_hits': 450, 'cached_models': 2537, 'cached_source_score_arrays': 3150}
+DONE C5_f025_composition_s101 cbmp bAcc=0.3589
+DONE C5_f025_composition_s101 multi_prototype_unbalanced bAcc=0.4334
+DONE C5_f025_composition_s101 linear_logistic bAcc=0.5224
+DONE C5_f025_composition_s101 trainable_cosine bAcc=0.5032
+DONE C5_f025_composition_s101 linear_group_center_weighted bAcc=0.4113
+DONE C5_f025_composition_s101 single_centroid_group_weighted bAcc=0.4334
+PROGRESS 31/48; elapsed=665.0s cache={'unique_fits': 2577, 'fit_cache_hits': 864, 'score_cache_hits': 465, 'cached_models': 2577, 'cached_source_score_arrays': 3255}
+DONE C5_f025_matched_scarcity_s101 cbmp bAcc=0.5177
+DONE C5_f025_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.4525
+DONE C5_f025_matched_scarcity_s101 linear_logistic bAcc=0.6317
+DONE C5_f025_matched_scarcity_s101 trainable_cosine bAcc=0.5727
+DONE C5_f025_matched_scarcity_s101 linear_group_center_weighted bAcc=0.5082
+DONE C5_f025_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.5561
+PROGRESS 32/48; elapsed=686.1s cache={'unique_fits': 2688, 'fit_cache_hits': 864, 'score_cache_hits': 480, 'cached_models': 2688, 'cached_source_score_arrays': 3360}
+DONE C5_f025_composition_s211 cbmp bAcc=0.4848
+DONE C5_f025_composition_s211 multi_prototype_unbalanced bAcc=0.5319
+DONE C5_f025_composition_s211 linear_logistic bAcc=0.5281
+DONE C5_f025_composition_s211 trainable_cosine bAcc=0.5314
+DONE C5_f025_composition_s211 linear_group_center_weighted bAcc=0.4863
+DONE C5_f025_composition_s211 single_centroid_group_weighted bAcc=0.5319
+PROGRESS 33/48; elapsed=695.9s cache={'unique_fits': 2728, 'fit_cache_hits': 935, 'score_cache_hits': 495, 'cached_models': 2728, 'cached_source_score_arrays': 3465}
+DONE C5_f025_matched_scarcity_s211 cbmp bAcc=0.5305
+DONE C5_f025_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.5730
+DONE C5_f025_matched_scarcity_s211 linear_logistic bAcc=0.6030
+DONE C5_f025_matched_scarcity_s211 trainable_cosine bAcc=0.6318
+DONE C5_f025_matched_scarcity_s211 linear_group_center_weighted bAcc=0.5494
+DONE C5_f025_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.6076
+PROGRESS 34/48; elapsed=719.5s cache={'unique_fits': 2839, 'fit_cache_hits': 935, 'score_cache_hits': 510, 'cached_models': 2839, 'cached_source_score_arrays': 3570}
+DONE C5_f025_composition_s307 cbmp bAcc=0.4631
+DONE C5_f025_composition_s307 multi_prototype_unbalanced bAcc=0.5373
+DONE C5_f025_composition_s307 linear_logistic bAcc=0.5637
+DONE C5_f025_composition_s307 trainable_cosine bAcc=0.5615
+DONE C5_f025_composition_s307 linear_group_center_weighted bAcc=0.5045
+DONE C5_f025_composition_s307 single_centroid_group_weighted bAcc=0.5145
+PROGRESS 35/48; elapsed=730.3s cache={'unique_fits': 2880, 'fit_cache_hits': 1005, 'score_cache_hits': 525, 'cached_models': 2880, 'cached_source_score_arrays': 3675}
+DONE C5_f025_matched_scarcity_s307 cbmp bAcc=0.4871
+DONE C5_f025_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6065
+DONE C5_f025_matched_scarcity_s307 linear_logistic bAcc=0.6758
+DONE C5_f025_matched_scarcity_s307 trainable_cosine bAcc=0.6921
+DONE C5_f025_matched_scarcity_s307 linear_group_center_weighted bAcc=0.5567
+DONE C5_f025_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.6371
+PROGRESS 36/48; elapsed=748.8s cache={'unique_fits': 2991, 'fit_cache_hits': 1005, 'score_cache_hits': 540, 'cached_models': 2991, 'cached_source_score_arrays': 3780}
+DONE C6_f050_composition_s101 cbmp bAcc=0.6993
+DONE C6_f050_composition_s101 multi_prototype_unbalanced bAcc=0.6675
+DONE C6_f050_composition_s101 linear_logistic bAcc=0.6704
+DONE C6_f050_composition_s101 trainable_cosine bAcc=0.6622
+DONE C6_f050_composition_s101 linear_group_center_weighted bAcc=0.6942
+DONE C6_f050_composition_s101 single_centroid_group_weighted bAcc=0.6875
+PROGRESS 37/48; elapsed=765.5s cache={'unique_fits': 3102, 'fit_cache_hits': 1005, 'score_cache_hits': 555, 'cached_models': 3102, 'cached_source_score_arrays': 3885}
+DONE C6_f050_matched_scarcity_s101 cbmp bAcc=0.6649
+DONE C6_f050_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.6649
+DONE C6_f050_matched_scarcity_s101 linear_logistic bAcc=0.6241
+DONE C6_f050_matched_scarcity_s101 trainable_cosine bAcc=0.6135
+DONE C6_f050_matched_scarcity_s101 linear_group_center_weighted bAcc=0.6571
+DONE C6_f050_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.6750
+PROGRESS 38/48; elapsed=778.6s cache={'unique_fits': 3177, 'fit_cache_hits': 1041, 'score_cache_hits': 570, 'cached_models': 3177, 'cached_source_score_arrays': 3990}
+DONE C6_f050_composition_s211 cbmp bAcc=0.6637
+DONE C6_f050_composition_s211 multi_prototype_unbalanced bAcc=0.6637
+DONE C6_f050_composition_s211 linear_logistic bAcc=0.6953
+DONE C6_f050_composition_s211 trainable_cosine bAcc=0.6645
+DONE C6_f050_composition_s211 linear_group_center_weighted bAcc=0.7083
+DONE C6_f050_composition_s211 single_centroid_group_weighted bAcc=0.6738
+PROGRESS 39/48; elapsed=790.9s cache={'unique_fits': 3252, 'fit_cache_hits': 1077, 'score_cache_hits': 585, 'cached_models': 3252, 'cached_source_score_arrays': 4095}
+DONE C6_f050_matched_scarcity_s211 cbmp bAcc=0.7020
+DONE C6_f050_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.7020
+DONE C6_f050_matched_scarcity_s211 linear_logistic bAcc=0.7237
+DONE C6_f050_matched_scarcity_s211 trainable_cosine bAcc=0.6750
+DONE C6_f050_matched_scarcity_s211 linear_group_center_weighted bAcc=0.7180
+DONE C6_f050_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.7020
+PROGRESS 40/48; elapsed=804.6s cache={'unique_fits': 3326, 'fit_cache_hits': 1114, 'score_cache_hits': 600, 'cached_models': 3326, 'cached_source_score_arrays': 4200}
+DONE C6_f050_composition_s307 cbmp bAcc=0.6448
+DONE C6_f050_composition_s307 multi_prototype_unbalanced bAcc=0.6448
+DONE C6_f050_composition_s307 linear_logistic bAcc=0.6463
+DONE C6_f050_composition_s307 trainable_cosine bAcc=0.6452
+DONE C6_f050_composition_s307 linear_group_center_weighted bAcc=0.6722
+DONE C6_f050_composition_s307 single_centroid_group_weighted bAcc=0.6883
+PROGRESS 41/48; elapsed=815.6s cache={'unique_fits': 3401, 'fit_cache_hits': 1150, 'score_cache_hits': 615, 'cached_models': 3401, 'cached_source_score_arrays': 4305}
+DONE C6_f050_matched_scarcity_s307 cbmp bAcc=0.6080
+DONE C6_f050_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6228
+DONE C6_f050_matched_scarcity_s307 linear_logistic bAcc=0.7177
+DONE C6_f050_matched_scarcity_s307 trainable_cosine bAcc=0.6675
+DONE C6_f050_matched_scarcity_s307 linear_group_center_weighted bAcc=0.7120
+DONE C6_f050_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.6916
+PROGRESS 42/48; elapsed=828.1s cache={'unique_fits': 3477, 'fit_cache_hits': 1185, 'score_cache_hits': 630, 'cached_models': 3477, 'cached_source_score_arrays': 4410}
+DONE C6_f025_composition_s101 cbmp bAcc=0.7093
+DONE C6_f025_composition_s101 multi_prototype_unbalanced bAcc=0.6878
+DONE C6_f025_composition_s101 linear_logistic bAcc=0.6694
+DONE C6_f025_composition_s101 trainable_cosine bAcc=0.6709
+DONE C6_f025_composition_s101 linear_group_center_weighted bAcc=0.6759
+DONE C6_f025_composition_s101 single_centroid_group_weighted bAcc=0.6878
+PROGRESS 43/48; elapsed=837.3s cache={'unique_fits': 3552, 'fit_cache_hits': 1221, 'score_cache_hits': 645, 'cached_models': 3552, 'cached_source_score_arrays': 4515}
+DONE C6_f025_matched_scarcity_s101 cbmp bAcc=0.7211
+DONE C6_f025_matched_scarcity_s101 multi_prototype_unbalanced bAcc=0.6916
+DONE C6_f025_matched_scarcity_s101 linear_logistic bAcc=0.6167
+DONE C6_f025_matched_scarcity_s101 trainable_cosine bAcc=0.6231
+DONE C6_f025_matched_scarcity_s101 linear_group_center_weighted bAcc=0.6269
+DONE C6_f025_matched_scarcity_s101 single_centroid_group_weighted bAcc=0.6916
+PROGRESS 44/48; elapsed=848.6s cache={'unique_fits': 3627, 'fit_cache_hits': 1257, 'score_cache_hits': 660, 'cached_models': 3627, 'cached_source_score_arrays': 4620}
+DONE C6_f025_composition_s211 cbmp bAcc=0.6932
+DONE C6_f025_composition_s211 multi_prototype_unbalanced bAcc=0.7205
+DONE C6_f025_composition_s211 linear_logistic bAcc=0.6886
+DONE C6_f025_composition_s211 trainable_cosine bAcc=0.6677
+DONE C6_f025_composition_s211 linear_group_center_weighted bAcc=0.6889
+DONE C6_f025_composition_s211 single_centroid_group_weighted bAcc=0.6645
+PROGRESS 45/48; elapsed=857.0s cache={'unique_fits': 3703, 'fit_cache_hits': 1292, 'score_cache_hits': 675, 'cached_models': 3703, 'cached_source_score_arrays': 4725}
+DONE C6_f025_matched_scarcity_s211 cbmp bAcc=0.7193
+DONE C6_f025_matched_scarcity_s211 multi_prototype_unbalanced bAcc=0.7193
+DONE C6_f025_matched_scarcity_s211 linear_logistic bAcc=0.6679
+DONE C6_f025_matched_scarcity_s211 trainable_cosine bAcc=0.7597
+DONE C6_f025_matched_scarcity_s211 linear_group_center_weighted bAcc=0.6812
+DONE C6_f025_matched_scarcity_s211 single_centroid_group_weighted bAcc=0.7100
+PROGRESS 46/48; elapsed=866.8s cache={'unique_fits': 3778, 'fit_cache_hits': 1328, 'score_cache_hits': 690, 'cached_models': 3778, 'cached_source_score_arrays': 4830}
+DONE C6_f025_composition_s307 cbmp bAcc=0.6025
+DONE C6_f025_composition_s307 multi_prototype_unbalanced bAcc=0.6016
+DONE C6_f025_composition_s307 linear_logistic bAcc=0.6035
+DONE C6_f025_composition_s307 trainable_cosine bAcc=0.6159
+DONE C6_f025_composition_s307 linear_group_center_weighted bAcc=0.6222
+DONE C6_f025_composition_s307 single_centroid_group_weighted bAcc=0.6425
+PROGRESS 47/48; elapsed=874.3s cache={'unique_fits': 3854, 'fit_cache_hits': 1363, 'score_cache_hits': 705, 'cached_models': 3854, 'cached_source_score_arrays': 4935}
+DONE C6_f025_matched_scarcity_s307 cbmp bAcc=0.7495
+DONE C6_f025_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6713
+DONE C6_f025_matched_scarcity_s307 linear_logistic bAcc=0.6928
+DONE C6_f025_matched_scarcity_s307 trainable_cosine bAcc=0.6747
+DONE C6_f025_matched_scarcity_s307 linear_group_center_weighted bAcc=0.6960
+DONE C6_f025_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.7071
+PROGRESS 48/48; elapsed=881.6s cache={'unique_fits': 3930, 'fit_cache_hits': 1398, 'score_cache_hits': 720, 'cached_models': 3930, 'cached_source_score_arrays': 5040}
+Experiment3 complete

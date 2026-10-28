@@ -1,0 +1,14 @@
+{
+  "conditions": 48,
+  "new_target_evaluations": 288,
+  "baseline_anchors_reused": 24,
+  "fit_cache": {
+    "unique_fits": 3930,
+    "fit_cache_hits": 1398,
+    "score_cache_hits": 720,
+    "cached_models": 3930,
+    "cached_source_score_arrays": 5040
+  },
+  "elapsed_seconds": 885.0046159001067,
+  "plan_sha256": "881d19f91e749381a0eac66e70cbd87609149a546d44cf25ae7587843ecc6513"
+}

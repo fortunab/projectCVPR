@@ -1,0 +1,240 @@
+{
+  "cells": [
+    {
+      "cell": "A_K1_beta0",
+      "K": 1,
+      "beta": 0.0,
+      "mean_center_balanced_accuracy": 0.6315085212193298,
+      "worst_center_balanced_accuracy": 0.6033887942704922,
+      "mean_center_auroc": 0.7899115769060648,
+      "optimization_seed_sd": 0.0,
+      "conditional_ci_low": 0.5804075414816243,
+      "conditional_ci_high": 0.6816722890831226
+    },
+    {
+      "cell": "B_K1_beta1",
+      "K": 1,
+      "beta": 1.0,
+      "mean_center_balanced_accuracy": 0.6047806694175537,
+      "worst_center_balanced_accuracy": 0.4763073680422573,
+      "mean_center_auroc": 0.6914297071259776,
+      "optimization_seed_sd": 0.0,
+      "conditional_ci_low": 0.5325933533681534,
+      "conditional_ci_high": 0.6552733046293193
+    },
+    {
+      "cell": "C_K4_beta0",
+      "K": 4,
+      "beta": 0.0,
+      "mean_center_balanced_accuracy": 0.5787455120075718,
+      "worst_center_balanced_accuracy": 0.5025110266823879,
+      "mean_center_auroc": 0.6880599336404535,
+      "optimization_seed_sd": 0.0030304538867346265,
+      "conditional_ci_low": 0.5317985868876687,
+      "conditional_ci_high": 0.649124297836301
+    },
+    {
+      "cell": "D_K4_beta1",
+      "K": 4,
+      "beta": 1.0,
+      "mean_center_balanced_accuracy": 0.595824250432615,
+      "worst_center_balanced_accuracy": 0.5209540884302158,
+      "mean_center_auroc": 0.6842833699566757,
+      "optimization_seed_sd": 0.01033909640435091,
+      "conditional_ci_low": 0.5338630046103926,
+      "conditional_ci_high": 0.6681279631046464
+    }
+  ],
+  "effects": [
+    {
+      "contrast": "multiplicity_at_beta0",
+      "scope": "equal_center_mean",
+      "effect_balanced_accuracy": -0.052763009211757916,
+      "conditional_ci_low": -0.10749468941491423,
+      "conditional_ci_high": 0.023523397319744913
+    },
+    {
+      "contrast": "multiplicity_at_beta0",
+      "scope": "C2",
+      "effect_balanced_accuracy": -0.1008777675881043,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta0",
+      "scope": "C4",
+      "effect_balanced_accuracy": 0.03839733985227234,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta0",
+      "scope": "C5",
+      "effect_balanced_accuracy": -0.08516581200975037,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta0",
+      "scope": "C6",
+      "effect_balanced_accuracy": -0.06340579710144933,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta1",
+      "scope": "equal_center_mean",
+      "effect_balanced_accuracy": -0.008956418984938708,
+      "conditional_ci_low": -0.0627818396534082,
+      "conditional_ci_high": 0.07538265170920437
+    },
+    {
+      "contrast": "multiplicity_at_beta1",
+      "scope": "C2",
+      "effect_balanced_accuracy": -0.03590404238904177,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta1",
+      "scope": "C4",
+      "effect_balanced_accuracy": 0.01201600820124582,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta1",
+      "scope": "C5",
+      "effect_balanced_accuracy": 0.04464672038795853,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "multiplicity_at_beta1",
+      "scope": "C6",
+      "effect_balanced_accuracy": -0.05658436213991758,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K1",
+      "scope": "equal_center_mean",
+      "effect_balanced_accuracy": -0.02672785180177606,
+      "conditional_ci_low": -0.0771667889463111,
+      "conditional_ci_high": -0.010865710268320838
+    },
+    {
+      "contrast": "balancing_at_K1",
+      "scope": "C2",
+      "effect_balanced_accuracy": -0.020721428883357373,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K1",
+      "scope": "C4",
+      "effect_balanced_accuracy": 0.013970211339799699,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K1",
+      "scope": "C5",
+      "effect_balanced_accuracy": -0.13531853641609587,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K1",
+      "scope": "C6",
+      "effect_balanced_accuracy": 0.035158346752549474,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K4",
+      "scope": "equal_center_mean",
+      "effect_balanced_accuracy": 0.01707873842504315,
+      "conditional_ci_low": -0.015238011773341262,
+      "conditional_ci_high": 0.04785151235693362
+    },
+    {
+      "contrast": "balancing_at_K4",
+      "scope": "C2",
+      "effect_balanced_accuracy": 0.04425229631570515,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K4",
+      "scope": "C4",
+      "effect_balanced_accuracy": -0.01241112031122682,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K4",
+      "scope": "C5",
+      "effect_balanced_accuracy": -0.005506004018386967,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "balancing_at_K4",
+      "scope": "C6",
+      "effect_balanced_accuracy": 0.04197978171408123,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "interaction_difference_in_differences",
+      "scope": "equal_center_mean",
+      "effect_balanced_accuracy": 0.04380659022681921,
+      "conditional_ci_low": 0.0183736856426452,
+      "conditional_ci_high": 0.09113996360872884
+    },
+    {
+      "contrast": "interaction_difference_in_differences",
+      "scope": "C2",
+      "effect_balanced_accuracy": 0.06497372519906253,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "interaction_difference_in_differences",
+      "scope": "C4",
+      "effect_balanced_accuracy": -0.02638133165102652,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "interaction_difference_in_differences",
+      "scope": "C5",
+      "effect_balanced_accuracy": 0.1298125323977089,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    },
+    {
+      "contrast": "interaction_difference_in_differences",
+      "scope": "C6",
+      "effect_balanced_accuracy": 0.006821434961531758,
+      "conditional_ci_low": null,
+      "conditional_ci_high": null
+    }
+  ],
+  "bootstrap": {
+    "attempted": 2000,
+    "accepted": 1026,
+    "rejected": 974,
+    "invalid_by_center_nonexclusive": {
+      "C2": 490,
+      "C4": 7,
+      "C5": 622,
+      "C6": 0
+    },
+    "seed": 2027,
+    "condition": "Whole sequence groups within fixed centers, same resamples all cells/seeds; conditional on all classes being present, fixed trained heads, no refitting. Patient independence unknown."
+  },
+  "exploratory": true,
+  "protocol_sha256": "6bfecec7a2f2b01e671be811b8f865150f766082fe42a391ddfbc2d12adca41a"
+}

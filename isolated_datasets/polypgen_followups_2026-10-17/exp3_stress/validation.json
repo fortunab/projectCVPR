@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "sampling_unit_tests_passed": 10,
+  "feasible_source_conditions": 48,
+  "target_evaluations": 288,
+  "reconstructed_prediction_rows": 375912,
+  "condition_plan_hash_reconstructed": true,
+  "all_source_centers_class_vocab_preserved": true,
+  "whole_groups_only": true,
+  "outer_targets_disjoint_from_fit_and_selection": true,
+  "original_class_complete_inner_centers_preserved": true,
+  "paired_total_group_budgets_exact": true,
+  "metrics_reconstructed_from_predictions": true,
+  "selected_spec_reconstructed_from_source_search": true,
+  "models_exist": true
+}

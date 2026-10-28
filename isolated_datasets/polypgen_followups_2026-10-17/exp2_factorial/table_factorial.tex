@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{ccccc}
+\hline
+$K$ & $\beta$ & Mean bAcc & Worst bAcc & Mean AUROC \\
+\hline
+1 & 0 & 0.632 & 0.603 & 0.790 \\
+1 & 1 & 0.605 & 0.476 & 0.691 \\
+4 & 0 & 0.579 & 0.503 & 0.688 \\
+4 & 1 & 0.596 & 0.521 & 0.684 \\
+\hline\end{tabular}
+\caption{Exploratory fixed factorial ablation on the partial reviewed PolypGen v3 sequence subset, frozen ResNet18. Scores average three fitting seeds and four target centers equally. Group weighting is present in all cells; beta controls center balancing. Patient independence is unverified.}
+\label{tab:factorial_exploratory}
+\end{table}

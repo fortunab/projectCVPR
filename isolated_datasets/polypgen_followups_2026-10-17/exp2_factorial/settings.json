@@ -1,0 +1,1922 @@
+[
+  {
+    "seed": 17,
+    "center": "C2",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.09763549423335359,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C2\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C2",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.031765706054683505,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C2\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C2",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.0416185811963559,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C2\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C2",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.060774887715417704,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C2\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C4",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.026915682178451014,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C4\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C4",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.01831570417971405,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C4\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C4",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.01949211603019045,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C4\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C4",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.04665189839425919,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C4\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C5",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.07795407512343842,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C5\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C5",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.02348693408175926,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C5\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C5",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.04016874004492281,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C5\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C5",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.06219849639149821,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C5\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C6",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.03367212934899098,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C6\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C6",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.029606009148787707,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C6\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C6",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05479959448292626,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C6\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 17,
+    "center": "C6",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.06732783773366621,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed17\\C6\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C2",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.09763549423335359,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C2\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C2",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.031765706054683505,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C2\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C2",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.03824800143320774,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C2\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C2",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.0622993471026969,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C2\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C4",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.026915682178451014,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C4\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C4",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.01831570417971405,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C4\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C4",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.023645984283547136,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C4\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C4",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.04448481642741132,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C4\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C5",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.07795407512343842,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C5\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C5",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.02348693408175926,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C5\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C5",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.04540491465335851,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C5\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C5",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05537842359809043,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C5\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C6",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.03367212934899098,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C6\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C6",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.029606009148787707,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C6\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C6",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05027348080260319,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C6\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 29,
+    "center": "C6",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.07427239558351556,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed29\\C6\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C2",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.09763549423335359,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C2\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C2",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.031765706054683505,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C2\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C2",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.0411786803738109,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C2\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C2",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05102821471052107,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C2\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C4",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.026915682178451014,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C4\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C4",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.01831570417971405,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C4\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C4",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.022011318770829645,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C4\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C4",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          3
+        ]
+      }
+    ],
+    "temperature": 0.04298502972523264,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C4\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C5",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.07795407512343842,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C5\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C5",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.02348693408175926,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C5\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C5",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.047021818242895974,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C5\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C5",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C6",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05811235075029887,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C5\\D_K4_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C6",
+    "cell": "A_K1_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.03367212934899098,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C6\\A_K1_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C6",
+    "cell": "B_K1_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          1,
+          1
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          1,
+          1
+        ]
+      }
+    ],
+    "temperature": 0.029606009148787707,
+    "requested_K": 1,
+    "realized_K": [
+      1,
+      1
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 1,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C6\\B_K1_beta1.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C6",
+    "cell": "C_K4_beta0",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05010701495243358,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 0.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C6\\C_K4_beta0.joblib"
+  },
+  {
+    "seed": 43,
+    "center": "C6",
+    "cell": "D_K4_beta1",
+    "source_folds": [
+      {
+        "validation_center": "C2",
+        "realized_K": [
+          4,
+          4
+        ]
+      },
+      {
+        "validation_center": "C4",
+        "realized_K": [
+          4,
+          3
+        ]
+      },
+      {
+        "validation_center": "C5",
+        "realized_K": [
+          4,
+          4
+        ]
+      }
+    ],
+    "temperature": 0.05671276758440935,
+    "requested_K": 4,
+    "realized_K": [
+      4,
+      4
+    ],
+    "configuration": {
+      "kind": "prototype",
+      "k": 4,
+      "beta": 1.0
+    },
+    "model_path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_followups_2026-10-17\\exp2_factorial\\models\\seed43\\C6\\D_K4_beta1.joblib"
+  }
+]
