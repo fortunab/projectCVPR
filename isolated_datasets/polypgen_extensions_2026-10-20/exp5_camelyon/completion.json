@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "source_models": 27,
+  "target_evaluations": 54,
+  "patches": 17200,
+  "patients": 43,
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "acquisition_revision": "d784d5344ba6c967f83f9f3d9b2f1e2a4d6eb78f",
+  "prediction_sha256": "becc800e97a069f888edc3e447b7326f873a14030c6d0bca444c431458bea23e",
+  "report_sha256": "77350c0e56accf8b064cf236c9570a9004cac0b0a6ad262e7e577840d2c8ff33",
+  "bootstrap_attempts": 2000,
+  "executed_source_snapshot_sha256": "57f030d6815907b332702dafcf3fc000fdcb47804f36714a09a55bee7a8eef1e",
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.5",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.1",
+    "torch": "2.13.0",
+    "torchvision": "0.28.0",
+    "pyarrow": "17.0.0",
+    "Pillow": "10.4.0",
+    "joblib": "1.4.2",
+    "matplotlib": "3.11.1"
+  },
+  "python_version": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+  "source_script_sha256": "57f030d6815907b332702dafcf3fc000fdcb47804f36714a09a55bee7a8eef1e",
+  "report_script_sha256": "2cb1198cef08b28474022116bf8d8b8b41e087be5929eb002bf4562686ce241b"
+}

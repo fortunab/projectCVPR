@@ -1,0 +1,29 @@
+{
+  "selected_manifest_sha256": "589664bc4a31e7a7744b3513834106812634b83be39891c100e49e8643dd4894",
+  "metadata_audit_sha256": "0b328bc6458deb16284210bc098e59d2f4e6026dbb54fb635abf13555feb2946",
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "selected_rows": 17200,
+  "patient_cap": 400,
+  "rank_prefix": "camelyon17-patient-cap400-seed2027|",
+  "original_identity_format": "patch_patient_{patient:03d}_node_{node}_x_{x}_y_{y}.png",
+  "source_train_only": true,
+  "source_hospitals": [
+    0,
+    3,
+    4
+  ],
+  "source_inner_LOCO": [
+    0,
+    3,
+    4
+  ],
+  "primary_target_hospital": 2,
+  "secondary_target_hospital": 1,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "nine_unchanged_head_grids": true,
+  "target_selected_parameters": false
+}

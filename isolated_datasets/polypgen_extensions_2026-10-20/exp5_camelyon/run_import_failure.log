@@ -1,0 +1,39 @@
+C:\Users\Lenovo\anaconda3\Lib\site-packages\pandas\core\computation\expressions.py:23: UserWarning: Pandas requires version '2.10.2' or newer of 'numexpr' (version '2.8.7' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+C:\Users\Lenovo\anaconda3\Lib\site-packages\pandas\core\arrays\masked.py:56: UserWarning: Pandas requires version '1.4.2' or newer of 'bottleneck' (version '1.3.7' currently installed).
+  from pandas.core import (
+[IMAGES] test-00000-of-00004.parquet: extracted 1236 selected patches
+[IMAGES] test-00001-of-00004.parquet: extracted 1292 selected patches
+[IMAGES] test-00002-of-00004.parquet: extracted 674 selected patches
+[IMAGES] test-00003-of-00004.parquet: extracted 398 selected patches
+[IMAGES] train-00000-of-00014.parquet: extracted 235 selected patches
+[IMAGES] train-00001-of-00014.parquet: extracted 293 selected patches
+[IMAGES] train-00002-of-00014.parquet: extracted 550 selected patches
+[IMAGES] train-00003-of-00014.parquet: extracted 210 selected patches
+[IMAGES] train-00004-of-00014.parquet: extracted 263 selected patches
+[IMAGES] train-00005-of-00014.parquet: extracted 431 selected patches
+[IMAGES] train-00006-of-00014.parquet: extracted 1368 selected patches
+[IMAGES] train-00007-of-00014.parquet: extracted 1160 selected patches
+[IMAGES] train-00008-of-00014.parquet: extracted 1201 selected patches
+[IMAGES] train-00009-of-00014.parquet: extracted 1193 selected patches
+[IMAGES] train-00010-of-00014.parquet: extracted 987 selected patches
+[IMAGES] train-00011-of-00014.parquet: extracted 918 selected patches
+[IMAGES] train-00012-of-00014.parquet: extracted 928 selected patches
+[IMAGES] train-00013-of-00014.parquet: extracted 663 selected patches
+[IMAGES] validation-00001-of-00003.parquet: extracted 1457 selected patches
+[IMAGES] validation-00002-of-00003.parquet: extracted 1743 selected patches
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_extensions_2026-10-20\exp5_camelyon.py", line 672, in <module>
+    main()
+  File "C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_extensions_2026-10-20\exp5_camelyon.py", line 668, in main
+    run(args.threads, args.batch_size)
+  File "C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_extensions_2026-10-20\exp5_camelyon.py", line 645, in run
+    features = extract_features(frame, threads=threads, batch_size=batch_size)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_extensions_2026-10-20\exp5_camelyon.py", line 420, in extract_features
+    import torch
+  File "C:\Users\Lenovo\anaconda3\Lib\site-packages\torch\__init__.py", line 288, in <module>
+    _load_dll_libraries()
+  File "C:\Users\Lenovo\anaconda3\Lib\site-packages\torch\__init__.py", line 271, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "C:\Users\Lenovo\anaconda3\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.

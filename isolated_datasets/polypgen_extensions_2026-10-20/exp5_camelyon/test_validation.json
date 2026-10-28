@@ -1,0 +1,13 @@
+{
+  "tests_run": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "verified_utc": "2026-10-20T16:35:06.446753+00:00",
+  "test_file_sha256": {
+    "test_exp5_camelyon.py": "363fb30878f35e8babe55b4f24e0e3a0c8fb1761cbd2cf964d25504478637d41",
+    "test_exp5_report.py": "0a79bc60f726f2647b11d15a1211cd52532a12101a4dc231ffe77a1ebfe3c2aa"
+  },
+  "scope": "patient-cap protocol, label and hospital decoding, source-target patient boundaries, freeze gating, exact bootstrap AUROC ties and patient multiplicities; scientific data checks recorded separately"
+}

@@ -1,0 +1,41 @@
+{
+  "initial_failure": "PyTorch late import after Arrow failed Windows c10.dll initialization; no features, fits or target scores were produced",
+  "recovery": "Initialize torch before pyarrow and pandas; exact audited cohort reused",
+  "resource_only_benchmark": {
+    "benchmark": "fixed64imagebatch;forwardonly;warmup1;timed3;torch2vs4",
+    "labels_read": false,
+    "scores_read": false,
+    "results": [
+      {
+        "threads": 2,
+        "batch_size": 64,
+        "timed_repetitions_seconds": [
+          3.1157911000191234,
+          3.3953303000016604,
+          3.1541731999896
+        ],
+        "median_seconds": 3.1541731999896,
+        "images_per_second": 20.290578843359338
+      },
+      {
+        "threads": 4,
+        "batch_size": 64,
+        "timed_repetitions_seconds": [
+          1.966240400011884,
+          1.9743913999991491,
+          1.5089854999969248
+        ],
+        "median_seconds": 1.966240400011884,
+        "images_per_second": 32.549427831720465
+      }
+    ],
+    "concurrent_jobs": "DINOv2 8threads and original ResNet extraction2threads",
+    "image_names_sha256": "0f54502ce95a6136a4eaf3758497803390a61609700b4e9dee8acee68f3af330"
+  },
+  "choice": "4 threads for full resumed extraction and head fitting; entire feature matrix restarted before any cache committed",
+  "prior_attempt_preserved": "run_threads2_interrupted.log",
+  "data_or_method_changed": false,
+  "target_scores_consulted": false,
+  "executed_source_snapshot_sha256": "57f030d6815907b332702dafcf3fc000fdcb47804f36714a09a55bee7a8eef1e",
+  "current_source_matches_snapshot": true
+}

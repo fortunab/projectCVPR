@@ -1,0 +1,113 @@
+C:\Users\Lenovo\anaconda3\Lib\site-packages\pandas\core\computation\expressions.py:23: UserWarning: Pandas requires version '2.10.2' or newer of 'numexpr' (version '2.8.7' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+C:\Users\Lenovo\anaconda3\Lib\site-packages\pandas\core\arrays\masked.py:56: UserWarning: Pandas requires version '1.4.2' or newer of 'bottleneck' (version '1.3.7' currently installed).
+  from pandas.core import (
+[RESNET18] 64/17200 patches;3.9s;ETA1043.0s
+[RESNET18] 704/17200 patches;26.1s;ETA611.3s
+[RESNET18] 1344/17200 patches;50.2s;ETA592.5s
+[RESNET18] 1984/17200 patches;73.1s;ETA560.6s
+[RESNET18] 2624/17200 patches;98.3s;ETA545.8s
+[RESNET18] 3264/17200 patches;127.6s;ETA544.9s
+[RESNET18] 3904/17200 patches;156.8s;ETA534.0s
+[RESNET18] 4544/17200 patches;186.5s;ETA519.5s
+[RESNET18] 5184/17200 patches;216.9s;ETA502.7s
+[RESNET18] 5824/17200 patches;247.1s;ETA482.7s
+[RESNET18] 6464/17200 patches;279.1s;ETA463.6s
+[RESNET18] 7104/17200 patches;308.4s;ETA438.3s
+[RESNET18] 7744/17200 patches;340.1s;ETA415.3s
+[RESNET18] 8384/17200 patches;373.5s;ETA392.8s
+[RESNET18] 9024/17200 patches;404.7s;ETA366.6s
+[RESNET18] 9664/17200 patches;434.0s;ETA338.4s
+[RESNET18] 10304/17200 patches;463.4s;ETA310.1s
+[RESNET18] 10944/17200 patches;492.0s;ETA281.3s
+[RESNET18] 11584/17200 patches;515.8s;ETA250.1s
+[RESNET18] 12224/17200 patches;538.8s;ETA219.3s
+[RESNET18] 12864/17200 patches;561.9s;ETA189.4s
+[RESNET18] 13504/17200 patches;585.4s;ETA160.2s
+[RESNET18] 14144/17200 patches;611.7s;ETA132.2s
+[RESNET18] 14784/17200 patches;639.2s;ETA104.5s
+[RESNET18] 15424/17200 patches;662.5s;ETA76.3s
+[RESNET18] 16064/17200 patches;685.6s;ETA48.5s
+[RESNET18] 16704/17200 patches;710.1s;ETA21.1s
+[SOURCE FIT] seed17 cbmp selected={'kind': 'prototype', 'k': 4, 'beta': 0.5} sourceBA=0.8318 147.7s
+[SOURCE FIT] seed17 multi_prototype_unbalanced selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} sourceBA=0.8267 16.1s
+[SOURCE FIT] seed17 linear_logistic selected={'kind': 'linear', 'C': 0.1} sourceBA=0.8609 4.9s
+[SOURCE FIT] seed17 trainable_cosine selected={'kind': 'cosine', 'learning_rate': 0.1} sourceBA=0.8579 40.9s
+[SOURCE FIT] seed17 linear_group_center_weighted selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} sourceBA=0.8395 15.3s
+[SOURCE FIT] seed17 cosine_group_center_weighted selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.0} sourceBA=0.8665 116.1s
+[SOURCE FIT] seed17 single_centroid_group_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} sourceBA=0.7970 0.7s
+[SOURCE FIT] seed17 single_centroid_center_balanced selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} sourceBA=0.8015 0.7s
+[SOURCE FIT] seed17 single_centroid_image_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} sourceBA=0.8361 2.5s
+[SOURCE FIT] seed29 cbmp selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} sourceBA=0.8373 194.7s
+[SOURCE FIT] seed29 multi_prototype_unbalanced selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} sourceBA=0.8373 11.6s
+[SOURCE FIT] seed29 linear_logistic selected={'kind': 'linear', 'C': 0.1} sourceBA=0.8609 6.0s
+[SOURCE FIT] seed29 trainable_cosine selected={'kind': 'cosine', 'learning_rate': 0.03} sourceBA=0.8560 44.7s
+[SOURCE FIT] seed29 linear_group_center_weighted selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} sourceBA=0.8395 18.3s
+[SOURCE FIT] seed29 cosine_group_center_weighted selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 1.0} sourceBA=0.8489 115.0s
+[SOURCE FIT] seed29 single_centroid_group_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} sourceBA=0.7970 0.8s
+[SOURCE FIT] seed29 single_centroid_center_balanced selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} sourceBA=0.8015 0.7s
+[SOURCE FIT] seed29 single_centroid_image_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} sourceBA=0.8361 2.1s
+[SOURCE FIT] seed43 cbmp selected={'kind': 'prototype', 'k': 4, 'beta': 1.0} sourceBA=0.8298 229.7s
+[SOURCE FIT] seed43 multi_prototype_unbalanced selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} sourceBA=0.8276 25.0s
+[SOURCE FIT] seed43 linear_logistic selected={'kind': 'linear', 'C': 0.1} sourceBA=0.8609 5.8s
+[SOURCE FIT] seed43 trainable_cosine selected={'kind': 'cosine', 'learning_rate': 0.1} sourceBA=0.8592 33.9s
+[SOURCE FIT] seed43 linear_group_center_weighted selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} sourceBA=0.8395 11.0s
+[SOURCE FIT] seed43 cosine_group_center_weighted selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.5} sourceBA=0.8357 97.9s
+[SOURCE FIT] seed43 single_centroid_group_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} sourceBA=0.7970 0.8s
+[SOURCE FIT] seed43 single_centroid_center_balanced selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} sourceBA=0.8015 0.8s
+[SOURCE FIT] seed43 single_centroid_image_weighted selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} sourceBA=0.8361 2.1s
+[TARGET] seed17 cbmp hospital2 BA=0.8557
+[TARGET] seed17 cbmp hospital1 BA=0.7790
+[TARGET] seed17 multi_prototype_unbalanced hospital2 BA=0.8589
+[TARGET] seed17 multi_prototype_unbalanced hospital1 BA=0.7679
+[TARGET] seed17 linear_logistic hospital2 BA=0.8888
+[TARGET] seed17 linear_logistic hospital1 BA=0.8030
+[TARGET] seed17 trainable_cosine hospital2 BA=0.8802
+[TARGET] seed17 trainable_cosine hospital1 BA=0.7591
+[TARGET] seed17 linear_group_center_weighted hospital2 BA=0.8457
+[TARGET] seed17 linear_group_center_weighted hospital1 BA=0.8267
+[TARGET] seed17 cosine_group_center_weighted hospital2 BA=0.8511
+[TARGET] seed17 cosine_group_center_weighted hospital1 BA=0.8159
+[TARGET] seed17 single_centroid_group_weighted hospital2 BA=0.7342
+[TARGET] seed17 single_centroid_group_weighted hospital1 BA=0.7455
+[TARGET] seed17 single_centroid_center_balanced hospital2 BA=0.7521
+[TARGET] seed17 single_centroid_center_balanced hospital1 BA=0.7511
+[TARGET] seed17 single_centroid_image_weighted hospital2 BA=0.8252
+[TARGET] seed17 single_centroid_image_weighted hospital1 BA=0.7548
+[TARGET] seed29 cbmp hospital2 BA=0.8547
+[TARGET] seed29 cbmp hospital1 BA=0.7730
+[TARGET] seed29 multi_prototype_unbalanced hospital2 BA=0.8547
+[TARGET] seed29 multi_prototype_unbalanced hospital1 BA=0.7730
+[TARGET] seed29 linear_logistic hospital2 BA=0.8888
+[TARGET] seed29 linear_logistic hospital1 BA=0.8030
+[TARGET] seed29 trainable_cosine hospital2 BA=0.8784
+[TARGET] seed29 trainable_cosine hospital1 BA=0.8081
+[TARGET] seed29 linear_group_center_weighted hospital2 BA=0.8457
+[TARGET] seed29 linear_group_center_weighted hospital1 BA=0.8267
+[TARGET] seed29 cosine_group_center_weighted hospital2 BA=0.8692
+[TARGET] seed29 cosine_group_center_weighted hospital1 BA=0.8113
+[TARGET] seed29 single_centroid_group_weighted hospital2 BA=0.7342
+[TARGET] seed29 single_centroid_group_weighted hospital1 BA=0.7455
+[TARGET] seed29 single_centroid_center_balanced hospital2 BA=0.7521
+[TARGET] seed29 single_centroid_center_balanced hospital1 BA=0.7511
+[TARGET] seed29 single_centroid_image_weighted hospital2 BA=0.8252
+[TARGET] seed29 single_centroid_image_weighted hospital1 BA=0.7548
+[TARGET] seed43 cbmp hospital2 BA=0.8518
+[TARGET] seed43 cbmp hospital1 BA=0.7753
+[TARGET] seed43 multi_prototype_unbalanced hospital2 BA=0.8409
+[TARGET] seed43 multi_prototype_unbalanced hospital1 BA=0.7639
+[TARGET] seed43 linear_logistic hospital2 BA=0.8888
+[TARGET] seed43 linear_logistic hospital1 BA=0.8030
+[TARGET] seed43 trainable_cosine hospital2 BA=0.8780
+[TARGET] seed43 trainable_cosine hospital1 BA=0.8085
+[TARGET] seed43 linear_group_center_weighted hospital2 BA=0.8457
+[TARGET] seed43 linear_group_center_weighted hospital1 BA=0.8267
+[TARGET] seed43 cosine_group_center_weighted hospital2 BA=0.8604
+[TARGET] seed43 cosine_group_center_weighted hospital1 BA=0.8186
+[TARGET] seed43 single_centroid_group_weighted hospital2 BA=0.7342
+[TARGET] seed43 single_centroid_group_weighted hospital1 BA=0.7455
+[TARGET] seed43 single_centroid_center_balanced hospital2 BA=0.7521
+[TARGET] seed43 single_centroid_center_balanced hospital1 BA=0.7511
+[TARGET] seed43 single_centroid_image_weighted hospital2 BA=0.8252
+[TARGET] seed43 single_centroid_image_weighted hospital1 BA=0.7548
+[EXP5] ALL54 TARGET RECORDS COMPLETE; report separately

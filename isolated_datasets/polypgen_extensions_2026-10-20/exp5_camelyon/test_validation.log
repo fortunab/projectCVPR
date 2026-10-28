@@ -1,0 +1,30 @@
+test_dict_names (test_exp5_camelyon.HospitalDecoding.test_dict_names) ... ok
+test_encoding_outside_support (test_exp5_camelyon.HospitalDecoding.test_encoding_outside_support) ... ok
+test_global_names (test_exp5_camelyon.HospitalDecoding.test_global_names) ... ok
+test_missing_names_rejected (test_exp5_camelyon.HospitalDecoding.test_missing_names_rejected) ... ok
+test_reencoded_source_subset (test_exp5_camelyon.HospitalDecoding.test_reencoded_source_subset) ... ok
+test_unknown_names_rejected (test_exp5_camelyon.HospitalDecoding.test_unknown_names_rejected) ... ok
+test_duplicate_patch_identity_stops (test_exp5_camelyon.PatientPartitionGuards.test_duplicate_patch_identity_stops) ... ok
+test_feature_valid (test_exp5_camelyon.PatientPartitionGuards.test_feature_valid) ... ok
+test_feature_zero_rejected (test_exp5_camelyon.PatientPartitionGuards.test_feature_zero_rejected) ... ok
+test_missing_target_class_stops (test_exp5_camelyon.PatientPartitionGuards.test_missing_target_class_stops) ... ok
+test_output_escape_rejected (test_exp5_camelyon.PatientPartitionGuards.test_output_escape_rejected) ... ok
+test_source_folds_target_free (test_exp5_camelyon.PatientPartitionGuards.test_source_folds_target_free) ... ok
+test_target_scoring_missing_freeze_rejected (test_exp5_camelyon.PatientPartitionGuards.test_target_scoring_missing_freeze_rejected) ... ok
+test_valid_cohort (test_exp5_camelyon.PatientPartitionGuards.test_valid_cohort) ... ok
+test_wrong_patient_center_stops (test_exp5_camelyon.PatientPartitionGuards.test_wrong_patient_center_stops) ... ok
+test_wrong_slide_center_stops (test_exp5_camelyon.PatientPartitionGuards.test_wrong_slide_center_stops) ... ok
+test_exact_identity_format (test_exp5_camelyon.ProspectiveSampling.test_exact_identity_format) ... ok
+test_label_blind (test_exp5_camelyon.ProspectiveSampling.test_label_blind) ... ok
+test_patient_cap_spans_multiple_nodes (test_exp5_camelyon.ProspectiveSampling.test_patient_cap_spans_multiple_nodes) ... ok
+test_rank_prefix_exact (test_exp5_camelyon.ProspectiveSampling.test_rank_prefix_exact) ... ok
+test_unused_id_validation_excluded (test_exp5_camelyon.ProspectiveSampling.test_unused_id_validation_excluded) ... ok
+test_class_incomplete_auc_undefined (test_exp5_report.PatientBootstrapNumerics.test_class_incomplete_auc_undefined) ... ok
+test_exact_weighted_tie_auc (test_exp5_report.PatientBootstrapNumerics.test_exact_weighted_tie_auc) ... ok
+test_patient_bootstrap_all_ones_reconstructs_mean_seed_metrics (test_exp5_report.PatientBootstrapNumerics.test_patient_bootstrap_all_ones_reconstructs_mean_seed_metrics) ... ok
+test_patient_draw_duplicates_whole_patient (test_exp5_report.PatientBootstrapNumerics.test_patient_draw_duplicates_whole_patient) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 7.232s
+
+OK
