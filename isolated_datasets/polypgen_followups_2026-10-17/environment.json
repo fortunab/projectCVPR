@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.1",
+    "joblib": "1.4.2",
+    "matplotlib": "3.11.1",
+    "threadpoolctl": "3.5.0"
+  }
+}

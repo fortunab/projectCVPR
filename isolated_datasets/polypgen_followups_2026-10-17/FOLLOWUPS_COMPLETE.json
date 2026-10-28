@@ -1,0 +1,9 @@
+{
+  "exploratory": true,
+  "threshold_controls": 108,
+  "factorial_final_evaluations": 48,
+  "stress_target_evaluations": 288,
+  "protocol_sha256": "6bfecec7a2f2b01e671be811b8f865150f766082fe42a391ddfbc2d12adca41a",
+  "baseline_preserved": true,
+  "interpretation": "No consistent robustness advantage established for current CBMP on this subset"
+}

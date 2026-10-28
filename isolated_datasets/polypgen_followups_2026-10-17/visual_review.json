@@ -1,0 +1,11 @@
+{
+  "reviewed": [
+    "exp1_failure/failure_score_diagnostics.png",
+    "exp2_factorial/factorial_mean_worst.png",
+    "exp3_stress/figures/performance_retention.png",
+    "exp3_stress/figures/source_group_composition.png"
+  ],
+  "method": "Direct visual inspection of generated PNG figures",
+  "result": "Labels, legends, axes and panels readable; no observed overlap or clipping",
+  "additional_agent_review": "Experiment1 retrieval montage and diagnostics reviewed by its author"
+}
