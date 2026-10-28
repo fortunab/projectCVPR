@@ -24,7 +24,7 @@ Choose **venv OR conda**. Activation changes the current shell; it does not inst
 PowerShell:
 
 ```powershell
-Set-Location 'C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines'
+Set-Location 'C:\Users\your_path'
 # Activation is optional; direct invocation also works when scripts are restricted.
 $Python = (Resolve-Path '.\.venv-cbmp\Scripts\python.exe').Path
 & $Python --version
@@ -38,7 +38,7 @@ Bash on Linux/WSL:
 
 ```bash
 # WSL on the same Windows computer:
-cd /mnt/c/Users/Lenovo/Documents/Codex/2026-10-14/https-github-com-fortunab-family-baselines
+cd /mnt/c/Users/your_path
 # Native Linux or a different checkout: replace this with that checkout's path.
 # A Windows venv cannot be reused on Linux: create a Linux venv first.
 source .venv-cbmp/bin/activate
@@ -52,7 +52,7 @@ Strict checking is expected to reject the existing torch 2.14 environment. Use a
 ### A. New reference venv: PowerShell
 
 ```powershell
-Set-Location 'C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines'
+Set-Location 'C:\Users\your_path'
 # This selects the available Python 3.12 installation on this computer.
 & 'C:\Users\Lenovo\anaconda3\python.exe' -m venv .venv-cbmp-reference
 $Python = (Resolve-Path '.\.venv-cbmp-reference\Scripts\python.exe').Path
@@ -72,7 +72,7 @@ If local policy blocks script execution, use the explicit Python commands; there
 
 ```bash
 # WSL on the same Windows computer:
-cd /mnt/c/Users/Lenovo/Documents/Codex/2026-10-14/https-github-com-fortunab-family-baselines
+cd /mnt/c/Users/your_path
 # Native Linux or a different checkout: replace this with that checkout's path.
 python3.12 -m venv .venv-cbmp-reference
 source .venv-cbmp-reference/bin/activate
@@ -91,7 +91,7 @@ These commands target 64-bit Linux/WSL x86_64 with Python 3.12 and CPU wheels. L
 Use a conda-enabled PowerShell session (for example the Anaconda PowerShell Prompt):
 
 ```powershell
-Set-Location 'C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines'
+Set-Location 'C:\Users\your_path'
 conda env create -f .\environment-cbmp.yml
 conda activate cbmp-repro
 $Python = (Get-Command python).Source
@@ -106,7 +106,7 @@ For an existing environment, skip creation and run `conda activate cbmp-repro`. 
 
 ```bash
 # WSL on the same Windows computer:
-cd /mnt/c/Users/Lenovo/Documents/Codex/2026-10-14/https-github-com-fortunab-family-baselines
+cd /mnt/c/Users/your_path
 # Native Linux or a different checkout: replace this with that checkout's path.
 conda env create -f environment-cbmp.yml
 conda activate cbmp-repro
