@@ -1,0 +1,313 @@
+{
+  "files": [
+    {
+      "path": "baseline/process_audit.py",
+      "bytes": 7975,
+      "sha256": "968c840f1b82cd074d69cbb8eea4d5ec152e90e6f8db1efc8ec4af7fa05ab086",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/process_audit.py"
+    },
+    {
+      "path": "baseline/run_experiments.py",
+      "bytes": 3194,
+      "sha256": "f037f9d2db2d9a0229cbd096bba3258fb1f25d3557a8ea06c7c35f3cf73cf948",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/run_experiments.py"
+    },
+    {
+      "path": "baseline/make_report.py",
+      "bytes": 27233,
+      "sha256": "118c4095bf5fccd401a089fc94bc2db86de77c726a8d233fbf4c0a6d8225de7a",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/make_report.py"
+    },
+    {
+      "path": "baseline/PROTOCOL.md",
+      "bytes": 5966,
+      "sha256": "71daf180f996c597ee5858cf7bb9785e33800ade83e46570d15ac1067f9b210f",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/PROTOCOL.md"
+    },
+    {
+      "path": "baseline/code/cbmp.py",
+      "bytes": 12808,
+      "sha256": "ec95d8fa07b1e9057132a8c66466d63b81f6b1116bb73ff12d2a0ed8f840871b",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/cbmp.py"
+    },
+    {
+      "path": "baseline/code/cbmp_data.py",
+      "bytes": 4214,
+      "sha256": "052bbfab383a164bddf31b27bf02a115df15e8a53d0c635383022080c97deff1",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/cbmp_data.py"
+    },
+    {
+      "path": "baseline/code/cbmp_evaluation.py",
+      "bytes": 9994,
+      "sha256": "6b5f978731c3ee09d7909683942f305686bee714f2c0393b6d5fe71c9978e802",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/cbmp_evaluation.py"
+    },
+    {
+      "path": "baseline/code/polypgen_manifest.py",
+      "bytes": 16854,
+      "sha256": "8eada291fd92d2c9be06bb17eb43dbba729f3b8e74be6df235d9d25812b9a83b",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/polypgen_manifest.py"
+    },
+    {
+      "path": "baseline/code/run_cbmp.py",
+      "bytes": 12665,
+      "sha256": "5819b7da1f28accdb9daf61037fa6e1569982928304615051400f1abd074ddc9",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/run_cbmp.py"
+    },
+    {
+      "path": "baseline/code/audit_cbmp_data.py",
+      "bytes": 2438,
+      "sha256": "3eff8357e61237dc021b447bc1b3e8f7235b41e81f950846b9addaad64ae912a",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/audit_cbmp_data.py"
+    },
+    {
+      "path": "baseline/audit/polypgen_sequence_center_mapping_review_v2.json",
+      "bytes": 7970,
+      "sha256": "adfb45ccf04b95b68e2d8233ab2659f0cef5bc0e4b62684b50621907dec21a2f",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/audit/polypgen_sequence_center_mapping_review_v2.json"
+    },
+    {
+      "path": "baseline/audit/polypgen_sequence_class_audit.json",
+      "bytes": 19595,
+      "sha256": "31e2fb29a8fbb8eeeaee8264509104d08b243ab37c79628ae420f87ee436dd85",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/audit/polypgen_sequence_class_audit.json"
+    },
+    {
+      "path": "baseline/audit/reviewed_sequence_centers.csv",
+      "bytes": 3903,
+      "sha256": "ac622dc38b81a7e0edd2f06f5e505d77ad53e8ca82b6b7c183ad78b8c0ee2eb6",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/audit/reviewed_sequence_centers.csv"
+    },
+    {
+      "path": "followups/common.py",
+      "bytes": 6747,
+      "sha256": "e16da3b3417816aeae15fdaf5edc46c7b309ccbc33e063d5739e431956b2b5fe",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/common.py"
+    },
+    {
+      "path": "followups/exp1_failure.py",
+      "bytes": 41576,
+      "sha256": "80f45029ccbe3ca49797cca803cc2282b0bedd2f0497dd34461341f86b6b1656",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/exp1_failure.py"
+    },
+    {
+      "path": "followups/exp2_factorial.py",
+      "bytes": 17304,
+      "sha256": "63d223699f9ea8a7b271cd2b0eece512a92e75fb3dec89bf626092f76febb7da",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/exp2_factorial.py"
+    },
+    {
+      "path": "followups/exp3_stress.py",
+      "bytes": 32415,
+      "sha256": "ef7cfa9e587dc5cde5c62c4203aa4cff534e7fa5073b7e5f47ed1f9677968d8a",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/exp3_stress.py"
+    },
+    {
+      "path": "followups/run_logged.py",
+      "bytes": 1503,
+      "sha256": "10e34d689d1bccbbbd43b73679031cf2e2cf53baa2700fa222bf7c6ced0fd597",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/run_logged.py"
+    },
+    {
+      "path": "followups/setup_followups.py",
+      "bytes": 3479,
+      "sha256": "8c8d9ce285c917d44f12d1713027daae28686f6f308fdb9e88ab1241f2437a58",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/setup_followups.py"
+    },
+    {
+      "path": "followups/summarize_followups.py",
+      "bytes": 14821,
+      "sha256": "bc67a82e90e593525c7b0a30a18d932e4b56ef17bb80a79d923bf50e40397c0d",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/summarize_followups.py"
+    },
+    {
+      "path": "followups/test_exp3_stress.py",
+      "bytes": 5091,
+      "sha256": "413ddf584d21ea5987934fa220ac5f606fd5e97a16c158c3d848e4c47ddb0b5d",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/test_exp3_stress.py"
+    },
+    {
+      "path": "followups/PROTOCOL.md",
+      "bytes": 9537,
+      "sha256": "6bfecec7a2f2b01e671be811b8f865150f766082fe42a391ddfbc2d12adca41a",
+      "original_workspace_path": "isolated_datasets/polypgen_followups_2026-10-17/PROTOCOL.md"
+    },
+    {
+      "path": "extensions/exp4_benchmark.py",
+      "bytes": 1712,
+      "sha256": "4566d30b4faff24663fa0c5ee7c4459c84dcbb04bcdb10a505f313637f444b7b",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_benchmark.py"
+    },
+    {
+      "path": "extensions/exp4_dinov2.py",
+      "bytes": 21421,
+      "sha256": "91e7ee504b353baf93e371a9c873497dc0d94662b0ff36b22b627d66fbcb88d6",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2.py"
+    },
+    {
+      "path": "extensions/exp4_launch.py",
+      "bytes": 1731,
+      "sha256": "011d5da2cdae36b6d4c2da402ed31c7799d8f2d3198ccc0c6666d5f73924d250",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_launch.py"
+    },
+    {
+      "path": "extensions/exp4_report.py",
+      "bytes": 25999,
+      "sha256": "8e624adf316f1512558643aecc4ec0adafd7e7590e98bf66b7681cb3b0881f2d",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_report.py"
+    },
+    {
+      "path": "extensions/exp4_seed_worker.py",
+      "bytes": 4123,
+      "sha256": "8f945c923e6e2e4b327cec5ee80192ceaf9086f444c610be01709d5ea9557d64",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_seed_worker.py"
+    },
+    {
+      "path": "extensions/exp5_camelyon.py",
+      "bytes": 38106,
+      "sha256": "57f030d6815907b332702dafcf3fc000fdcb47804f36714a09a55bee7a8eef1e",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp5_camelyon.py"
+    },
+    {
+      "path": "extensions/exp5_report.py",
+      "bytes": 24171,
+      "sha256": "f2fb318422605db5067e547f23bc597e8f2f3c7b6146f477eb223092086c8b95",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/exp5_report.py"
+    },
+    {
+      "path": "extensions/fetch_public.py",
+      "bytes": 2917,
+      "sha256": "5c531fc5b2b8d7ca5809212c3cc4278290dab97ed3e334d602cdb5d621ffe069",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/fetch_public.py"
+    },
+    {
+      "path": "extensions/finalize_extensions.py",
+      "bytes": 9463,
+      "sha256": "54876b3fe992888e926ec1feba7ca6c9ee1dde9cce2ce2ee8f750608c3e7ba01",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/finalize_extensions.py"
+    },
+    {
+      "path": "extensions/setup_extensions.py",
+      "bytes": 3263,
+      "sha256": "44bd4aec3d1fba3ade8d36eea995a2c1c6782629042647552eeadff4ce5c047b",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/setup_extensions.py"
+    },
+    {
+      "path": "extensions/test_exp4_dinov2.py",
+      "bytes": 3502,
+      "sha256": "31a9d5c676d1c8a84aa5edbcf3588ebf43cceaf6f34e05918c7f74e5eea68d47",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/test_exp4_dinov2.py"
+    },
+    {
+      "path": "extensions/test_exp4_report.py",
+      "bytes": 2072,
+      "sha256": "d51b0f3945dabd9a590c67664d125a4a51ff5589f34130f46148549af93330bc",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/test_exp4_report.py"
+    },
+    {
+      "path": "extensions/test_exp5_camelyon.py",
+      "bytes": 5682,
+      "sha256": "363fb30878f35e8babe55b4f24e0e3a0c8fb1761cbd2cf964d25504478637d41",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/test_exp5_camelyon.py"
+    },
+    {
+      "path": "extensions/test_exp5_report.py",
+      "bytes": 2463,
+      "sha256": "0a79bc60f726f2647b11d15a1211cd52532a12101a4dc231ffe77a1ebfe3c2aa",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/test_exp5_report.py"
+    },
+    {
+      "path": "extensions/PROTOCOL.md",
+      "bytes": 8392,
+      "sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+      "original_workspace_path": "isolated_datasets/polypgen_extensions_2026-10-20/PROTOCOL.md"
+    },
+    {
+      "path": "histology/histology_cbmp/__init__.py",
+      "bytes": 81,
+      "sha256": "6c36777f7bffb41cd177acfae3681933639e38c99db983d5e2ff3342c82551e6",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/__init__.py"
+    },
+    {
+      "path": "histology/histology_cbmp/data.py",
+      "bytes": 23763,
+      "sha256": "607d78593b37081dd8ee0a9072a39dd9e888083f8c82d3636d8427337a5479b6",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/data.py"
+    },
+    {
+      "path": "histology/histology_cbmp/run.py",
+      "bytes": 16251,
+      "sha256": "46527547c9124daf0cd6152d4a7c5ee4d3f0d64b20dcc19f560dfbc78cbe5329",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/run.py"
+    },
+    {
+      "path": "histology/histology_cbmp/report.py",
+      "bytes": 8730,
+      "sha256": "5c6505b813048835d2a43130f9ae30301e1b811f0408d7159753c11a061c5fd9",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/report.py"
+    },
+    {
+      "path": "histology/histology_cbmp/README.md",
+      "bytes": 8352,
+      "sha256": "0c49c0fdbe3b2fa38950245e5b5f2e9ef4bd3f2babc16fb9a1ea135bd5a6d00f",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/README.md"
+    },
+    {
+      "path": "histology/histology_cbmp/requirements.txt",
+      "bytes": 155,
+      "sha256": "64e755573429f7923eaff46a4b6e6db1bb0562b97cb4d5378053ba4c606aa86a",
+      "original_workspace_path": "work/family_baselines/histology_cbmp/requirements.txt"
+    },
+    {
+      "path": "histology/polypgen/cbmp.py",
+      "bytes": 12808,
+      "sha256": "ec95d8fa07b1e9057132a8c66466d63b81f6b1116bb73ff12d2a0ed8f840871b",
+      "original_workspace_path": "isolated_datasets/polypgen_v3_copy_2026-10-17/code/cbmp.py"
+    }
+  ],
+  "archive_sha256": "a22f956a9f0fc3f941927108a3de8217fc61f1944c7eda598536dbabc27dbff3",
+  "archive_bytes": 3419253506,
+  "assets": {
+    "resnet18-f37072fd.pth": {
+      "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "location": "assets/torch/hub/checkpoints/resnet18-f37072fd.pth"
+    },
+    "model.safetensors": {
+      "url": "https://huggingface.co/facebook/dinov2-base/resolve/f9e44c814b77203eaa57a6bdbbd535f21ede1415/model.safetensors",
+      "sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+      "location": "assets/dinov2/f9e44c814b77203eaa57a6bdbbd535f21ede1415/model.safetensors"
+    },
+    "config.json": {
+      "url": "https://huggingface.co/facebook/dinov2-base/resolve/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json",
+      "sha256": "f7ff4cfa73d2f70647dbf6950541ad25d73082d54c2e7e9bded160c7656b2a70",
+      "location": "assets/dinov2/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json"
+    },
+    "preprocessor_config.json": {
+      "url": "https://huggingface.co/facebook/dinov2-base/resolve/f9e44c814b77203eaa57a6bdbbd535f21ede1415/preprocessor_config.json",
+      "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "location": "assets/dinov2/f9e44c814b77203eaa57a6bdbbd535f21ede1415/preprocessor_config.json"
+    }
+  },
+  "dinov2_revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "reference_packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.1",
+    "joblib": "1.4.2",
+    "threadpoolctl": "3.5.0",
+    "torch": "2.13.0",
+    "torchvision": "0.28.0",
+    "Pillow": "10.4.0",
+    "matplotlib": "3.11.1",
+    "tqdm": "4.66.5",
+    "pandas": "3.0.5",
+    "pyarrow": "17.0.0",
+    "transformers": "5.14.1",
+    "huggingface-hub": "1.19.0",
+    "safetensors": "0.8.0"
+  },
+  "cohort_order_sha256": "03616bcce755b2158dd3a7c7d45cf9381d33d90706e5a28db76536005703b5f6",
+  "raw_data_included": false,
+  "notes": "This captures code, protocols, reviewed mapping metadata, checkpoint identities, and ordering. Running data/results are never copied or changed."
+}
