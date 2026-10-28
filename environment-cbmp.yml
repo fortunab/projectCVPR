@@ -1,0 +1,7 @@
+name: cbmp-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.3
+  - pip
+# After activation install the pinned scientific packages as shown in README.md.

@@ -1,0 +1,18 @@
+% Generated from prediction-verified CSVs by scripts/build_paper_results.py.
+\begin{table*}[t]\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrr}\toprule
+ & \multicolumn{3}{c}{ResNet18} & \multicolumn{3}{c}{DINOv2 ViT-B/14}\\
+Classifier & Mean BA & Worst BA & AUROC & Mean BA & Worst BA & AUROC\\\midrule
+CBMP & 58.35 & 42.14 & 73.33 & 59.54 & 45.31 & 62.05\\
+Unbalanced multi-prototype & 61.12 & 53.14 & 76.22 & 60.43 & 48.88 & 64.47\\
+Linear logistic & 70.20 & 57.17 & 80.04 & 61.31 & 52.12 & 67.15\\
+Trained cosine & 63.12 & 56.68 & 80.55 & 68.17 & 61.45 & 74.70\\
+Weighted linear & 61.78 & 47.17 & 73.32 & 59.24 & 51.30 & 66.49\\
+Weighted cosine & 63.51 & 46.07 & 74.51 & 65.74 & 61.60 & 74.89\\
+Group centroid & 63.15 & 60.34 & 78.99 & 64.03 & 53.87 & 71.98\\
+Center centroid & 60.48 & 47.63 & 69.14 & 61.21 & 51.53 & 64.30\\
+Image centroid & 60.41 & 58.17 & 76.54 & 62.32 & 51.23 & 70.68\\
+\bottomrule\end{tabular}
+\caption{PolypGen reviewed-sequence subset. All values are percentages, averaged over three fitting seeds and equally over C2, C4, C5 and C6. Worst BA is the minimum center-specific seed mean. AUROC is the equal-center mean. All heads use the same features and source-only folds within an encoder; tuning grids differ as disclosed in the text.}
+\label{tab:polypgen_main}\end{table*}

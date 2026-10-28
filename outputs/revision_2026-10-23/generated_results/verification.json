@@ -1,0 +1,59 @@
+{
+  "prediction_records_verified": {
+    "polypgen_resnet18": 140967,
+    "polypgen_dinov2": 140967,
+    "camelyon": 183600
+  },
+  "main_evaluations": {
+    "polypgen_resnet18": 108,
+    "polypgen_dinov2": 108,
+    "camelyon": 54
+  },
+  "point_metrics_recomputed_from_predictions": true,
+  "summary_tolerance": 1e-12,
+  "new_training_performed": false,
+  "new_bootstrap_performed": false,
+  "uncertainty_source": "Existing scoped reports; this command verifies point metrics and paired support.",
+  "inputs": [
+    {
+      "path": "isolated_datasets/polypgen_v3_copy_2026-10-17/results/seed17/predictions.csv",
+      "sha256": "1f68ca0dd21549699a24fbcc0499107382fe47044f0df2c91cc328abed28f879"
+    },
+    {
+      "path": "isolated_datasets/polypgen_v3_copy_2026-10-17/results/seed29/predictions.csv",
+      "sha256": "5a6113e577e8055d455472acc0cd163aa1fbc1c507170fdcf8c521df1e5498cc"
+    },
+    {
+      "path": "isolated_datasets/polypgen_v3_copy_2026-10-17/results/seed43/predictions.csv",
+      "sha256": "eb87b45b1c447a8d3e5fc060462df9b4c664a3724bbd6c27be4053f79b8dd8ca"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/main/seed17/predictions.csv",
+      "sha256": "f373d832b8ff4bdf7fdb42c859c7a7d70b569c5d77857a5d14e0988334b3dc49"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/main/seed29/predictions.csv",
+      "sha256": "81d2dd5797b6f8bc9ddf4dec52d4f6e1b046df8e2b63c3ab340c677a3522080f"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/main/seed43/predictions.csv",
+      "sha256": "3c961f6c5da3cd029c724724e5731d13d16d42baa8efc0df92b37f351aa9ec60"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp5_camelyon/evaluation/predictions.csv",
+      "sha256": "becc800e97a069f888edc3e447b7326f873a14030c6d0bca444c431458bea23e"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/report/summary_metrics.csv",
+      "sha256": "d1214c8214d4dbcf6ddf3d8e0cd89c47a9c021f17d25eeb2f6cdc06b52e88470"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp5_camelyon/report/summary_by_hospital.csv",
+      "sha256": "1098f2bbf6ca75e1d59f0cb103b2e44a6c376a54f28e8306cbe76b43db0e1fcb"
+    },
+    {
+      "path": "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/report/factorial_encoder_summary.csv",
+      "sha256": "cf4182182f9e1c814e60d7bfd67f354c5258943046ada16d27b50c710eff5ca5"
+    }
+  ]
+}

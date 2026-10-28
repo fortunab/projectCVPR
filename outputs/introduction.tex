@@ -1,0 +1,368 @@
+\begin{abstract}
+Medical imaging models face hospital shifts, so evaluation at unseen centers is essential for assessing transfer. We examine center-balanced multi-prototype classification (CBMP) against matched heads using frozen ResNet18 and DINOv2 encoders. On reviewed PolypGen data, we compare nine heads across four class-complete held-out centers and three fitting seeds. Hyperparameters use source-only selection; sequence groups remain partitioned, with sequence-level uncertainty. Factorial and source-composition analyses test prototype count and center weighting. For histology, we fit heads on a patient-capped CAMELYON17-WILDS subset and evaluate two held-out hospitals with patient-level resampling. Intervals are conditional on sampled groups and fixed classifier heads. These controls matter: pooled metrics can hide center failures, frame-level splits can overstate precision, and unmatched heads confound classifier with representation effects. The strongest PolypGen results are 70.20\% mean balanced accuracy for ResNet18 linear logistic regression and 68.17\% for DINOv2 trained cosine; CBMP scores 58.35\% and 59.54\%, respectively. At primary hospital H2, CAMELYON linear logistic achieves 88.88\% balanced accuracy and 95.14\% AUROC, versus CBMP's 85.40\% and 92.96\%. Prototype count and center weighting have context-dependent effects. These results support source-only, group-aware evaluation; the limited centers and custom subsets do not establish broad robustness or clinical utility.
+\end{abstract}
+\section{Introduction}
+\label{sec:introduction}
+
+Medical images vary across institutions because of differences in acquisition devices, imaging protocols, patient populations, and sample preparation~\cite{ali2023polypgen}. These variations create a persistent challenge for visual recognition: a model that performs well in its training environment may fail at an unseen medical center. Zech et al. document variable cross-hospital performance and hospital-associated confounding in pneumonia detection from chest radiographs~\cite{zech2018generalization}. The challenge extends beyond achieving high average accuracy. Reliable recognition requires representations that preserve diagnostically relevant visual structure while remaining robust to changes in how images are acquired. Multi-center datasets such as PolypGen provide an opportunity to investigate this problem under explicit institutional distribution shifts~\cite{ali2023polypgen}.
+
+Pretrained visual encoders offer reusable representations for downstream recognition, including frozen-feature evaluation~\cite{oquab2024dinov2}. Their benefit in medical imaging is task-dependent: Raghu et al. found limited performance gains from ImageNet transfer in the two medical tasks they studied~\cite{raghu2019transfusion}. However, pretraining alone does not ensure that downstream decision rules generalize across centers. A classifier learned from pooled source data may exploit acquisition characteristics that correlate with class labels in the training set~\cite{zech2018generalization}. Theoretical results in domain adaptation also show that distribution alignment alone need not ensure low target error~\cite{zhao2019invariant}. Whether alignment suppresses useful variation in our medical setting remains an empirical question. This raises a central question: how can a recognition model retain class-discriminative structure without relying on center-specific visual cues?
+
+Prototype-based learning provides a natural framework for studying this question. By representing classes through reference vectors in an embedding space, prototype methods make the relationship between representation geometry and prediction explicit~\cite{snell2017prototypical}. Strong cosine-classifier baselines further motivate controlled evaluation of whether a proposed prototype mechanism contributes beyond its underlying representation~\cite{chen2019closer}. Prior work represents categories through multiple prototypical image parts, as in ProtoPNet~\cite{chen2019protopnet}. Here, we study global embedding prototypes and hypothesize that a single prototype may compress distinct class appearances. The pooled mean also gives greater influence to centers contributing more samples, as formalized in Eq.~\ref{eq:pooled_centroid}. Introducing multiple prototypes increases representational flexibility, but does not automatically distinguish meaningful within-class variation from acquisition-specific structure. Consequently, neither pooled class centroids nor unconstrained collections of prototypes necessarily provide a decision rule that transfers to an unseen center.
+
+We empirically examine whether center-aware, multi-prototype classifiers improve recognition at unseen medical centers. Our study uses pretrained image representations and controlled comparisons with pooled centroids, linear probes, cosine classifiers, and unbalanced multiple-prototype models. Target-center images and identities are excluded from fitting and model selection. We evaluate two tasks with distinct source and target partitions: polyp-presence classification on a reviewed PolypGen subset and tumor-patch classification on a patient-capped CAMELYON17-WILDS subset~\cite{bandi2019camelyon,koh2021wilds}. The latter fits new classifier heads on its own source hospitals; it is not zero-shot transfer of a PolypGen-trained model.
+
+A rigorous evaluation protocol is essential to assess whether differences reflect transferable visual structure. DomainBed emphasizes matched experimental conditions and source-only selection~\cite{gulrajani2021domainbed}; nested evaluation separates hyperparameter selection from performance estimation~\cite{varma2006bias}. Model selection is restricted to source-domain validation data, and available sequence or patient groups remain within a partition. Within each encoder, classifier comparisons use the same frozen features and outer splits. The ResNet18--DINOv2 comparison changes the full pretrained encoder package, including architecture and preprocessing, so it does not isolate a single cause. We report per-center results and controlled analyses, including cases where additional prototypes or center balancing do not help.
+
+\paragraph{Scope and objectives.}
+This paper studies supervised image classification under hospital or center shift using frozen pretrained encoders and source-fitted classifier heads. The PolypGen task predicts polyp presence in a reviewed endoscopy subset; the CAMELYON17-WILDS task predicts tumor presence in histology patches. Target images and target identities are not used for fitting or model selection in either task. The study has three objectives:
+\begin{enumerate}
+    \item \textbf{Measure prototype-classifier performance.} Compare center/group-weighted and multiple-prototype classifiers with linear, cosine, and centroid controls under source-only selection.
+    \item \textbf{Test component sensitivity.} Quantify how prototype count, center weighting, source decision thresholds, and source composition relate to held-out-center results.
+    \item \textbf{Assess transfer across settings.} Repeat the PolypGen comparison with a second frozen encoder and evaluate newly fitted heads on an independent histology task, while keeping the distinct data limitations explicit.
+\end{enumerate}
+These objectives provide an empirical account of where the evaluated prototype rules match or fall short of standard classifiers. They do not presuppose an advantage or establish clinical readiness.
+
+\paragraph{Paper organization.}
+Section~\ref{sec:background} reviews related work; Section~\ref{sec:method} presents the method and evaluation protocol; Section~\ref{sec:results} reports the experiments; and Section~\ref{sec:conclusion} discusses the findings, limitations, and future work.
+\section{Background and Related Work}
+\label{sec:background}
+
+\subsection{Cross-Center Domain Generalization}
+Following the domain-generalization setting of DomainBed~\cite{gulrajani2021domainbed}, we model each imaging center as a domain with a joint distribution $P_s(X,Y)$ over images $X$ and labels $Y$. Given labeled datasets from $S$ source centers, the objective is to learn a predictor that transfers to an unseen target distribution $P_t(X,Y)$ sharing the same label space. Cross-hospital evaluation demonstrates differences in image appearance and class prevalence~\cite{zech2018generalization}, while class-conditional shift matters in analyses of transfer~\cite{zhao2019invariant}. We therefore treat center identity as a grouping variable rather than a complete description of acquisition style. In this paper, target-center images are unavailable during training and model selection. This is a domain-generalization setting~\cite{gulrajani2021domainbed}, whereas unsupervised domain adaptation permits access to unlabeled target images, as in the medical segmentation setting of En and Guo~\cite{en2024dpcl}.
+
+Empirical risk minimization (ERM) on pooled source data is an essential baseline. Gulrajani and Lopez-Paz~\cite{gulrajani2021domainbed} demonstrate that careful implementation and model selection can make ERM competitive with dedicated domain-generalization algorithms on the benchmarks they examine. Their findings motivate matched architectures, tuning budgets, and source-only validation rather than assuming that an additional alignment objective is beneficial. Separately, Zhao et al.~\cite{zhao2019invariant} show, in domain adaptation, that distribution invariance and low source error do not suffice for successful transfer under certain shifts. These results caution against indiscriminate alignment; they do not prove that alignment necessarily harms the medical tasks considered here.
+
+\subsection{Pretrained Representations and Prototype Geometry}
+Let $f_\theta(x)$ be an image encoder and let $z(x)=f_\theta(x)/\|f_\theta(x)\|_2$ denote its normalized embedding, assuming a nonzero encoder output. Large-scale self-supervised encoders such as DINOv2 produce features transferable across multiple visual tasks~\cite{oquab2024dinov2}. We use pretrained representations as fixed inputs rather than treating encoder pretraining as our contribution. All reported experiments freeze the encoder; end-to-end adaptation is outside the evaluated scope. Within an encoder, this design isolates differences among the downstream classifier heads.
+
+Prototypical Networks classify examples by distances to class means in a learned metric space~\cite{snell2017prototypical}. For normalized class prototypes $p_c$ and temperature $\tau>0$, a cosine-based classifier instead uses
+\begin{equation}
+    q(y=c\mid x)=\frac{\exp(z(x)^\top p_c/\tau)}
+    {\sum_{j=1}^{C}\exp(z(x)^\top p_j/\tau)}.
+    \label{eq:prototype_classifier}
+\end{equation}
+With one trainable vector per class, this is a normalized linear classifier, consistent with the cosine formulation of Chen et al.~\cite{chen2019closer}. Supervised contrastive learning explicitly constructs labeled positive and negative relationships among embeddings~\cite{khosla2020supcon}. Cross-entropy training of cosine scores alone does not establish a new contrastive-learning method. The cosine baseline of Chen et al.~\cite{chen2019closer} reinforces the importance of testing prototype updates against a strong classifier using the same encoder.
+
+ProtoPNet represents categories through prototypical image parts and exposes supporting regions~\cite{chen2019protopnet}. Its spatial, example-based explanation differs from our global embedding vectors. Spherical clustering provides an established mechanism for representing several directions in normalized feature space~\cite{dhillon2001spherical}. Whether these directions capture transferable class structure or acquisition artifacts is a hypothesis to test. A geometric reference vector alone is not a clinically validated explanation; interpretability requires evidence linking matches to meaningful image content. Temperature scaling is likewise an established calibration technique~\cite{guo2017calibration}, not a guarantee of calibration after domain shift.
+
+\subsection{Prototype Weighting and Medical Transfer}
+For class $c$, let $n_{s,c}$ and $\mu_{s,c}$ denote the sample count and mean embedding at source center $s$. Before normalization, the pooled class centroid is
+\begin{equation}
+    \mu_c^{\mathrm{pool}}=
+    \frac{\sum_{s=1}^{S}n_{s,c}\mu_{s,c}}
+    {\sum_{s=1}^{S}n_{s,c}},
+    \label{eq:pooled_centroid}
+\end{equation}
+where centers with no examples of class $c$ contribute zero. Thus, centers with larger class-specific sample counts receive greater weight. Averaging the available center means equally changes the weighting, but is not necessarily preferable: estimates from small centers may be noisy, and equal weighting may differ from the deployment distribution. The effects of center balancing and prototype multiplicity are consequently empirical questions, not assumed improvements. Equation~\ref{eq:pooled_centroid} is an algebraic decomposition of the pooled mean, rather than a new estimator; our clustering also builds on established spherical $k$-means~\cite{dhillon2001spherical}.
+
+Prototype-based medical transfer has existing precedents. En and Guo~\cite{en2024dpcl} introduce dynamic cross-domain prototypes and contrastive learning for medical image segmentation using labeled source and unlabeled target data. Their method addresses adaptation with target access, while our experiments concern classification without target access. This distinction defines a different evaluation setting; it does not establish novelty for prototype alignment itself. PolypGen supplies multi-center endoscopy data~\cite{ali2023polypgen}. Our reviewed subset uses recorded sequence identifiers to group frames; patient independence is not verified. For CAMELYON17, WILDS defines a hospital-shifted lymph-node histology task~\cite{koh2021wilds} based on the CAMELYON17 challenge data~\cite{bandi2019camelyon}. Our custom, patient-capped evaluation differs from the official WILDS split and benchmark scale.
+
+\paragraph{Research question and limits.}
+The question pursued here is whether center-aware prototype estimation improves unseen-center recognition beyond matched linear, cosine, and centroid baselines. The reviewed work motivates this evaluation but does not establish that the exact implementation is novel; a broader comparison with recent prototype-based domain-generalization methods remains necessary. The experiments distinguish weighting, prototype count, and encoder package, and include settings where standard classifiers perform better. Results on these reviewed subsets do not establish universal robustness across medical modalities or readiness for clinical deployment.
+
+\section{Methodology}
+\label{sec:method}
+% Proposed implementation specification, not a description of completed runs.
+% Replace this comment and reconcile all settings with the released code
+% before submission. No performance or novelty claim is established here.
+
+\subsection{Setting and Design Rationale}
+We evaluate the implemented \emph{center-balanced multi-prototype} (CBMP) classifier on frozen image embeddings. Each labeled sample has an image $x_i$, class $y_i$, source center $s_i$, and grouping unit $g_i$. PolypGen uses the reviewed video-sequence identifier as its grouping unit; no patient linkage was verified. CAMELYON uses patient identifiers. Each outer target center is excluded from representation fitting, classifier fitting, and model selection. A fold is evaluated only when both classes occur in its source and target partitions. PolypGen labels were constructed and audited from annotations, not inferred from folder names.
+
+All five experiments freeze the image encoder and fit classifier heads on source data. CBMP changes group/center contributions to class-conditional clustering and can represent a class with several reference directions. It imposes no explicit domain-invariance loss and treats center identity only as a grouping variable. We test whether this particular weighting and prototype rule helps using matched features and source-only controls; the name CBMP does not imply a measured domain-robustness advantage.
+
+Figure~\ref{fig:cbmp_system} summarizes the system and its experimental data boundaries. The same outer center split and encoder features are used for CBMP and its controls. Inner source-center validation selects the configuration before the outer source data are used to construct the final prototype bank. Target images enter only the fixed inference path.
+
+% Add to the CVPR preamble: \usepackage{tikz}
+% \usetikzlibrary{arrows.meta,positioning,shapes.geometric,shapes.symbols,fit,backgrounds}
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+    font=\footnotesize, >=Latex,
+    block/.style={draw=blue!65!black, fill=blue!6, rounded corners=3pt,
+        align=center, text width=3.8cm, minimum height=1.35cm, inner sep=5pt},
+    select/.style={block, draw=orange!75!black, fill=orange!12},
+    learned/.style={block, draw=teal!65!black, fill=teal!10},
+    target/.style={block, draw=purple!65!black, fill=purple!7, dashed},
+    data/.style={block, shape=cylinder, shape border rotate=90,
+        aspect=0.5, rounded corners=0pt},
+    flow/.style={->, thick, draw=blue!65!black},
+    choice/.style={->, thick, dashed, draw=orange!80!black},
+    testflow/.style={->, thick, draw=purple!65!black}
+]
+\node[data] (source) at (0,0) {\textbf{Source centers}\\Labeled images\\Center and group IDs};
+\node[select] (validation) at (5.2,0) {\textbf{Source-only validation}\\Select $K$, $\beta$, and $\tau$};
+\node[data, draw=purple!65!black, fill=purple!7, dashed] (targetdata) at (10.4,0) {\textbf{Held-out target center}\\Excluded from fitting\\and model selection};
+
+\node[block] (encoder) at (0,-2.6) {\textbf{Frozen encoder}\\Prescribed preprocessing\\Normalized embeddings $z_i$};
+\node[select] (weight) at (5.2,-2.6) {\textbf{Group/center weights}\\$w_i\propto G_{s_i,c}^{-\beta}/m_{g_i,c}$\\Source training data only};
+\node[target] (targetencoder) at (10.4,-2.6) {\textbf{Target encoding}\\Same frozen encoder\\No target adaptation};
+
+\node[learned] (cluster) at (0,-5.2) {\textbf{Spherical clustering}\\Weighted class-wise updates\\Training-objective restarts};
+\node[learned, double, double distance=1pt] (bank) at (5.2,-5.2) {\textbf{Stored prototype bank}\\$\{p_{c,k}\}$ and fixed settings\\Built from outer sources};
+\node[target] (prediction) at (10.4,-5.2) {\textbf{Prediction}\\$h_c(x)=\max_k z(x)^\top p_{c,k}$\\Source-selected temperature};
+
+\node[block, draw=gray!70, fill=gray!8, text width=8.5cm]
+    (controls) at (2.6,-7.8) {\textbf{Matched controls and ablations}\\Same outer splits and encoder\\Isolate prototype count and weighting};
+\node[target] (evaluation) at (10.4,-7.8) {\textbf{Independent evaluation}\\Per-center / worst-center metrics\\Group-level uncertainty};
+
+\draw[flow] (source) -- (encoder);
+\draw[choice] (source) -- (validation);
+\draw[flow] (encoder) -- (weight);
+\draw[choice] (validation) -- (weight);
+\draw[flow] (weight.south) -- (5.2,-3.9) -- (0,-3.9) -- (cluster.north);
+\draw[flow] (cluster) -- (bank);
+\draw[flow] (bank) -- (prediction);
+\draw[testflow] (targetdata) -- (targetencoder);
+\draw[testflow] (targetencoder) -- (prediction);
+\draw[testflow] (prediction) -- (evaluation);
+\draw[flow] (cluster.south) -- (controls.north -| cluster.south);
+\draw[flow] (controls) -- (evaluation);
+\node[font=\scriptsize, align=center, text width=14cm] at (5.2,-9.35)
+    {\textcolor{blue!65!black}{Blue: data/encoding}\quad
+     \textcolor{orange!80!black}{Orange: source-only selection/weighting}\\[3pt]
+     \textcolor{teal!65!black}{Teal: prototype construction}\quad
+     \textcolor{purple!65!black}{Purple dashed: target evaluation}};
+\end{tikzpicture}
+\caption{CBMP system and evaluation boundaries. Cylinders denote datasets, rounded rectangles denote processing, and the double border identifies stored prototypes. Source-only inner validation selects the configuration, after which final prototypes are constructed from the outer sources. The dashed target path uses fixed encoding and prediction, with no feedback from target evaluation into fitting or selection. Controls share the outer splits and encoder; ablations isolate multiplicity and weighting. Colors reinforce the stage labels and boundary styles, so the diagram remains interpretable in grayscale.}
+\label{fig:cbmp_system}
+\end{figure*}
+
+\subsection{Embeddings and Sampling Units}
+We extract normalized embeddings $z_i=z(x_i)$ using the pinned checkpoint and its prescribed image preprocessing, in evaluation mode and without stochastic augmentation. ResNet18 produces 512-dimensional pooled features; the DINOv2-base replication uses the final layer-normalized 768-dimensional CLS embedding. ResNet18 is the only encoder used for CAMELYON. All feature arrays are checked for finite values and nonzero norms, and the same cache is used for every head in a given encoder/task comparison. No encoder parameters are updated.
+
+Repeated frames should not determine a center's influence merely through sequence length. For class $c$, let $\mathcal{G}_{s,c}$ be the groups containing that class at center $s$, let $G_{s,c}=|\mathcal{G}_{s,c}|$, and let $m_{g,c}$ count class-$c$ training images in group $g$. For $\mathcal{I}_c=\{i:y_i=c\}$, define
+\begin{equation}
+    a_i=\frac{G_{s_i,c}^{-\beta}}{m_{g_i,c}},
+    \qquad
+    w_i=\frac{a_i}{\sum_{j\in\mathcal{I}_c}a_j},
+    \label{eq:cbmp_weights}
+\end{equation}
+where $\beta\in[0,1]$ controls center balancing. Each group receives equal total weight within its center and class. A center's total unnormalized class weight is $G_{s,c}^{1-\beta}$: $\beta=0$ retains group-count weighting, whereas $\beta=1$ equalizes the available centers. Absent center-class combinations contribute no samples. The recorded grouping unit is used consistently within a task: sequence for PolypGen and patient for CAMELYON. This weighting reduces dominance by groups with many images but does not make correlated observations statistically independent or repair missing patient links.
+
+\subsection{Weighted Spherical Prototype Construction}
+Building on spherical $k$-means~\cite{dhillon2001spherical}, for each class $c$ we construct $K_c$ unit-norm prototypes $p_{c,k}$ by minimizing the weighted spherical clustering objective
+\begin{equation}
+    J_c=\sum_{i\in\mathcal{I}_c}w_i
+    \min_{1\leq k\leq K_c}\bigl(1-z_i^\top p_{c,k}\bigr),
+    \qquad \|p_{c,k}\|_2=1.
+    \label{eq:cbmp_clustering}
+\end{equation}
+Given prototypes, each embedding is assigned to the largest cosine similarity, with ties resolved by prototype index. For assigned set $\mathcal{A}_{c,k}$, the update is
+\begin{equation}
+    v_{c,k}=\sum_{i\in\mathcal{A}_{c,k}}w_i z_i,
+    \qquad p_{c,k}=\frac{v_{c,k}}{\|v_{c,k}\|_2}.
+    \label{eq:cbmp_update}
+\end{equation}
+This update minimizes the fixed-assignment objective whenever $v_{c,k}$ is nonzero. It does not guarantee a globally optimal clustering or target-domain robustness.
+
+Initialization selects distinct training embeddings without replacement using probabilities proportional to $w_i$. We use five restarts per class and retain the solution with the smallest training objective. Empty clusters or numerically zero update vectors are reinitialized from the training embedding with the largest weighted residual to its nearest valid prototype, avoiding duplicate seeds where possible. Iteration stops when assignments are unchanged or after 100 updates. We choose $K_c=\min(K,|\mathcal{I}_c|,\sum_s G_{s,c})$ and record the realized prototype count. A class with fewer than $K_c$ distinct embedding directions uses fewer prototypes. These rules prevent unsupported or undefined prototype updates; they do not substitute for adequate class coverage.
+
+\subsection{Prediction and Calibration}
+For an unseen image, the class score is the strongest match among its prototypes:
+\begin{equation}
+    h_c(x)=\max_{1\leq k\leq K_c}z(x)^\top p_{c,k},
+    \qquad \hat y(x)=\mathop{\rm argmax}_{c} h_c(x).
+    \label{eq:cbmp_prediction}
+\end{equation}
+This decision rule lets different prototypes support different appearances without averaging them into a single direction. Prototype count can also increase accidental matches, motivating a matched multiple-prototype baseline. When $K=1$ and $\beta=0$, the method reduces to a group-weighted normalized class centroid; when $\beta=1$, it equalizes available centers before normalization.
+
+For probabilistic evaluation, scores are converted to a softmax with temperature $\tau>0$, as in Eq.~\ref{eq:prototype_classifier}, substituting $h_c(x)$ for the single-prototype similarity. Following temperature scaling~\cite{guo2017calibration}, temperature is selected by bounded scalar optimization of mean source-fold negative log-likelihood in log-temperature space (log-temperature bounds $[-4,4]$); it is not selected from a discrete grid. Temperature does not change the argmax decision. These scores are not assumed to remain calibrated after a center shift. In the separate threshold-control experiment, decision thresholds are estimated using source-only margins. Inference uses only the image, frozen encoder, and fitted head, with no target-center identifier or batch adaptation.
+
+\subsection{Source-Only Selection and Controlled Evaluation}
+For each outer held-out center, the CBMP candidate grid is $K\in\{1,2,4,8\}$ and $\beta\in\{0,0.5,1\}$. The same inner source-center folds are used for all classifier families, with method-specific grids disclosed: unbalanced prototypes use four $K$ values; logistic regression uses five $C$ values; the trained cosine head uses three learning rates; weighted linear and cosine heads use their respective regularization or learning-rate grid crossed with three $\beta$ values; centroid controls have no fitted hyperparameter. Thus, the validation data and folds are shared, but the grid cardinalities are not identical. Selection uses mean balanced accuracy across inner validation centers, with ties favoring smaller $K$ and then smaller $\beta$. Temperature is optimized separately by mean inner-fold NLL. Inner training and validation partitions must contain both classes and be group-disjoint. If no valid held-out-source-center fold exists, the recorded group-disjoint source fallback is used. Once settings are fixed, the final head is refitted on all outer source training data. Target scores never choose settings, restarts, or checkpoints, following the source-only model-selection principle emphasized by DomainBed~\cite{gulrajani2021domainbed}.
+
+Controls include matched linear and cosine classifiers, a single-centroid classifier, and unbalanced multiple-prototype clustering. A factorial comparison of $K=1$ versus $K>1$ and $\beta=0$ versus $\beta>0$ separates multiplicity from center weighting. Group weighting is held constant in these comparisons; a separate image-weighted control measures its effect. Trainable classifiers receive the same source validation protocol and a disclosed tuning budget. Encoder adaptation, if evaluated, is a separate experiment with matched optimization and feature recomputation, rather than an unreported change to the frozen-encoder method.
+
+We report balanced accuracy (BA), macro F1, AUROC, and per-center scores. The mean gives equal weight to the evaluated target centers; worst-center BA is the minimum of center-specific means over the three fitting seeds. For PolypGen, paired uncertainty resamples whole recorded sequences and rejects class-incomplete draws; this is conditional sequence uncertainty, not patient-level uncertainty. For CAMELYON, paired uncertainty resamples patients within each observed target hospital while holding the selected patch samples and fitted heads fixed. Three fitting seeds are summarized separately from these bootstrap intervals. Center balancing cannot compensate for missing class support, erroneous labels, or an encoder insensitive to relevant visual cues.
+
+\paragraph{Computational cost.}
+With cached $d$-dimensional embeddings, $R$ restarts and $T$ clustering updates require approximately $O(RTNKd)$ operations for $N$ training images, excluding encoder feature extraction. Prototype storage is $O(d\sum_c K_c)$, and prediction costs $O(d\sum_c K_c)$ per image after encoding. The frozen-encoder construction uses no gradient updates. The empirical contribution must therefore be assessed through its weighting rule and independently measured transfer behavior, rather than architectural scale or a renamed cosine classifier.
+
+\subsection{Datasets and Experimental Comparisons}
+The PolypGen evaluation uses 5,444 reviewed frames from 37 recorded sequences from the six-center dataset~\cite{ali2023polypgen}. Four class-complete centers (C2, C4, C5, C6) form the outer evaluation folds. C1 is source-only; C3 is not represented in the reviewed cohort after center-mapping review. The existing ResNet18 experiment and the DINOv2 replication use the same manifest, outer folds, feature-group partitions, and fitting seeds $\{17,29,43\}$. Nine classifier variants are compared per encoder. The DINOv2 checkpoint is the pinned $\texttt{facebook/dinov2-base}$ revision; comparison with ResNet18 changes the architecture, pretraining and preprocessing package together, so the study does not attribute differences to architecture alone~\cite{he2016deep,oquab2024dinov2}.
+
+Three PolypGen follow-ups reuse the reviewed cohort. The threshold-control analysis recalculates decisions from source-selected thresholds while keeping fitted scores fixed. A $K\times\beta$ factorial compares four prespecified combinations with group weighting held constant. A source-composition stress analysis compares dominant-center retention with matched total-group scarcity; its sampling conditions are exploratory because the original PolypGen results were already inspected.
+
+The CAMELYON17-WILDS task follows the five-hospital histology setting in the original benchmark~\cite{bandi2019camelyon,koh2021wilds}, but uses a custom patient-capped subset rather than the complete official WILDS protocol. A label-blind hash retains at most 400 patches per patient and original partition, yielding 17,200 patches from 43 patients. Source training and all model selection use hospitals 0, 3, and 4; hospital 2 is the primary target and hospital 1 the secondary target. These are new heads trained on the histology source hospitals, not cross-task zero-shot reuse of PolypGen heads. The data are from the pinned public community redistribution described in the accompanying release records.
+
+All reported point estimates average three fitted heads. Paired 95\% bootstrap intervals use 2,000 attempts and seed 2027. In PolypGen, the resampling unit is the recorded sequence and only class-complete draws are retained. In CAMELYON, the resampling unit is patient within each target hospital. Intervals condition on the observed target groups, the chosen patch subset, and fixed fitted models; they do not quantify variability across a population of hospitals or include the full model-selection process.
+
+\section{Experiments and Results}
+\label{sec:results}
+
+\paragraph{Fold eligibility and comparison.}
+For PolypGen~\cite{ali2023polypgen}, centers were eligible as held-out targets only when the audited reviewed cohort contained both classes, which is required for interpretable binary balanced accuracy and AUROC. This yields C2, C4, C5, and C6; C1 has negative-only sequence support and remains source-only, while C3 is absent after center-mapping review. Eligibility therefore follows label and provenance checks, not model performance. All nine heads share the same folds, features, and fitting seeds within each encoder, making the within-encoder contrasts more controlled. For CAMELYON17-WILDS~\cite{bandi2019camelyon,koh2021wilds}, H0, H3, and H4 are sources, with H2 primary and H1 secondary targets fixed by protocol; neither target is used for model selection.
+\subsection{PolypGen: held-out-center classification}
+Table~\ref{tab:polypgen_results} reports equally weighted balanced accuracy across the four evaluated centers, after averaging the three fitting seeds. Worst-center performance is the minimum of the corresponding seed-averaged center scores. All heads within an encoder use identical features and outer partitions. The previously evaluated ResNet18 experiment is paired with the DINOv2 replication on the same reviewed images; each encoder contributes 108 main evaluations (nine heads, four targets, three seeds) and the fixed factorial contributes 48 more evaluations.
+
+CBMP does not attain the strongest mean or worst-center result for either encoder. With ResNet18, its mean BA is 58.35\% (worst center 42.14\%), compared with 70.20\% (57.17\%) for linear logistic regression. The paired CBMP-minus-linear mean-center difference is $-11.9$ percentage points (conditional sequence-bootstrap 95\% interval $[-16.0,-7.7]$). With DINOv2, CBMP reaches 59.54\% (45.31\%), while the trained cosine head reaches 68.17\% (61.45\%). The change of encoder therefore changes which classifier performs best; it does not yield a consistent CBMP advantage. Figure~\ref{fig:polypgen_comparison} summarizes the mean and worst-center comparisons. ResNet18 and DINOv2 differ in more than architecture, so their difference is not a causal architecture comparison. Across the plotted mean-leading comparators, the gap is larger at the worst center (ResNet18: 11.85 versus 15.03 points; DINOv2: 8.63 versus 16.14). Thus, the lower center average is accompanied by a larger shortfall at the least favorable site. CBMP rises by 1.19 mean and 3.17 worst-center points with DINOv2 relative to ResNet18, but this is descriptive because architecture, pretraining, and preprocessing change together. The figure uses the highest-mean learned head for each encoder in both panels; for DINOv2, weighted cosine reaches 61.60\% worst-center BA, slightly above the plotted trained cosine score of 61.45\%. Table~\ref{tab:polypgen_results} is therefore needed to compare all heads and both summary criteria.
+
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize]
+% Shared legend
+\fill[blue!70] (5.25,5.02) rectangle (5.48,5.22);
+\node[anchor=west] at (5.57,5.12) {CBMP};
+\fill[orange!85!black] (7.15,5.02) rectangle (7.38,5.22);
+\node[anchor=west] at (7.47,5.12) {Mean-best learned baseline};
+
+% Mean balanced accuracy panel
+\node[font=\small\bfseries] at (4.45,4.55) {Mean across held-out centers};
+\foreach \yy/\tick in {0/0,0.8/20,1.6/40,2.4/60,3.2/80,4/100} {
+  \draw[black!20,line width=.3pt] (1.15,\yy) -- (7.8,\yy);
+  \node[anchor=east] at (1.04,\yy) {\tick};
+}
+\node[rotate=90] at (.25,2) {Balanced accuracy (\%)};
+\fill[blue!70] (1.86,0) rectangle (2.48,2.334);
+\fill[orange!85!black] (2.58,0) rectangle (3.20,2.808);
+\fill[blue!70] (5.06,0) rectangle (5.68,2.3816);
+\fill[orange!85!black] (5.78,0) rectangle (6.40,2.7268);
+\node[above] at (2.17,2.334) {58.35};
+\node[above] at (2.89,2.808) {70.20};
+\node[above] at (5.37,2.3816) {59.54};
+\node[above] at (6.09,2.7268) {68.17};
+\draw[black!75,line width=.5pt] (1.15,0) -- (7.8,0);
+\draw[black!75,line width=.5pt] (1.15,0) -- (1.15,4);
+\node at (2.53,-.32) {ResNet18};
+\node at (5.73,-.32) {DINOv2};
+
+% Worst-center balanced accuracy panel
+\begin{scope}[xshift=8.55cm]
+\node[font=\small\bfseries] at (4.45,4.55) {Worst held-out center};
+\foreach \yy/\tick in {0/0,0.8/20,1.6/40,2.4/60,3.2/80,4/100} {
+  \draw[black!20,line width=.3pt] (1.15,\yy) -- (7.8,\yy);
+  \node[anchor=east] at (1.04,\yy) {\tick};
+}
+\node[rotate=90] at (.25,2) {Balanced accuracy (\%)};
+\fill[blue!70] (1.86,0) rectangle (2.48,1.6856);
+\fill[orange!85!black] (2.58,0) rectangle (3.20,2.2868);
+\fill[blue!70] (5.06,0) rectangle (5.68,1.8124);
+\fill[orange!85!black] (5.78,0) rectangle (6.40,2.458);
+\node[above] at (2.17,1.6856) {42.14};
+\node[above] at (2.89,2.2868) {57.17};
+\node[above] at (5.37,1.8124) {45.31};
+\node[above] at (6.09,2.458) {61.45};
+\draw[black!75,line width=.5pt] (1.15,0) -- (7.8,0);
+\draw[black!75,line width=.5pt] (1.15,0) -- (1.15,4);
+\node at (2.53,-.32) {ResNet18};
+\node at (5.73,-.32) {DINOv2};
+\end{scope}
+\end{tikzpicture}
+\caption{Held-out-center balanced accuracy on the reviewed PolypGen subset. The mean-best learned comparator is linear logistic regression for ResNet18 and the trained cosine classifier for DINOv2; the same head is shown in both panels for each encoder. Mean scores are equally weighted across four eligible centers after averaging three fitting seeds; worst-center scores are the minimum center-specific seed averages.}
+\label{fig:polypgen_comparison}
+\end{figure*}
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\hline
+Classifier & ResNet18 mean BA & ResNet18 worst BA & DINOv2 mean BA & DINOv2 worst BA \\
+\hline
+CBMP & 58.35 & 42.14 & 59.54 & 45.31 \\
+Unbalanced multi-prototype & 61.12 & 53.14 & 60.43 & 48.88 \\
+Linear logistic & 70.20 & 57.17 & 61.31 & 52.12 \\
+Trained cosine & 63.12 & 56.68 & 68.17 & 61.45 \\
+Weighted linear & 61.78 & 47.17 & 59.24 & 51.30 \\
+Weighted cosine & 63.51 & 46.07 & 65.74 & 61.60 \\
+Group-weighted centroid & 63.15 & 60.34 & 64.03 & 53.87 \\
+Center-balanced centroid & 60.48 & 47.63 & 61.21 & 51.53 \\
+Image-weighted centroid & 60.41 & 58.17 & 62.32 & 51.23 \\
+\hline
+\end{tabular}
+\caption{PolypGen held-out-center balanced accuracy (percent). Each mean is an equal-weight average over C2, C4, C5, and C6 after averaging seeds. Worst BA is the minimum of the four seed-averaged center scores. The reviewed cohort contains 5,444 frames and 37 recorded sequences; patient independence is unverified.}
+\label{tab:polypgen_results}
+\end{table*}
+
+The fixed factorial analysis shows that multiplicity and center balancing have encoder-dependent effects. For ResNet18, mean BA is 63.15\% at $(K,\beta)=(1,0)$, 60.48\% at $(1,1)$, 57.87\% at $(4,0)$, and 59.58\% at $(4,1)$. For DINOv2, the corresponding values are 64.03\%, 61.21\%, 64.24\%, and 60.32\%. Equalizing centers at $K=1$ reduces mean BA for both encoders; increasing $K$ to four reduces the ResNet18 score and changes DINOv2 only slightly when $\beta=0$. These fixed comparisons do not support a uniform benefit from adding prototypes or balancing centers.
+
+The three earlier diagnostic follow-ups are consistent with this reading. A source-selected CBMP threshold changes mean BA from 58.35\% to 58.82\% while leaving worst-center BA at 42.14\%. In the source-composition stress analysis, CBMP's composition-versus-matched-scarcity difference is $+1.0$ points at 50\% dominant-center retention and $-0.7$ points at 25\% retention. The sign change and the small cohort make this an exploratory sensitivity result, not a stable robustness law.
+
+\subsection{CAMELYON17-WILDS: independent histology task}
+Table~\ref{tab:camelyon_results} reports seed-averaged scores for the custom patient-capped subset. The nine source-fitted classifier heads were frozen and hashed before either target hospital was scored. H2 is the prespecified primary target and H1 the secondary target; neither target contributes to head or threshold selection, so these results measure held-out transfer rather than target adaptation. At primary hospital 2, CBMP obtains 85.40\% BA and 92.96\% AUROC; linear logistic obtains 88.88\% and 95.14\%, respectively. The paired CBMP-minus-linear BA difference is $-3.48$ points (patient-bootstrap 95\% interval $[-4.70,-2.11]$). The interval remains below zero when resampling the observed H2 patients, supporting a lower CBMP BA on this sampled target; it does not quantify variation across hospitals. At secondary hospital 1, CBMP reaches 77.58\% BA and 85.35\% AUROC, compared with 80.30\% and 91.71\% for linear logistic. CBMP exceeds the group-weighted single centroid at hospital 2, but this does not establish an advantage over the stronger learned heads or over unseen hospitals generally. Figure~\ref{fig:camelyon_comparison} visualizes the hospital-wise scores. Linear logistic has higher point estimates than CBMP at both hospitals for both metrics. The balanced-accuracy gap is 3.48 points at H2 and 2.72 at H1, while the AUROC gap expands from 2.18 to 6.36 points. Both heads score lower at H1 than H2; the AUROC decline is larger for CBMP (7.61 points) than for linear logistic (3.43). With only two target hospitals in this custom subset, this pattern is descriptive and cannot establish a general hospital effect.
+
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize]
+% Shared legend
+\fill[blue!70] (6.25,5.02) rectangle (6.48,5.22);
+\node[anchor=west] at (6.57,5.12) {CBMP};
+\fill[orange!85!black] (8.0,5.02) rectangle (8.23,5.22);
+\node[anchor=west] at (8.32,5.12) {Linear logistic};
+
+% Balanced accuracy panel
+\node[font=\small\bfseries] at (4.45,4.55) {Balanced accuracy};
+\foreach \yy/\tick in {0/0,0.8/20,1.6/40,2.4/60,3.2/80,4/100} {
+  \draw[black!20,line width=.3pt] (1.15,\yy) -- (7.8,\yy);
+  \node[anchor=east] at (1.04,\yy) {\tick};
+}
+\node[rotate=90] at (.25,2) {Score (\%)};
+\fill[blue!70] (1.86,0) rectangle (2.48,3.416);
+\fill[orange!85!black] (2.58,0) rectangle (3.20,3.5552);
+\fill[blue!70] (5.06,0) rectangle (5.68,3.1032);
+\fill[orange!85!black] (5.78,0) rectangle (6.40,3.212);
+\node[above] at (2.17,3.416) {85.40};
+\node[above] at (2.89,3.5552) {88.88};
+\node[above] at (5.37,3.1032) {77.58};
+\node[above] at (6.09,3.212) {80.30};
+\draw[black!75,line width=.5pt] (1.15,0) -- (7.8,0);
+\draw[black!75,line width=.5pt] (1.15,0) -- (1.15,4);
+\node at (2.53,-.32) {H2 (primary)};
+\node at (5.73,-.32) {H1 (secondary)};
+
+% AUROC panel
+\begin{scope}[xshift=8.55cm]
+\node[font=\small\bfseries] at (4.45,4.55) {AUROC};
+\foreach \yy/\tick in {0/0,0.8/20,1.6/40,2.4/60,3.2/80,4/100} {
+  \draw[black!20,line width=.3pt] (1.15,\yy) -- (7.8,\yy);
+  \node[anchor=east] at (1.04,\yy) {\tick};
+}
+\node[rotate=90] at (.25,2) {Score (\%)};
+\fill[blue!70] (1.86,0) rectangle (2.48,3.7184);
+\fill[orange!85!black] (2.58,0) rectangle (3.20,3.8056);
+\fill[blue!70] (5.06,0) rectangle (5.68,3.414);
+\fill[orange!85!black] (5.78,0) rectangle (6.40,3.6684);
+\node[above] at (2.17,3.7184) {92.96};
+\node[above] at (2.89,3.8056) {95.14};
+\node[above] at (5.37,3.414) {85.35};
+\node[above] at (6.09,3.6684) {91.71};
+\draw[black!75,line width=.5pt] (1.15,0) -- (7.8,0);
+\draw[black!75,line width=.5pt] (1.15,0) -- (1.15,4);
+\node at (2.53,-.32) {H2 (primary)};
+\node at (5.73,-.32) {H1 (secondary)};
+\end{scope}
+\end{tikzpicture}
+\caption{CBMP and linear logistic scores at the two target hospitals in the custom patient-capped CAMELYON17-WILDS subset. H2 is the primary target and H1 the secondary target. Bars show scores averaged across three fitted seeds; this is a custom subset evaluation, not the full official WILDS benchmark.}
+\label{fig:camelyon_comparison}
+\end{figure*}
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\hline
+Classifier & H2 BA & H2 AUROC & H1 BA & H1 AUROC \\
+\hline
+CBMP & 85.40 & 92.96 & 77.58 & 85.35 \\
+Unbalanced multi-prototype & 85.15 & 92.47 & 76.83 & 84.66 \\
+Linear logistic & 88.88 & 95.14 & 80.30 & 91.71 \\
+Trained cosine & 87.88 & 94.90 & 79.19 & 91.46 \\
+Weighted linear & 84.57 & 93.14 & 82.67 & 90.03 \\
+Weighted cosine & 86.02 & 93.49 & 81.52 & 90.45 \\
+Group-weighted centroid & 73.42 & 88.92 & 74.55 & 86.47 \\
+Center-balanced centroid & 75.21 & 89.71 & 75.11 & 86.75 \\
+Image-weighted centroid & 82.52 & 91.63 & 75.48 & 88.65 \\
+\hline
+\end{tabular}
+\caption{CAMELYON17-WILDS custom-subset results (percent), averaged over three fitted seeds. H2 is the prespecified primary unseen hospital and H1 the secondary hospital. Patient-bootstrap intervals are reported in the supplementary results; they condition on the 9 H2 and 8 H1 sampled patients and fixed fitted heads.}
+\label{tab:camelyon_results}
+\end{table*}
+
+\paragraph{Interpretation and limitations.}
+Taken together, the results suggest a bounded conclusion: CBMP can improve on a simple centroid in selected comparisons, notably at H2, but it does not consistently outperform learned linear or cosine heads. This distinction matters because a centroid-only comparison would overstate evidence for the prototype design relative to stronger feature-matched controls. The factorial results also show that prototype count and center weighting interact with the encoder; they are design choices to validate empirically, not guaranteed sources of domain robustness. The PolypGen evaluation is a reviewed subset rather than the complete release; four centers are class-complete, center mapping is unresolved for excluded material, and PolypGen patient identities are not verified. C2 negatives and C5 positives each occur in one recorded sequence, and 1,026 of 2,000 sequence-bootstrap draws were class-complete. CAMELYON uses a community redistribution and a custom cap of 400 patches per patient, with only two observed target hospitals and 17 target patients in total. Its patient intervals describe those sampled patients with heads fixed; they do not estimate variation across hospitals. Consequently, these results do not establish a general CBMP advantage, population-level hospital robustness, or clinical utility.
+\section{Conclusion}
+\label{sec:conclusion}
+
+We evaluated center-balanced multi-prototype classification under source-only selection on two medical imaging tasks with frozen encoders and matched classifier controls. On the reviewed PolypGen subset, CBMP underperformed the strongest learned baseline for both encoder packages; the factorial analyses also showed that prototype count and center weighting did not yield a consistent improvement. On the patient-capped CAMELYON17-WILDS subset, CBMP exceeded a group-weighted centroid at the primary target hospital but remained below linear logistic regression. Taken together, the results do not support a general performance advantage for the tested CBMP formulation. They show why prototype methods should be judged against well-tuned, feature-matched classifiers and why component effects must be measured rather than assumed.
+
+The evidence is limited by the reviewed PolypGen cohort, unresolved center mapping for excluded material, unavailable patient linkage, sparse class support in some recorded sequences, and the small number of target hospitals and patients in the custom CAMELYON subset. The observed bootstrap intervals are conditional on these sampled groups and fitted heads; they do not establish population-level hospital robustness or clinical utility. A stronger follow-up should use a complete, independently audited cohort with verified patient-level grouping, more class-complete centers, and an untouched external evaluation. It should also compare against recent domain-generalization methods under preregistered, matched tuning and report uncertainty at the hospital level. Until such evidence is available, CBMP is best viewed as an evaluated classifier design whose benefits depend on the data and setting, rather than as a generally superior solution to medical center shift.

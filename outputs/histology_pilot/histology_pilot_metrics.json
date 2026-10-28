@@ -1,0 +1,462 @@
+{
+  "scope": "Within-dataset patch classification pilot; patient/slide/center identities are unavailable. Content-disjoint splits do not establish patient independence or unseen-center generalization. Center balancing is not evaluated.",
+  "seed": 17,
+  "manifest_digest": "7e869728abb2e2e873bbaf2bcd03ea67dc588abee00f0e45df3b43f12d6c295b",
+  "split_counts": {
+    "train": 3000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "split_class_counts": {
+    "train": [
+      375,
+      375,
+      375,
+      375,
+      375,
+      375,
+      375,
+      375
+    ],
+    "validation": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "test": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ]
+  },
+  "selection": {
+    "criterion": "validation balanced accuracy; ties prefer smaller K/C",
+    "K_candidates": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "selected_K": 8,
+    "C_candidates": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selected_C": 10.0,
+    "cosine_steps_fixed": 300,
+    "cosine_learning_rate_fixed": 0.03,
+    "prototype_restarts": 5,
+    "beta": 0.0
+  },
+  "methods": {
+    "single_prototype": {
+      "temperature": 0.025077189548567753,
+      "validation": {
+        "accuracy": 0.797,
+        "balanced_accuracy": 0.7969999999999999,
+        "macro_f1": 0.7976312059701369,
+        "macro_auroc_ovr": 0.963504,
+        "negative_log_likelihood": 0.6786219525653862
+      },
+      "test": {
+        "accuracy": 0.794,
+        "balanced_accuracy": 0.794,
+        "macro_f1": 0.7964562622624058,
+        "macro_auroc_ovr": 0.9653531428571429,
+        "negative_log_likelihood": 0.6374851690497889
+      },
+      "confusion_matrix": [
+        [
+          106,
+          2,
+          13,
+          0,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          90,
+          24,
+          1,
+          8,
+          1,
+          0,
+          0
+        ],
+        [
+          10,
+          23,
+          80,
+          11,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          18,
+          105,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          18,
+          7,
+          10,
+          74,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          3,
+          12,
+          10,
+          3,
+          94,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          120,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          125
+        ]
+      ]
+    },
+    "multiple_prototypes_selected": {
+      "temperature": 0.01831570417971405,
+      "validation": {
+        "accuracy": 0.889,
+        "balanced_accuracy": 0.889,
+        "macro_f1": 0.8885530005179588,
+        "macro_auroc_ovr": 0.9880045714285715,
+        "negative_log_likelihood": 0.3934748002027204
+      },
+      "test": {
+        "accuracy": 0.877,
+        "balanced_accuracy": 0.877,
+        "macro_f1": 0.876615279084695,
+        "macro_auroc_ovr": 0.9854160000000001,
+        "negative_log_likelihood": 0.42420530846863436
+      },
+      "confusion_matrix": [
+        [
+          113,
+          5,
+          4,
+          2,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          87,
+          25,
+          3,
+          8,
+          1,
+          0,
+          0
+        ],
+        [
+          12,
+          9,
+          93,
+          7,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          9,
+          111,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          0,
+          117,
+          1,
+          2,
+          0
+        ],
+        [
+          4,
+          1,
+          4,
+          3,
+          2,
+          111,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          121,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          124
+        ]
+      ]
+    },
+    "linear_classifier": {
+      "temperature": 0.7484233958115312,
+      "validation": {
+        "accuracy": 0.911,
+        "balanced_accuracy": 0.911,
+        "macro_f1": 0.9108140328442207,
+        "macro_auroc_ovr": 0.9917474285714285,
+        "negative_log_likelihood": 0.28623765483349517
+      },
+      "test": {
+        "accuracy": 0.896,
+        "balanced_accuracy": 0.896,
+        "macro_f1": 0.8969659631638781,
+        "macro_auroc_ovr": 0.990672,
+        "negative_log_likelihood": 0.3037718716098082
+      },
+      "confusion_matrix": [
+        [
+          115,
+          2,
+          6,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          98,
+          18,
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          12,
+          99,
+          5,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          12,
+          112,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          3,
+          0,
+          113,
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          4,
+          1,
+          114,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          121,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          124
+        ]
+      ]
+    },
+    "cosine_classifier": {
+      "temperature": 0.043676031465430816,
+      "validation": {
+        "accuracy": 0.866,
+        "balanced_accuracy": 0.866,
+        "macro_f1": 0.8669708533428104,
+        "macro_auroc_ovr": 0.9805497142857142,
+        "negative_log_likelihood": 0.4551360219575791
+      },
+      "test": {
+        "accuracy": 0.846,
+        "balanced_accuracy": 0.846,
+        "macro_f1": 0.8481154589067443,
+        "macro_auroc_ovr": 0.9819851428571429,
+        "negative_log_likelihood": 0.43756602267661776
+      },
+      "confusion_matrix": [
+        [
+          112,
+          2,
+          7,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          88,
+          22,
+          1,
+          11,
+          2,
+          0,
+          0
+        ],
+        [
+          10,
+          15,
+          90,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          17,
+          105,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          4,
+          4,
+          102,
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          10,
+          7,
+          0,
+          103,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          121,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          125
+        ]
+      ]
+    }
+  }
+}

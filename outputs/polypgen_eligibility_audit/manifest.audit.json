@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "data_root": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\polypgen\\data\\PolypGen\\extracted\\PolypGen2021_MultiCenterData_v3",
+  "manifest": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\outputs\\polypgen_eligibility_audit\\manifest.csv",
+  "manifest_sha256": "051e3e9257c7c4cc47aab54d27814cc7064586536269235acfbbc48269812e8e",
+  "samples_indexed": 1535,
+  "samples_rejected": 17725,
+  "rejection_counts": {
+    "not_original_image_leaf": 11223,
+    "Mask/bounding-box presence disagreement": 1,
+    "Missing annotation; absence of a file is not a negative label": 1,
+    "unresolved_sequence_center: provide reviewed sequence_metadata CSV": 6500
+  },
+  "unresolved_sequences": [
+    "seq1",
+    "seq10",
+    "seq10_neg",
+    "seq11",
+    "seq11_neg",
+    "seq12",
+    "seq12_neg",
+    "seq13",
+    "seq13_neg",
+    "seq14",
+    "seq14_neg",
+    "seq15",
+    "seq15_neg",
+    "seq16",
+    "seq16_neg",
+    "seq17",
+    "seq17_neg",
+    "seq18",
+    "seq18_neg",
+    "seq19",
+    "seq19_neg",
+    "seq1_neg",
+    "seq2",
+    "seq20",
+    "seq20_neg",
+    "seq21",
+    "seq21_neg",
+    "seq22",
+    "seq22_neg",
+    "seq23",
+    "seq23_neg",
+    "seq2_neg",
+    "seq3",
+    "seq3_neg",
+    "seq4",
+    "seq4_neg",
+    "seq5",
+    "seq5_neg",
+    "seq6",
+    "seq6_neg",
+    "seq7",
+    "seq7_neg",
+    "seq8",
+    "seq8_neg",
+    "seq9",
+    "seq9_neg"
+  ],
+  "sequence_only": false,
+  "verified_sequences_only": false,
+  "included_sequence_ids": null,
+  "scope": "Full requested image/sequence scope",
+  "sequence_metadata": null,
+  "sequence_metadata_sha256": null,
+  "mask_threshold": 127,
+  "min_foreground_pixels": 1,
+  "class_counts": {
+    "0": 125,
+    "1": 1410
+  },
+  "center_class_counts": {
+    "C1": {
+      "0": 5,
+      "1": 251
+    },
+    "C2": {
+      "0": 31,
+      "1": 269
+    },
+    "C3": {
+      "0": 1,
+      "1": 455
+    },
+    "C4": {
+      "0": 81,
+      "1": 146
+    },
+    "C5": {
+      "0": 2,
+      "1": 206
+    },
+    "C6": {
+      "0": 5,
+      "1": 83
+    }
+  },
+  "groups_without_sequence_metadata": 1535,
+  "duplicate_content_groups": [
+    [
+      "data_C5/images_C5/EndoCV2021_C5_50000140.jpg",
+      "data_C5/images_C5/EndoCV2021_C5_50000141.jpg"
+    ],
+    [
+      "data_C5/images_C5/EndoCV2021_C5_50000284.jpg",
+      "data_C5/images_C5/EndoCV2021_C5_50000285.jpg"
+    ]
+  ],
+  "warning": "Frame labels describe annotated polyp presence. Sequence grouping does not establish independence between different sequences from the same patient.",
+  "blocking_rejections": 6502,
+  "sequence_metadata_template": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\outputs\\polypgen_eligibility_audit\\manifest.sequence_metadata_template.csv"
+}

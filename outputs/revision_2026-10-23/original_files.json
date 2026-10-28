@@ -1,0 +1,37 @@
+{
+  "backed_up_utc": "2026-10-23T13:22:43.969250+00:00",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "40e1660c9f8b74263a71ee54c30748e93b6a60f3bdac66c5250ae254373989e8"
+    },
+    {
+      "path": "setup_venv.ps1",
+      "sha256": "a2ab0b8851f048d732de83fe177af796ce17a54242456c317372e717543d821d"
+    },
+    {
+      "path": "setup_venv.sh",
+      "sha256": "3bf24692e96504ddddab61e47461b49f7f5a9f6aab8b424d60a808abf626dc08"
+    },
+    {
+      "path": "run_pipeline.ps1",
+      "sha256": "a75be0a12d90b825d7043e6613be86bde49aee0bf593585bbd7859d6fc27a901"
+    },
+    {
+      "path": "run_pipeline.sh",
+      "sha256": "421447ed03d9aebad257c35430464a0d089594af6157da7049bba61f5140a969"
+    },
+    {
+      "path": "outputs/introduction.tex",
+      "sha256": "699c022b5a8a7ad6295affd01c90360d9733e2f4f24b650acc9fddf4c19c1383"
+    },
+    {
+      "path": "outputs/main.tex",
+      "sha256": "579ddb4df25eafa7cf37428b4783fb56976315747ab752e4f3091ab22908f605"
+    },
+    {
+      "path": "outputs/references.bib",
+      "sha256": "77352edd7f745a7ddc35bcd48f1b1e48d947a3f5e360e3d28480063a9e7e0fa1"
+    }
+  ]
+}

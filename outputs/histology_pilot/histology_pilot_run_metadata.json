@@ -1,0 +1,33 @@
+{
+  "encoder": {
+    "feature_version": 1,
+    "manifest_digest": "7e869728abb2e2e873bbaf2bcd03ea67dc588abee00f0e45df3b43f12d6c295b",
+    "encoder": "torchvision.resnet18",
+    "weights": "IMAGENET1K_V1",
+    "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+    "device": "cpu",
+    "normalized": true
+  },
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "scikit_learn": "1.5.1",
+  "completed_utc": "2026-10-17T10:21:29.129009+00:00",
+  "source_sha256": {
+    "runner": "46527547c9124daf0cd6152d4a7c5ee4d3f0d64b20dcc19f560dfbc78cbe5329",
+    "prototype_core": "bc95ea764e7683814eec8e9a171cfac1195ea4946f03532c3c2b55f334e90183",
+    "data_loader": "dcd47fa72699d1e1157362412781215b9da689ee6ef00fd1c91702aac8048db7"
+  },
+  "command_arguments": {
+    "manifest": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\histology_cbmp\\results\\pilot\\manifest.csv",
+    "results_dir": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\histology_cbmp\\results\\pilot",
+    "feature_cache": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\histology_cbmp\\cache\\resnet18_imagenet1k_v1.npz",
+    "weights": "C:\\Users\\Lenovo\\.cache\\torch\\hub\\checkpoints\\resnet18-f37072fd.pth",
+    "seed": 17,
+    "batch_size": 32,
+    "threads": 4
+  }
+}

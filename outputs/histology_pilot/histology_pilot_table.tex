@@ -1,0 +1,17 @@
+% Diagnostic pilot only; does not evaluate center generalization.
+\begin{table*}[t]
+\centering
+\small
+\caption{Within-dataset colorectal histology pilot on a fixed patch split. All heads use frozen ImageNet-pretrained ResNet18 features. The split does not establish patient independence or cross-center transfer.}
+\label{tab:histology-pilot}
+\begin{tabular}{lrrr}
+\hline
+Method & BA (\%) & Macro F1 (\%) & AUROC \\
+\hline
+Single prototype & 79.40 & 79.65 & 0.9654 \\
+Validation-selected prototypes (K=8) & 87.70 & 87.66 & 0.9854 \\
+Linear classifier & 89.60 & 89.70 & 0.9907 \\
+Cosine classifier & 84.60 & 84.81 & 0.9820 \\
+\hline
+\end{tabular}
+\end{table*}
