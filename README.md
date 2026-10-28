@@ -1,8 +1,6 @@
 # CBMP: cross-center medical recognition experiments
 
-This README documents the verified PolypGen baseline, follow-ups 1-3, DINOv2 experiment 4, and CAMELYON17 experiment 5. It separates saved-result verification, cached-feature refitting, and full reconstruction from raw data. Updated 27 October 2026.
-
-Current Windows workspace:
+This README documents the verified PolypGen baseline, follow-ups 1-3, DINOv2 experiment 4, and CAMELYON17 experiment 5.
 
 The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. The existing root `.venv-cbmp` currently contains torch 2.14.1+cpu; that is a different software condition. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
 
