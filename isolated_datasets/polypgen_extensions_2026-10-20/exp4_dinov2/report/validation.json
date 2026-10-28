@@ -1,0 +1,22 @@
+{
+  "exact_paired_manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+  "matched_main_predictions": 140967,
+  "matched_factorial_predictions": 62652,
+  "all_prediction_pairs_complete": true,
+  "bootstrap_metadata": {
+    "attempted": 2000,
+    "accepted": 1026,
+    "seed": 2027,
+    "invalid_by_center_nonexclusive": {
+      "C2": 490,
+      "C4": 7,
+      "C5": 622,
+      "C6": 0
+    },
+    "scope": "Whole sequence bootstrap within fixed centers; same resamples all encoders, heads, and seeds; conditional on both classes per center and fixed fitted models. Patient independence unverified; no population-level hospital claim."
+  },
+  "main_final_evaluations": 108,
+  "factorial_final_evaluations": 48,
+  "official_pinned_revision_lfs_checksum_matches": true,
+  "report_source_sha256": "8e624adf316f1512558643aecc4ec0adafd7e7590e98bf66b7681cb3b0881f2d"
+}

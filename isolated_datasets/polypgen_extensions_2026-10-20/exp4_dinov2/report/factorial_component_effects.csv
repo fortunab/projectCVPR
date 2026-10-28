@@ -1,0 +1,51 @@
+encoder,contrast,scope,effect_balanced_accuracy,conditional_ci_low,conditional_ci_high
+ResNet18,multiplicity_at_beta0,equal_center_mean,-0.052763009211757916,-0.10749468941491423,0.023523397319744913
+ResNet18,multiplicity_at_beta0,C2,-0.1008777675881043,,
+ResNet18,multiplicity_at_beta0,C4,0.03839733985227234,,
+ResNet18,multiplicity_at_beta0,C5,-0.08516581200975037,,
+ResNet18,multiplicity_at_beta0,C6,-0.06340579710144933,,
+ResNet18,multiplicity_at_beta1,equal_center_mean,-0.008956418984938819,-0.0627818396534081,0.07538265170920437
+ResNet18,multiplicity_at_beta1,C2,-0.03590404238904177,,
+ResNet18,multiplicity_at_beta1,C4,0.01201600820124582,,
+ResNet18,multiplicity_at_beta1,C5,0.04464672038795853,,
+ResNet18,multiplicity_at_beta1,C6,-0.05658436213991758,,
+ResNet18,balancing_at_K1,equal_center_mean,-0.02672785180177606,-0.07716678894631117,-0.0108657102683207
+ResNet18,balancing_at_K1,C2,-0.020721428883357373,,
+ResNet18,balancing_at_K1,C4,0.013970211339799699,,
+ResNet18,balancing_at_K1,C5,-0.13531853641609587,,
+ResNet18,balancing_at_K1,C6,0.035158346752549474,,
+ResNet18,balancing_at_K4,equal_center_mean,0.01707873842504304,-0.015238011773341345,0.04785151235693366
+ResNet18,balancing_at_K4,C2,0.04425229631570515,,
+ResNet18,balancing_at_K4,C4,-0.01241112031122682,,
+ResNet18,balancing_at_K4,C5,-0.005506004018386967,,
+ResNet18,balancing_at_K4,C6,0.04197978171408123,,
+ResNet18,interaction_difference_in_differences,equal_center_mean,0.0438065902268191,0.01837368564264502,0.09113996360872872
+ResNet18,interaction_difference_in_differences,C2,0.06497372519906253,,
+ResNet18,interaction_difference_in_differences,C4,-0.02638133165102652,,
+ResNet18,interaction_difference_in_differences,C5,0.1298125323977089,,
+ResNet18,interaction_difference_in_differences,C6,0.006821434961531758,,
+DINOv2 base,multiplicity_at_beta0,equal_center_mean,0.0021229032975116358,-0.06226804712177547,0.09113590185879943
+DINOv2 base,multiplicity_at_beta0,C2,-0.12321498755404175,,
+DINOv2 base,multiplicity_at_beta0,C4,-0.06577179113108855,,
+DINOv2 base,multiplicity_at_beta0,C5,0.22058180930226579,,
+DINOv2 base,multiplicity_at_beta0,C6,-0.02310341742708888,,
+DINOv2 base,multiplicity_at_beta1,equal_center_mean,-0.008911222843680067,-0.06584056318296778,0.07066455075591456
+DINOv2 base,multiplicity_at_beta1,C2,-0.059667816644103866,,
+DINOv2 base,multiplicity_at_beta1,C4,-0.048526502904607915,,
+DINOv2 base,multiplicity_at_beta1,C5,0.015719047068248337,,
+DINOv2 base,multiplicity_at_beta1,C6,0.056830381105743344,,
+DINOv2 base,balancing_at_K1,equal_center_mean,-0.02824619870575462,-0.06211688205405558,0.010580954988687205
+DINOv2 base,balancing_at_K1,C2,-0.04054762216690688,,
+DINOv2 base,balancing_at_K1,C4,0.005988289567068872,,
+DINOv2 base,balancing_at_K1,C5,-0.02340667532033569,,
+DINOv2 base,balancing_at_K1,C6,-0.055018786902844896,,
+DINOv2 base,balancing_at_K4,equal_center_mean,-0.039280324846946324,-0.08519721057602446,0.0028253467804459503
+DINOv2 base,balancing_at_K4,C2,0.022999548743031006,,
+DINOv2 base,balancing_at_K4,C4,0.02323357779354951,,
+DINOv2 base,balancing_at_K4,C5,-0.22826943755435314,,
+DINOv2 base,balancing_at_K4,C6,0.024915011629987327,,
+DINOv2 base,interaction_difference_in_differences,equal_center_mean,-0.011034126141191702,-0.06200727156501157,0.047957948562493816
+DINOv2 base,interaction_difference_in_differences,C2,0.06354717090993789,,
+DINOv2 base,interaction_difference_in_differences,C4,0.017245288226480637,,
+DINOv2 base,interaction_difference_in_differences,C5,-0.20486276223401745,,
+DINOv2 base,interaction_difference_in_differences,C6,0.07993379853283222,,

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lccccc}
+\hline
+Encoder & $K$ & $\beta$ & Mean & Worst & AUROC \\
+\hline
+ResNet18 & 1 & 0 & 0.632 & 0.603 & 0.790 \\
+ResNet18 & 1 & 1 & 0.605 & 0.476 & 0.691 \\
+ResNet18 & 4 & 0 & 0.579 & 0.503 & 0.688 \\
+ResNet18 & 4 & 1 & 0.596 & 0.521 & 0.684 \\
+DINOv2 base & 1 & 0 & 0.640 & 0.539 & 0.720 \\
+DINOv2 base & 1 & 1 & 0.612 & 0.515 & 0.643 \\
+DINOv2 base & 4 & 0 & 0.642 & 0.473 & 0.688 \\
+DINOv2 base & 4 & 1 & 0.603 & 0.496 & 0.632 \\
+\hline\end{tabular}
+\caption{Exploratory fixed prototype-count and center-balancing ablation across frozen encoders. Group weighting, sequences, partitions and source-only calibration are held constant. Mean and worst scores are balanced accuracy after averaging 3 head seeds.}
+\label{tab:encoder_factorial}
+\end{table}

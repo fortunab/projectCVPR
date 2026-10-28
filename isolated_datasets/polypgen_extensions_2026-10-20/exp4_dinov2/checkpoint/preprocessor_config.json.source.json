@@ -1,0 +1,8 @@
+{
+  "source_url": "https://huggingface.co/facebook/dinov2-base/resolve/f9e44c814b77203eaa57a6bdbbd535f21ede1415/preprocessor_config.json",
+  "final_host_path": "https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/preprocessor_config.json",
+  "bytes": 436,
+  "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+  "seconds": 0.4220000000204891,
+  "credentials": "No user credentials or authorization headers supplied"
+}

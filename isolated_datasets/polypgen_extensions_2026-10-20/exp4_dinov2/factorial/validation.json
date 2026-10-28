@@ -1,0 +1,174 @@
+{
+  "K1_identical_main_prediction_checks": [
+    {
+      "seed": 17,
+      "center": "C2",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C2",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C4",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C5",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 17,
+      "center": "C6",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C2",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C4",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C5",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 29,
+      "center": "C6",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C2",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C4",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C5",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "cell": "A_K1_beta0",
+      "matched_baseline": "single_centroid_group_weighted",
+      "exact_predictions_match": true
+    },
+    {
+      "seed": 43,
+      "center": "C6",
+      "cell": "B_K1_beta1",
+      "matched_baseline": "single_centroid_center_balanced",
+      "exact_predictions_match": true
+    }
+  ],
+  "final_evaluations": 48,
+  "all_realized_K_match_requested": true
+}

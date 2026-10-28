@@ -1,0 +1,9 @@
+{
+  "source_url": "https://huggingface.co/api/models/facebook/dinov2-base/revision/f9e44c814b77203eaa57a6bdbbd535f21ede1415?blobs=true",
+  "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "expected_lfs_sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+  "actual_cached_sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+  "match": true,
+  "metadata_sha256": "780c5a19bb6e5245183a618c69b66dceb8329e4570185faed2ee09a58212368d",
+  "credentials_supplied": false
+}

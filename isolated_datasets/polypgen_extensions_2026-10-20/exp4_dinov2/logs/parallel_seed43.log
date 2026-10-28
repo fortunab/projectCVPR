@@ -1,0 +1,40 @@
+Command: C:\Users\Lenovo\anaconda3\python.exe exp4_seed_worker.py --seed 43
+Reused exact pinned DINOv2 feature cache
+[SKIP] C1: excluded_target_missing_class
+[DONE] heldout=C2 method=cbmp source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.5} test_bAcc=0.4542
+[DONE] heldout=C2 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} test_bAcc=0.4798
+[DONE] heldout=C2 method=linear_logistic source-selected={'kind': 'linear', 'C': 1.0} test_bAcc=0.6408
+[DONE] heldout=C2 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6152
+[DONE] heldout=C2 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 10.0, 'beta': 0.0} test_bAcc=0.6183
+[DONE] heldout=C2 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.6277
+[DONE] heldout=C2 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.5967
+[DONE] heldout=C2 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.5562
+[DONE] heldout=C2 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5925
+[DONE] heldout=C4 method=cbmp source-selected={'kind': 'prototype', 'k': 2, 'beta': 0.0} test_bAcc=0.6127
+[DONE] heldout=C4 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 2, 'beta': 0.0} test_bAcc=0.6127
+[DONE] heldout=C4 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.5899
+[DONE] heldout=C4 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6470
+[DONE] heldout=C4 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} test_bAcc=0.5409
+[DONE] heldout=C4 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.6699
+[DONE] heldout=C4 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6489
+[DONE] heldout=C4 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.6549
+[DONE] heldout=C4 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6474
+[DONE] heldout=C5 method=cbmp source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.5387
+[DONE] heldout=C5 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.5387
+[DONE] heldout=C5 method=linear_logistic source-selected={'kind': 'linear', 'C': 0.01} test_bAcc=0.5212
+[DONE] heldout=C5 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.7434
+[DONE] heldout=C5 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 0.01, 'beta': 1.0} test_bAcc=0.5130
+[DONE] heldout=C5 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.5} test_bAcc=0.6646
+[DONE] heldout=C5 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.5387
+[DONE] heldout=C5 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.5153
+[DONE] heldout=C5 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5123
+[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770
+[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770
+[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 10.0} test_bAcc=0.7006
+[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.7099
+[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} test_bAcc=0.6973
+[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 1.0} test_bAcc=0.6522
+[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770
+[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7220
+[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.7405
+[WORKER] seed43 COMPLETE

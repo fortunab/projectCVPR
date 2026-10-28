@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lcccc}
+\hline
+& \multicolumn{2}{c}{ResNet18} & \multicolumn{2}{c}{DINOv2-B} \\
+Classifier & Mean & Worst & Mean & Worst \\
+\hline
+CBMP & 0.583 & 0.421 & 0.595 & 0.453 \\
+Unbalanced multiprototype & 0.611 & 0.531 & 0.604 & 0.489 \\
+Linear logistic & 0.702 & 0.572 & 0.613 & 0.521 \\
+Trained cosine & 0.631 & 0.567 & 0.682 & 0.614 \\
+Weighted linear & 0.618 & 0.472 & 0.592 & 0.513 \\
+Weighted cosine & 0.635 & 0.461 & 0.657 & 0.616 \\
+Group weighted centroid & 0.632 & 0.603 & 0.640 & 0.539 \\
+Center balanced centroid & 0.605 & 0.476 & 0.612 & 0.515 \\
+Image weighted centroid & 0.604 & 0.582 & 0.623 & 0.512 \\
+\hline\end{tabular}
+\caption{Exploratory paired frozen-encoder comparison on the same partial reviewed PolypGen sequence subset: 5,444 frames, 37 sequences, 4 target centers and 3 head seeds. Source-only classifier selection and original partitions are unchanged. Scores are balanced accuracy. Patient independence is unverified.}
+\label{tab:encoder_replication}
+\end{table*}

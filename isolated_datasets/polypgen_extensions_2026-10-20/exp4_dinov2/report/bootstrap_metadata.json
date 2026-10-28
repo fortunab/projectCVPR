@@ -1,0 +1,12 @@
+{
+  "attempted": 2000,
+  "accepted": 1026,
+  "seed": 2027,
+  "invalid_by_center_nonexclusive": {
+    "C2": 490,
+    "C4": 7,
+    "C5": 622,
+    "C6": 0
+  },
+  "scope": "Whole sequence bootstrap within fixed centers; same resamples all encoders, heads, and seeds; conditional on both classes per center and fixed fitted models. Patient independence unverified; no population-level hospital claim."
+}
