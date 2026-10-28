@@ -1,0 +1,18 @@
+{
+  "seed": 43,
+  "threads": 4,
+  "resource_only_parallelization": true,
+  "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+  "checkpoint_sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+  "feature_cache_sha256": "6d0c61aec3be661bdc0974b41065b0c55d6be7fea32639c1b7bc98133ffefc8b",
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "worker_source_sha256": "8f945c923e6e2e4b327cec5ee80192ceaf9086f444c610be01709d5ea9557d64",
+  "classifier_code_sha256": {
+    "cbmp.py": "ec95d8fa07b1e9057132a8c66466d63b81f6b1116bb73ff12d2a0ed8f840871b",
+    "cbmp_data.py": "052bbfab383a164bddf31b27bf02a115df15e8a53d0c635383022080c97deff1",
+    "cbmp_evaluation.py": "6b5f978731c3ee09d7909683942f305686bee714f2c0393b6d5fe71c9978e802",
+    "polypgen_manifest.py": "8eada291fd92d2c9be06bb17eb43dbba729f3b8e74be6df235d9d25812b9a83b"
+  },
+  "private_output": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_extensions_2026-10-20\\exp4_dinov2\\parallel_private\\seed43",
+  "promoted_output": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_extensions_2026-10-20\\exp4_dinov2\\main\\seed43"
+}
