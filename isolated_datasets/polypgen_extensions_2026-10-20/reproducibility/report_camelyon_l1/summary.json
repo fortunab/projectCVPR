@@ -1,0 +1,110 @@
+{
+  "summary": [
+    {
+      "method": "cbmp",
+      "mean_center_balanced_accuracy": 0.8149094418106522,
+      "worst_center_balanced_accuracy": 0.7757801374786001,
+      "optimization_seed_std": 0.002091555271736221,
+      "balanced_accuracy_ci_low": 0.7710150475234547,
+      "balanced_accuracy_ci_high": 0.8487545661197328,
+      "mean_center_auroc": 0.8915235622395699
+    },
+    {
+      "method": "cosine_group_center_weighted",
+      "mean_center_balanced_accuracy": 0.8377272820045093,
+      "worst_center_balanced_accuracy": 0.8152392245669883,
+      "optimization_seed_std": 0.003675511153706884,
+      "balanced_accuracy_ci_low": 0.80470675528643,
+      "balanced_accuracy_ci_high": 0.8660557779033429,
+      "mean_center_auroc": 0.9197046440658871
+    },
+    {
+      "method": "linear_group_center_weighted",
+      "mean_center_balanced_accuracy": 0.836195283416816,
+      "worst_center_balanced_accuracy": 0.8266981428774635,
+      "optimization_seed_std": 0.0,
+      "balanced_accuracy_ci_low": 0.7994881488267936,
+      "balanced_accuracy_ci_high": 0.8625856762102438,
+      "mean_center_auroc": 0.9158940252167485
+    },
+    {
+      "method": "linear_logistic",
+      "mean_center_balanced_accuracy": 0.8459246323044697,
+      "worst_center_balanced_accuracy": 0.8030013758879871,
+      "optimization_seed_std": 0.0,
+      "balanced_accuracy_ci_low": 0.7816990416139612,
+      "balanced_accuracy_ci_high": 0.8761325391297028,
+      "mean_center_auroc": 0.9342329055765534
+    },
+    {
+      "method": "multi_prototype_unbalanced",
+      "mean_center_balanced_accuracy": 0.809876005266394,
+      "worst_center_balanced_accuracy": 0.7682687228572419,
+      "optimization_seed_std": 0.006474205543524723,
+      "balanced_accuracy_ci_low": 0.7666073065446443,
+      "balanced_accuracy_ci_high": 0.84250154547908,
+      "mean_center_auroc": 0.885652705717106
+    },
+    {
+      "method": "single_centroid_center_balanced",
+      "mean_center_balanced_accuracy": 0.7515801407156175,
+      "worst_center_balanced_accuracy": 0.7510791129067688,
+      "optimization_seed_std": 0.0,
+      "balanced_accuracy_ci_low": 0.6841321209514162,
+      "balanced_accuracy_ci_high": 0.7889768594941957,
+      "mean_center_auroc": 0.8823244504939826
+    },
+    {
+      "method": "single_centroid_group_weighted",
+      "mean_center_balanced_accuracy": 0.7398618166742821,
+      "worst_center_balanced_accuracy": 0.7341978792745133,
+      "optimization_seed_std": 1.3597399555105182e-16,
+      "balanced_accuracy_ci_low": 0.6701380228339905,
+      "balanced_accuracy_ci_high": 0.7812121995489273,
+      "mean_center_auroc": 0.8769482217610705
+    },
+    {
+      "method": "single_centroid_image_weighted",
+      "mean_center_balanced_accuracy": 0.7899915397194057,
+      "worst_center_balanced_accuracy": 0.7548248515907101,
+      "optimization_seed_std": 0.0,
+      "balanced_accuracy_ci_low": 0.7102651898821682,
+      "balanced_accuracy_ci_high": 0.826892587041107,
+      "mean_center_auroc": 0.9014289798154409
+    },
+    {
+      "method": "trainable_cosine",
+      "mean_center_balanced_accuracy": 0.8353834744820376,
+      "worst_center_balanced_accuracy": 0.7919322852572929,
+      "optimization_seed_std": 0.013634703349340568,
+      "balanced_accuracy_ci_low": 0.773619010437394,
+      "balanced_accuracy_ci_high": 0.8669463643610158,
+      "mean_center_auroc": 0.9318296640649636
+    }
+  ],
+  "bootstrap": {
+    "attempted_draws": 2000,
+    "valid_draws": 2000,
+    "invalid_class_incomplete_draws": 0,
+    "invalid_draws_by_center_nonexclusive": {
+      "1": 0,
+      "2": 0
+    },
+    "seed": 2027,
+    "confidence_level": 0.95,
+    "resampling": "Whole recorded sequence groups within each fixed target center; identical multiplicities across methods and all head seeds",
+    "estimand": "Equal mean of observed-center balanced accuracies, averaged across 3 fixed provided head seed(s)",
+    "conditioning": "Class-complete draws across every target center; fixed trained heads and fixed reviewed subset; no model refitting",
+    "patient_independence_established": false
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "group_column": "group_id",
+  "prediction_only": true,
+  "raw_data_or_models_validated": false,
+  "metric_scope": "Equal observed-center mean of seed-specific metrics; seeds are not independent groups/patients. Group semantics come from supplied predictions.",
+  "limitation": "This helper reports supplied predictions and cannot establish raw-data integrity, model-selection correctness or patient independence."
+}

@@ -1,0 +1,174 @@
+{
+  "status": "Partial primary-source mapping v2: two explicit figure mappings disputed; no count-inferred assignments",
+  "archive": "C:/Users/Lenovo/Downloads/PolypGen2021_MultiCenterData_v3.zip",
+  "primary_paper": "C:/Users/Lenovo/Downloads/s41597-023-01981-y.pdf",
+  "paper_url": "https://www.nature.com/articles/s41597-023-01981-y.pdf",
+  "figure7_render": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\polypgen_figure7_page.png",
+  "figure2_render": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\polypgen_figure2_page.png",
+  "archive_layout": {
+    "positive": "sequenceData/positive/seqN/images_seqN",
+    "negative": "sequenceData/negativeOnly/seqN_neg"
+  },
+  "positive_mapping_verified": {
+    "1": "C4",
+    "2": "C4",
+    "3": "C4",
+    "6": "C4",
+    "10": "C4",
+    "5": "C5",
+    "12": "C2",
+    "13": "C2",
+    "16": "C6",
+    "17": "C6",
+    "18": "C6",
+    "19": "C6",
+    "20": "C6",
+    "21": "C6",
+    "22": "C6",
+    "23": "C6"
+  },
+  "positive_unresolved": [
+    4,
+    7,
+    8,
+    9,
+    14,
+    15
+  ],
+  "positive_evidence": "Figure7 explicitly colors seq1,2,3,5,6,10,11,12,13,16,23. seq11 is downgraded to conflicted. Every original filename for seq16..23 contains an explicit C6 token.",
+  "negative_mapping_as_drawn_in_figure7": {
+    "1": "C4",
+    "2": "C4",
+    "3": "C4",
+    "8": "C4",
+    "9": "C4",
+    "10": "C4",
+    "4": "C1",
+    "5": "C1",
+    "6": "C1",
+    "7": "C1",
+    "11": "C5",
+    "12": "C5",
+    "13": "C5",
+    "14": "C6",
+    "15": "C6",
+    "16": "C6",
+    "17": "C6",
+    "18": "C6",
+    "19": "C6",
+    "20": "C6",
+    "21": "C6",
+    "22": "C6",
+    "23": "C6"
+  },
+  "negative_evidence": "All seq1_neg..seq23_neg are explicitly drawn with center colors in Fig7. seq11..13 filenames independently contain C5.",
+  "conflicts": [
+    "NEW: Fig7 seq11 color C3 conflicts with page4 center totals and actual still counts; downgrade to disputed, do not correct from228-frame difference.",
+    "Fig7 draws seq7_neg red (C1). Applying Fig7 colors to actual archive frame counts gives C1=430,C4=1359,C5=731,C6=1755. Fig2 reports C1=223 and C4=1566; the 207-frame difference equals seq7_neg. Do not resolve by counts alone.",
+    "Fig2 negative purple sector is labeled C5 even though color legend maps purple to C6. Multiple source figure typos exist; retain the color/transcription distinction.",
+    "Fig7 uses positive seq_N labels while actual v3 archive uses seqN directory names. Normalize only this naming difference."
+  ],
+  "not_inferred": "No unresolved positive sequence is assigned from counts, image appearance, acquisition style, or adjacency/ellipsis in Fig7.",
+  "archive_docs_checked": [
+    "readme.md",
+    "readme.html",
+    "fileStructure_directories.txt",
+    "folderStructure"
+  ],
+  "archive_docs_result": "No explicit sequence-to-center mapping found in textual README/tree documents.",
+  "next_step": "Use a documented verified subset only, exclude disputed/unresolved mappings, report all exclusions and class coverage before freezing experiment protocol. Author clarification would be required for complete mapping; no message has been sent.",
+  "review_date": "2026-10-17",
+  "supersedes_review_only": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\polypgen_sequence_center_mapping_review.json",
+  "positive_mapping_conflicted": {
+    "11": {
+      "figure7_center": "C3",
+      "status": "disputed_do_not_use",
+      "reason": "Figure7 color is C3. Paper page4 reports C1=484 and C3=457 positive-folder frames; actual stills are C1=256,C3=457. seq11=228 frames creates a direct consistency conflict. Counts cannot determine the corrected center."
+    }
+  },
+  "negative_mapping_verified": {
+    "1": "C4",
+    "2": "C4",
+    "3": "C4",
+    "8": "C4",
+    "9": "C4",
+    "10": "C4",
+    "4": "C1",
+    "5": "C1",
+    "6": "C1",
+    "11": "C5",
+    "12": "C5",
+    "13": "C5",
+    "14": "C6",
+    "15": "C6",
+    "16": "C6",
+    "17": "C6",
+    "18": "C6",
+    "19": "C6",
+    "20": "C6",
+    "21": "C6",
+    "22": "C6",
+    "23": "C6"
+  },
+  "negative_mapping_conflicted": {
+    "7": {
+      "figure7_center": "C1",
+      "status": "disputed_do_not_use",
+      "reason": "Figure7 color is C1, whereas the figure2 center totals differ by exactly its207frames between C1 and C4. Counts cannot determine the corrected center."
+    }
+  },
+  "additional_archive_checks": {
+    "all46_sequence_original_filenames": "Inspected basename tokens for all23positive and23negative sequences. Unresolved seq4,7,8,9,14,15 and conflicted seq11,seq7_neg contain no C1-C6 tokens.",
+    "unresolved_positive_basename_intersection": "No unresolved positive basename matches an original frame basename in data_C1..data_C6.",
+    "unresolved_positive_byte_identity": "SHA256 comparison of every unresolved positive original against all1537center-folder originals found no byte-identical overlap.",
+    "unresolved_positive_exif": "First3original JPEGs in each unresolved positive sequence had no EXIF tags, only JFIF information.",
+    "single_frame_metadata_csvs": "All5CSV files inspected completely: 256,301,457,227,208rows for C1-C5 respectively; no sequence basenames or per-sequence center mapping.",
+    "text_metadata_search": "README md/html and directory/tree metadata provide no explicit remaining sequence-to-center mapping."
+  },
+  "center_positive_folder_count_crosscheck": {
+    "source": "Paper page4 center totals versus actual v3 folder counts; diagnostic consistency check only, never assignment evidence",
+    "paper_center_totals": {
+      "C1": 484,
+      "C2": 1166,
+      "C3": 457,
+      "C4": 677,
+      "C5": 458,
+      "C6": 520
+    },
+    "archive_still_counts": {
+      "C1": 256,
+      "C2": 301,
+      "C3": 457,
+      "C4": 227,
+      "C5": 208,
+      "C6": 88
+    },
+    "explicit_figure_mapping_plus_C6_filename_sequence_counts_before_downgrading_seq11": {
+      "C1": 0,
+      "C2": 500,
+      "C3": 228,
+      "C4": 230,
+      "C5": 250,
+      "C6": 432
+    },
+    "interpretation": "C5 and C6 reconcile exactly. C2/C4 remain incomplete because omitted sequence labels are unresolved. C1/C3 have a contradiction involving seq11, not merely omitted labels. No reassignment is made."
+  },
+  "sequence1_annotation_review": {
+    "center_status": "C4 verified by explicit Figure7 color; separate label-quality question",
+    "issue_url": "https://github.com/DebeshJha/PolypGen/issues/1",
+    "issue_title": "Missing annotation for video seq1",
+    "opened_by": "HeverLaw",
+    "opened_date": "2025-05-10",
+    "description_exact": "I found that video seq1 only has full black masks and non-boxes, while other video sequences have continuous masks. Can I confirm whether my findings are true?",
+    "reply_status": "No author reply or other comment displayed on public issue page at this review.",
+    "interpretation": "Third-party report, not verified proof of missing labels. Paper page4 explicitly allows negative frames in positive folders. Root plans to exclude seq1 from first experiment pending annotation review."
+  },
+  "sources_checked_additionally": [
+    "https://github.com/sharib-vision/PolypGen-Benchmark",
+    "https://raw.githubusercontent.com/sharib-vision/PolypGen-Benchmark/main/train_val_split_endocv2021.py",
+    "https://raw.githubusercontent.com/sharib-vision/PolypGen-Benchmark/main/datasets/polypGen2021.py",
+    "https://github.com/sharib-vision/EndoCV2021-polyp_det_seg_gen",
+    "https://github.com/DebeshJha/PolypGen/issues/1"
+  ],
+  "primary_mapping_result": "No additional explicit center assignments could be recovered; previous6unresolved positive mappings stay unresolved. seq11 and seq7_neg are disputed."
+}
