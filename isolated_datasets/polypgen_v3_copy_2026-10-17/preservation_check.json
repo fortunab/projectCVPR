@@ -1,0 +1,12 @@
+{
+  "files_checked": 25009,
+  "changed_paths": [],
+  "unchanged": true,
+  "check": "File size and last-modification timestamp; not a content-hash check",
+  "roots": [
+    "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\outputs",
+    "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\polypgen\\data",
+    "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\polypgen\\results",
+    "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\polypgen\\cache"
+  ]
+}

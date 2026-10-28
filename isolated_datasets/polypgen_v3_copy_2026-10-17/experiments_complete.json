@@ -1,0 +1,16 @@
+{
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "eligible_centers": [
+    "C2",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "elapsed_seconds": 1165.956143999938,
+  "scope": "Preliminary reviewed-sequence subset of PolypGen v3, not complete-release evaluation",
+  "complete": true
+}

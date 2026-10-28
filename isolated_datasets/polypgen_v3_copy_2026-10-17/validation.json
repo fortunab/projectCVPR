@@ -1,0 +1,6 @@
+{
+  "command": "python -m pytest tests/test_cbmp_manifest.py tests/test_cbmp_audit_policy.py tests/test_cbmp_evaluation.py tests/test_cbmp_weighted_heads.py -q",
+  "result": "40 passed",
+  "elapsed_seconds": 5.89,
+  "scope": "Copied snapshot under isolated folder; original code/data/output not modified"
+}
