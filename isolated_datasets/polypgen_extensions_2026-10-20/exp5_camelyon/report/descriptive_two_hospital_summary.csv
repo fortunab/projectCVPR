@@ -1,0 +1,10 @@
+method,descriptive_mean_two_hospitals,descriptive_worst_two_hospitals,seed_sd_mean,seed_sd_of_per_seed_hospital_minima,descriptive_worst_estimand
+linear_logistic,0.8459246323044697,0.8030013758879871,0.0,0.0,minimum of hospital-specific mean balanced accuracies across fitting seeds
+single_centroid_group_weighted,0.739861816674282,0.7341978792745133,1.3597399555105182e-16,1.3597399555105182e-16,minimum of hospital-specific mean balanced accuracies across fitting seeds
+trainable_cosine,0.8353834744820375,0.7919322852572929,0.013634703349340568,0.028425653624873166,minimum of hospital-specific mean balanced accuracies across fitting seeds
+single_centroid_image_weighted,0.7899915397194057,0.7548248515907101,0.0,0.0,minimum of hospital-specific mean balanced accuracies across fitting seeds
+single_centroid_center_balanced,0.7515801407156175,0.7510791129067688,0.0,1.3597399555105182e-16,minimum of hospital-specific mean balanced accuracies across fitting seeds
+multi_prototype_unbalanced,0.8098760052663941,0.7682687228572419,0.006474205543524723,0.004576219277537676,minimum of hospital-specific mean balanced accuracies across fitting seeds
+linear_group_center_weighted,0.8361952834168159,0.8266981428774635,0.0,1.3597399555105182e-16,minimum of hospital-specific mean balanced accuracies across fitting seeds
+cosine_group_center_weighted,0.8377272820045093,0.8152392245669883,0.003675511153706884,0.0037040286913540064,minimum of hospital-specific mean balanced accuracies across fitting seeds
+cbmp,0.8149094418106522,0.7757801374786001,0.002091555271736221,0.002998008447055426,minimum of hospital-specific mean balanced accuracies across fitting seeds

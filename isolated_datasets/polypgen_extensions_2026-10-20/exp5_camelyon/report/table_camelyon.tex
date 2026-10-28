@@ -1,0 +1,21 @@
+% Custom frozen-transfer subset; not an official WILDS leaderboard result.
+\begin{table}[t]
+\centering
+\caption{Independent hospital transfer on a prespecified patient-capped CAMELYON17-WILDS subset. Frozen ImageNet ResNet18; source-only selection. Entries are balanced accuracy (\%) averaged over three fitting seeds. Hospital 2 is the primary test; hospital 1 is a secondary unseen hospital.}
+\label{tab:camelyon_transfer}
+\begin{tabular}{lrr}
+\hline
+Method & Hospital 2 & Hospital 1 \\
+\hline
+Linear logistic & 88.9 & 80.3 \\
+Patient-weighted centroid & 73.4 & 74.6 \\
+Trained cosine & 87.9 & 79.2 \\
+Image-weighted centroid & 82.5 & 75.5 \\
+Hospital-balanced centroid & 75.2 & 75.1 \\
+Unbalanced multi-prototype & 85.1 & 76.8 \\
+Weighted linear & 84.6 & 82.7 \\
+Weighted cosine & 86.0 & 81.5 \\
+CBMP & 85.4 & 77.6 \\
+\hline
+\end{tabular}
+\end{table}

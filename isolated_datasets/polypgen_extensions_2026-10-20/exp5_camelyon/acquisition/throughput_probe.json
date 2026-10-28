@@ -1,0 +1,10 @@
+{
+  "bytes": 8388608,
+  "seconds": 1.3315609999990556,
+  "range_status": 206,
+  "content_range": "bytes 0-8388607/483255084",
+  "path": "data/test-00000-of-00004.parquet",
+  "probe_sha256": "84fc6bc2c723c62ab0e5301af6b9f3690525ae6c1436c557e344334f401820af",
+  "megabytes_per_second": 6.299830049097224,
+  "estimated_full_transfer_seconds": 1693.5910413216516
+}

@@ -1,0 +1,28 @@
+{
+  "attempts_per_hospital": 2000,
+  "random_seed": 2027,
+  "patient_draws_shared_between_methods_and_head_seeds": true,
+  "trained_heads_fixed": true,
+  "patient_counts_and_undefined_draws": [
+    {
+      "hospital": 2,
+      "attempts": 2000,
+      "valid_class_complete": 2000,
+      "undefined_class_incomplete": 0,
+      "patient_count": 9
+    },
+    {
+      "hospital": 1,
+      "attempts": 2000,
+      "valid_class_complete": 2000,
+      "undefined_class_incomplete": 0,
+      "patient_count": 8
+    }
+  ],
+  "percentiles": [
+    0.025,
+    0.975
+  ],
+  "hospital_population_inference": false,
+  "seed_variation_separate_from_patient_CI": true
+}

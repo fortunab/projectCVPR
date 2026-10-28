@@ -1,0 +1,7 @@
+hospital,contrast,metric,ci_low,ci_high,valid_draws
+2,cbmp minus linear_logistic,balanced_accuracy,-0.04701878231096017,-0.02108032783949085,2000
+2,cbmp minus single_centroid_group_weighted,balanced_accuracy,0.06717752508779662,0.16561527487197428,2000
+2,cbmp minus multi_prototype_unbalanced,balanced_accuracy,-0.004299619968405449,0.007882690643607962,2000
+1,cbmp minus linear_logistic,balanced_accuracy,-0.05109547512667327,0.027205076018795783,2000
+1,cbmp minus single_centroid_group_weighted,balanced_accuracy,-0.012989591644189193,0.09681490471487193,2000
+1,cbmp minus multi_prototype_unbalanced,balanced_accuracy,0.0037688340309761648,0.013415545453581047,2000

@@ -1,0 +1,177 @@
+{
+  "models": [
+    {
+      "seed": 17,
+      "method": "cbmp",
+      "path": "fits\\models\\seed17\\cbmp.joblib",
+      "sha256": "5870b6c79f053ff6f2e5957cc997480ddce067671c54de45da9ba6f3331615b9"
+    },
+    {
+      "seed": 17,
+      "method": "multi_prototype_unbalanced",
+      "path": "fits\\models\\seed17\\multi_prototype_unbalanced.joblib",
+      "sha256": "73fa8c29c755a859515f4fc7790f6643c5cf941188228c1f7ed9a587b6e2937a"
+    },
+    {
+      "seed": 17,
+      "method": "linear_logistic",
+      "path": "fits\\models\\seed17\\linear_logistic.joblib",
+      "sha256": "4bfb12bed0dd6426a9debc129c05f2a86a6a27a49f7fe7c5b0e887042dc39936"
+    },
+    {
+      "seed": 17,
+      "method": "trainable_cosine",
+      "path": "fits\\models\\seed17\\trainable_cosine.joblib",
+      "sha256": "5a748d79a23d286cce1e56903aec5dafdd999cab662658fb94a799f791e4fa97"
+    },
+    {
+      "seed": 17,
+      "method": "linear_group_center_weighted",
+      "path": "fits\\models\\seed17\\linear_group_center_weighted.joblib",
+      "sha256": "2e2dbba232abc7840da7c21674a7624c51b90884634d8c44e8bde7ba4bd1bff6"
+    },
+    {
+      "seed": 17,
+      "method": "cosine_group_center_weighted",
+      "path": "fits\\models\\seed17\\cosine_group_center_weighted.joblib",
+      "sha256": "7c0edcf48be48eb59824b531695e9596fb42df7930058526437618d714c3a593"
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_group_weighted",
+      "path": "fits\\models\\seed17\\single_centroid_group_weighted.joblib",
+      "sha256": "808df3e8145d2d41fc71692df69c19b878b312dac675aa4c540a2dfb33d05940"
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_center_balanced",
+      "path": "fits\\models\\seed17\\single_centroid_center_balanced.joblib",
+      "sha256": "6aaeeaba005f31ae3fd5771f3a6a3d3f5690878dda3dfb2ead9954141bdb13a2"
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_image_weighted",
+      "path": "fits\\models\\seed17\\single_centroid_image_weighted.joblib",
+      "sha256": "8ecce5034c59229e0d899fabf7e4db5dac648cb3286e08cc73d425b062696f15"
+    },
+    {
+      "seed": 29,
+      "method": "cbmp",
+      "path": "fits\\models\\seed29\\cbmp.joblib",
+      "sha256": "0d4668c6b0f59634409acd0d5a25ffc5539542f681c1b7938c848c9949e66ccd"
+    },
+    {
+      "seed": 29,
+      "method": "multi_prototype_unbalanced",
+      "path": "fits\\models\\seed29\\multi_prototype_unbalanced.joblib",
+      "sha256": "7e5bb4ca84533b5f3281f505f4634474fb4b9c98d1319e6f3a17ea95b59b14c4"
+    },
+    {
+      "seed": 29,
+      "method": "linear_logistic",
+      "path": "fits\\models\\seed29\\linear_logistic.joblib",
+      "sha256": "747a647961719e98db71f172161f32bd70c6812ff922a5e0eea465e58ca1d18e"
+    },
+    {
+      "seed": 29,
+      "method": "trainable_cosine",
+      "path": "fits\\models\\seed29\\trainable_cosine.joblib",
+      "sha256": "d7122d3c55f37d48ee4fb46b12bc465bb5cc09e26875bc82f6a0c799913037eb"
+    },
+    {
+      "seed": 29,
+      "method": "linear_group_center_weighted",
+      "path": "fits\\models\\seed29\\linear_group_center_weighted.joblib",
+      "sha256": "27b35c6438fea9be25e6230f13c58ab3904b3420a82fd41b9ac2be71c9adac0b"
+    },
+    {
+      "seed": 29,
+      "method": "cosine_group_center_weighted",
+      "path": "fits\\models\\seed29\\cosine_group_center_weighted.joblib",
+      "sha256": "7bb56255e12263ce2d4fb086139d26428c1b3abc522bdbf4ec436964a7045c1a"
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_group_weighted",
+      "path": "fits\\models\\seed29\\single_centroid_group_weighted.joblib",
+      "sha256": "7f34fc7e83a54a8587b3b64b5eadb90898a37799c8493b1077f3dfcd0b5d7a60"
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_center_balanced",
+      "path": "fits\\models\\seed29\\single_centroid_center_balanced.joblib",
+      "sha256": "a9fadeb8e7c35a01ada3646f41a81861c1cdd470007d9795490592ccccdfdfa6"
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_image_weighted",
+      "path": "fits\\models\\seed29\\single_centroid_image_weighted.joblib",
+      "sha256": "ecf4d3da85de7f37e7e0510839c96652acd4e4c7488f1ab5f822c80d5e7eb285"
+    },
+    {
+      "seed": 43,
+      "method": "cbmp",
+      "path": "fits\\models\\seed43\\cbmp.joblib",
+      "sha256": "82d341ad813591e2a38cef04bd481c1afebe6f93136f3a6f38e894220fb89396"
+    },
+    {
+      "seed": 43,
+      "method": "multi_prototype_unbalanced",
+      "path": "fits\\models\\seed43\\multi_prototype_unbalanced.joblib",
+      "sha256": "f9b9ccfca9178237d9c4efc95f49458ec10a761f9dea6d5761f144bf5466e8c9"
+    },
+    {
+      "seed": 43,
+      "method": "linear_logistic",
+      "path": "fits\\models\\seed43\\linear_logistic.joblib",
+      "sha256": "0ca9e5d7a2e650310c9999974e79d51647f30f15d811b2306fda34de14ded295"
+    },
+    {
+      "seed": 43,
+      "method": "trainable_cosine",
+      "path": "fits\\models\\seed43\\trainable_cosine.joblib",
+      "sha256": "ad838518419e949505c5acdcde4e3c6193f8c362687285a63f5d8e5209741fa2"
+    },
+    {
+      "seed": 43,
+      "method": "linear_group_center_weighted",
+      "path": "fits\\models\\seed43\\linear_group_center_weighted.joblib",
+      "sha256": "1f473c90976fbc5e94a89cc8ebe0f1e764f173a66e48ef6f0bfbf86870ee1ccf"
+    },
+    {
+      "seed": 43,
+      "method": "cosine_group_center_weighted",
+      "path": "fits\\models\\seed43\\cosine_group_center_weighted.joblib",
+      "sha256": "973f662968beb9547182eade8e2d94087f55ed929495beabc3c33a9a5cbaca9a"
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_group_weighted",
+      "path": "fits\\models\\seed43\\single_centroid_group_weighted.joblib",
+      "sha256": "20fec028aab98ab39038da01451eaa20b7816345eafa1e712da285f858c61766"
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_center_balanced",
+      "path": "fits\\models\\seed43\\single_centroid_center_balanced.joblib",
+      "sha256": "3c970d277c380e4033d02282cea3d9082ba3e50b57d6a013059edd39002c1ea6"
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_image_weighted",
+      "path": "fits\\models\\seed43\\single_centroid_image_weighted.joblib",
+      "sha256": "e6291ef546dccc5b4016d012dfff4a34c1ef9a5caefffa8c68f831dba8223518"
+    }
+  ],
+  "cohort_plan_sha256": "d4263aeb86069af837b0b8088533d7214b8ef3913a6910e61c931de592d3cee7",
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "target_scores_evaluated": false,
+  "all_models_saved_before_target_evaluation": true,
+  "source_training_rows": 10400,
+  "source_inner_hospitals": [
+    0,
+    3,
+    4
+  ],
+  "created_unix_seconds": 1792516294.9928536
+}

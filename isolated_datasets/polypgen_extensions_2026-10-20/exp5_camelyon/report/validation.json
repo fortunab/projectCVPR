@@ -1,0 +1,333 @@
+{
+  "saved_model_prediction_metric_checks": [
+    {
+      "seed": 17,
+      "method": "cbmp",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "cbmp",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "linear_logistic",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "linear_logistic",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "trainable_cosine",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "trainable_cosine",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "linear_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "linear_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "cosine_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "cosine_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_group_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_group_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_center_balanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_center_balanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_image_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 17,
+      "method": "single_centroid_image_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "cbmp",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "cbmp",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "linear_logistic",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "linear_logistic",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "trainable_cosine",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "trainable_cosine",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "linear_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "linear_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "cosine_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "cosine_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_group_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_group_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_center_balanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_center_balanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_image_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 29,
+      "method": "single_centroid_image_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "cbmp",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "cbmp",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "multi_prototype_unbalanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "linear_logistic",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "linear_logistic",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "trainable_cosine",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "trainable_cosine",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "linear_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "linear_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "cosine_group_center_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "cosine_group_center_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_group_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_group_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_center_balanced",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_center_balanced",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_image_weighted",
+      "hospital": 2,
+      "predictions_and_metrics_reconstructed": true
+    },
+    {
+      "seed": 43,
+      "method": "single_centroid_image_weighted",
+      "hospital": 1,
+      "predictions_and_metrics_reconstructed": true
+    }
+  ],
+  "all27_heads_precede_bank_freeze": true,
+  "head_count": 27,
+  "target_records": 54,
+  "source_bank_sha256": "90ab05b2c5dabe380fe0ffff30bf7145f128a94c92ab5b8101573ceb0a3f29c1",
+  "prediction_file_sha256": "becc800e97a069f888edc3e447b7326f873a14030c6d0bca444c431458bea23e"
+}

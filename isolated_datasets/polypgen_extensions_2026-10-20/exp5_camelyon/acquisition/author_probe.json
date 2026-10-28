@@ -1,0 +1,12 @@
+{
+  "author_url": "https://worksheets.codalab.org/rest/bundles/0xe45e15f39fb54e9d9e919556af67aabe/contents/blob/",
+  "mirror_repository": "wltjr1007/Camelyon17-WILDS",
+  "mirror_revision": "d784d5344ba6c967f83f9f3d9b2f1e2a4d6eb78f",
+  "community_mirror_not_author_distribution": true,
+  "credentials_supplied": false,
+  "author_probe": {
+    "unavailable": true,
+    "exception": "URLError",
+    "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+  }
+}
