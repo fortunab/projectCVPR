@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lccccc}
+\hline
+Method & Mean bAcc [95\% CI] & Seed SD & Worst bAcc & Mean F1 & Mean AUROC \\
+\hline
+CBMP & 0.583 [0.527, 0.631] & 0.007 & 0.421 & 0.534 & 0.733 \\
+Multiple prototypes (unbalanced) & 0.611 [0.553, 0.658] & 0.004 & 0.531 & 0.565 & 0.762 \\
+Linear logistic & 0.702 [0.655, 0.745] & 0.000 & 0.572 & 0.630 & 0.800 \\
+Trained cosine & 0.631 [0.585, 0.672] & 0.036 & 0.567 & 0.570 & 0.805 \\
+Linear (group/center weighted) & 0.618 [0.557, 0.665] & 0.000 & 0.472 & 0.585 & 0.733 \\
+Cosine (group/center weighted) & 0.635 [0.597, 0.678] & 0.021 & 0.461 & 0.572 & 0.745 \\
+Centroid (group weighted) & 0.632 [0.580, 0.682] & 0.000 & 0.603 & 0.568 & 0.790 \\
+Centroid (center balanced) & 0.605 [0.533, 0.655] & 0.000 & 0.476 & 0.549 & 0.691 \\
+Centroid (image weighted) & 0.604 [0.552, 0.654] & 0.000 & 0.582 & 0.544 & 0.765 \\
+\hline
+\end{tabular}
+\caption{Preliminary leave-one-center-out evaluation on a partial PolypGen v3 reviewed subset with frozen ImageNet ResNet18 features. Metrics average equally across four target centers and 3 head seeds; predictions are not ensembled. Worst-center balanced accuracy is computed after averaging each center over seeds. Seed SD measures optimization variation separately. The sequence bootstrap is conditional on class-complete draws (1026 accepted of 2000 attempted) and on fixed trained heads; identical group resamples pair all methods and seeds. No patient independence is established.}
+\label{tab:polypgen_reviewed_subset}
+\end{table*}

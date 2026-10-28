@@ -1,0 +1,47 @@
+sequence_id,center,status,negative_frames,positive_frames,annotation_errors,source
+seq1,,excluded_pending_annotation_review,36,0,0,
+seq10,C4,included_verified_sequence,18,7,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq10_neg,C4,included_verified_sequence,292,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq11,,excluded_conflicting_center_sources,92,136,0,
+seq11_neg,C5,included_verified_sequence,190,0,0,Official v3 original filenames: every frame has explicit C5 token
+seq12,C2,included_verified_sequence,0,250,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq12_neg,C5,included_verified_sequence,261,0,0,Official v3 original filenames: every frame has explicit C5 token
+seq13,C2,included_verified_sequence,51,199,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq13_neg,C5,included_verified_sequence,280,0,0,Official v3 original filenames: every frame has explicit C5 token
+seq14,,excluded_unresolved_center,49,200,0,
+seq14_neg,C6,included_verified_sequence,301,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq15,,excluded_unresolved_center,0,116,0,
+seq15_neg,C6,included_verified_sequence,278,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq16,C6,included_verified_sequence,7,33,0,Official v3 original filenames: every frame has explicit C6 token
+seq16_neg,C6,included_verified_sequence,141,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq17,C6,included_verified_sequence,19,44,0,Official v3 original filenames: every frame has explicit C6 token
+seq17_neg,C6,included_verified_sequence,130,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq18,C6,included_verified_sequence,7,56,0,Official v3 original filenames: every frame has explicit C6 token
+seq18_neg,C6,included_verified_sequence,121,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq19,C6,included_verified_sequence,1,55,0,Official v3 original filenames: every frame has explicit C6 token
+seq19_neg,C6,included_verified_sequence,210,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq1_neg,C4,included_verified_sequence,315,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq2,C4,included_verified_sequence,3,60,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq20,C6,included_verified_sequence,21,31,0,Official v3 original filenames: every frame has explicit C6 token
+seq20_neg,C6,included_verified_sequence,191,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq21,C6,included_verified_sequence,31,25,0,Official v3 original filenames: every frame has explicit C6 token
+seq21_neg,C6,included_verified_sequence,151,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq22,C6,included_verified_sequence,2,44,0,Official v3 original filenames: every frame has explicit C6 token
+seq22_neg,C6,included_verified_sequence,82,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq23,C6,included_verified_sequence,20,36,0,Official v3 original filenames: every frame has explicit C6 token
+seq23_neg,C6,included_verified_sequence,150,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq2_neg,C4,included_verified_sequence,302,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq3,C4,included_verified_sequence,0,15,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq3_neg,C4,included_verified_sequence,40,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq4,,excluded_unresolved_center,2,46,0,
+seq4_neg,C1,included_verified_sequence,72,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq5,C5,included_verified_sequence,51,199,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq5_neg,C1,included_verified_sequence,61,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq6,C4,included_verified_sequence,29,62,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq6_neg,C1,included_verified_sequence,90,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq7,,excluded_unresolved_center,48,0,0,
+seq7_neg,,excluded_conflicting_center_sources,207,0,0,
+seq8,,excluded_unresolved_center,19,54,0,
+seq8_neg,C4,included_verified_sequence,311,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq9,,excluded_unresolved_center,9,42,0,
+seq9_neg,C4,included_verified_sequence,99,0,0,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"

@@ -1,0 +1,801 @@
+{
+  "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\family_baselines\\polypgen\\data\\PolypGen\\extracted\\PolypGen2021_MultiCenterData_v3",
+  "label_rule": "Current polypgen_manifest._label, mask >127 and at least 1 foreground pixel; matched bbox agreement; documented negativeOnly sequences can be unannotated negatives.",
+  "mapping_review": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\work\\polypgen_sequence_center_mapping_review.json",
+  "all_sequences": {
+    "seq10_neg": {
+      "sequence_id": "seq10_neg",
+      "image_count": 292,
+      "label_counts": {
+        "0": 292,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 292
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq11_neg": {
+      "sequence_id": "seq11_neg",
+      "image_count": 190,
+      "label_counts": {
+        "0": 190,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 190
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C5",
+      "mapping_status": "verified_in_review"
+    },
+    "seq12_neg": {
+      "sequence_id": "seq12_neg",
+      "image_count": 261,
+      "label_counts": {
+        "0": 261,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 261
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C5",
+      "mapping_status": "verified_in_review"
+    },
+    "seq13_neg": {
+      "sequence_id": "seq13_neg",
+      "image_count": 280,
+      "label_counts": {
+        "0": 280,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 280
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C5",
+      "mapping_status": "verified_in_review"
+    },
+    "seq14_neg": {
+      "sequence_id": "seq14_neg",
+      "image_count": 301,
+      "label_counts": {
+        "0": 301,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 301
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq15_neg": {
+      "sequence_id": "seq15_neg",
+      "image_count": 278,
+      "label_counts": {
+        "0": 278,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 278
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq16_neg": {
+      "sequence_id": "seq16_neg",
+      "image_count": 141,
+      "label_counts": {
+        "0": 141,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 141
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq17_neg": {
+      "sequence_id": "seq17_neg",
+      "image_count": 130,
+      "label_counts": {
+        "0": 130,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 130
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq18_neg": {
+      "sequence_id": "seq18_neg",
+      "image_count": 121,
+      "label_counts": {
+        "0": 121,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 121
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq19_neg": {
+      "sequence_id": "seq19_neg",
+      "image_count": 210,
+      "label_counts": {
+        "0": 210,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 210
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq1_neg": {
+      "sequence_id": "seq1_neg",
+      "image_count": 315,
+      "label_counts": {
+        "0": 315,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 315
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq20_neg": {
+      "sequence_id": "seq20_neg",
+      "image_count": 191,
+      "label_counts": {
+        "0": 191,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 191
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq21_neg": {
+      "sequence_id": "seq21_neg",
+      "image_count": 151,
+      "label_counts": {
+        "0": 151,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 151
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq22_neg": {
+      "sequence_id": "seq22_neg",
+      "image_count": 82,
+      "label_counts": {
+        "0": 82,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 82
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq23_neg": {
+      "sequence_id": "seq23_neg",
+      "image_count": 150,
+      "label_counts": {
+        "0": 150,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 150
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq2_neg": {
+      "sequence_id": "seq2_neg",
+      "image_count": 302,
+      "label_counts": {
+        "0": 302,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 302
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq3_neg": {
+      "sequence_id": "seq3_neg",
+      "image_count": 40,
+      "label_counts": {
+        "0": 40,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 40
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq4_neg": {
+      "sequence_id": "seq4_neg",
+      "image_count": 72,
+      "label_counts": {
+        "0": 72,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 72
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C1",
+      "mapping_status": "verified_in_review"
+    },
+    "seq5_neg": {
+      "sequence_id": "seq5_neg",
+      "image_count": 61,
+      "label_counts": {
+        "0": 61,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 61
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C1",
+      "mapping_status": "verified_in_review"
+    },
+    "seq6_neg": {
+      "sequence_id": "seq6_neg",
+      "image_count": 90,
+      "label_counts": {
+        "0": 90,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 90
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C1",
+      "mapping_status": "verified_in_review"
+    },
+    "seq7_neg": {
+      "sequence_id": "seq7_neg",
+      "image_count": 207,
+      "label_counts": {
+        "0": 207,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 207
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C1",
+      "mapping_status": "source_conflict"
+    },
+    "seq8_neg": {
+      "sequence_id": "seq8_neg",
+      "image_count": 311,
+      "label_counts": {
+        "0": 311,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 311
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq9_neg": {
+      "sequence_id": "seq9_neg",
+      "image_count": 99,
+      "label_counts": {
+        "0": 99,
+        "1": 0
+      },
+      "label_sources": {
+        "documented_negative_only_sequence": 99
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq1": {
+      "sequence_id": "seq1",
+      "image_count": 36,
+      "label_counts": {
+        "0": 36,
+        "1": 0
+      },
+      "label_sources": {
+        "bbox+mask": 36
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq10": {
+      "sequence_id": "seq10",
+      "image_count": 25,
+      "label_counts": {
+        "0": 18,
+        "1": 7
+      },
+      "label_sources": {
+        "bbox+mask": 25
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq11": {
+      "sequence_id": "seq11",
+      "image_count": 228,
+      "label_counts": {
+        "0": 92,
+        "1": 136
+      },
+      "label_sources": {
+        "bbox+mask": 228
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C3",
+      "mapping_status": "verified_in_review"
+    },
+    "seq12": {
+      "sequence_id": "seq12",
+      "image_count": 250,
+      "label_counts": {
+        "0": 0,
+        "1": 250
+      },
+      "label_sources": {
+        "bbox+mask": 250
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C2",
+      "mapping_status": "verified_in_review"
+    },
+    "seq13": {
+      "sequence_id": "seq13",
+      "image_count": 250,
+      "label_counts": {
+        "0": 51,
+        "1": 199
+      },
+      "label_sources": {
+        "bbox+mask": 250
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C2",
+      "mapping_status": "verified_in_review"
+    },
+    "seq14": {
+      "sequence_id": "seq14",
+      "image_count": 249,
+      "label_counts": {
+        "0": 49,
+        "1": 200
+      },
+      "label_sources": {
+        "bbox+mask": 249
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    },
+    "seq15": {
+      "sequence_id": "seq15",
+      "image_count": 116,
+      "label_counts": {
+        "0": 0,
+        "1": 116
+      },
+      "label_sources": {
+        "bbox+mask": 116
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    },
+    "seq16": {
+      "sequence_id": "seq16",
+      "image_count": 40,
+      "label_counts": {
+        "0": 7,
+        "1": 33
+      },
+      "label_sources": {
+        "bbox+mask": 40
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq17": {
+      "sequence_id": "seq17",
+      "image_count": 63,
+      "label_counts": {
+        "0": 19,
+        "1": 44
+      },
+      "label_sources": {
+        "bbox+mask": 63
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq18": {
+      "sequence_id": "seq18",
+      "image_count": 63,
+      "label_counts": {
+        "0": 7,
+        "1": 56
+      },
+      "label_sources": {
+        "bbox+mask": 63
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq19": {
+      "sequence_id": "seq19",
+      "image_count": 56,
+      "label_counts": {
+        "0": 1,
+        "1": 55
+      },
+      "label_sources": {
+        "bbox+mask": 56
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq2": {
+      "sequence_id": "seq2",
+      "image_count": 63,
+      "label_counts": {
+        "0": 3,
+        "1": 60
+      },
+      "label_sources": {
+        "bbox+mask": 63
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq20": {
+      "sequence_id": "seq20",
+      "image_count": 52,
+      "label_counts": {
+        "0": 21,
+        "1": 31
+      },
+      "label_sources": {
+        "bbox+mask": 52
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq21": {
+      "sequence_id": "seq21",
+      "image_count": 56,
+      "label_counts": {
+        "0": 31,
+        "1": 25
+      },
+      "label_sources": {
+        "bbox+mask": 56
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq22": {
+      "sequence_id": "seq22",
+      "image_count": 46,
+      "label_counts": {
+        "0": 2,
+        "1": 44
+      },
+      "label_sources": {
+        "bbox+mask": 46
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq23": {
+      "sequence_id": "seq23",
+      "image_count": 56,
+      "label_counts": {
+        "0": 20,
+        "1": 36
+      },
+      "label_sources": {
+        "bbox+mask": 56
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C6",
+      "mapping_status": "verified_in_review"
+    },
+    "seq3": {
+      "sequence_id": "seq3",
+      "image_count": 15,
+      "label_counts": {
+        "0": 0,
+        "1": 15
+      },
+      "label_sources": {
+        "bbox+mask": 15
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq4": {
+      "sequence_id": "seq4",
+      "image_count": 48,
+      "label_counts": {
+        "0": 2,
+        "1": 46
+      },
+      "label_sources": {
+        "bbox+mask": 48
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    },
+    "seq5": {
+      "sequence_id": "seq5",
+      "image_count": 250,
+      "label_counts": {
+        "0": 51,
+        "1": 199
+      },
+      "label_sources": {
+        "bbox+mask": 250
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C5",
+      "mapping_status": "verified_in_review"
+    },
+    "seq6": {
+      "sequence_id": "seq6",
+      "image_count": 91,
+      "label_counts": {
+        "0": 29,
+        "1": 62
+      },
+      "label_sources": {
+        "bbox+mask": 91
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": "C4",
+      "mapping_status": "verified_in_review"
+    },
+    "seq7": {
+      "sequence_id": "seq7",
+      "image_count": 48,
+      "label_counts": {
+        "0": 48,
+        "1": 0
+      },
+      "label_sources": {
+        "bbox+mask": 48
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    },
+    "seq8": {
+      "sequence_id": "seq8",
+      "image_count": 73,
+      "label_counts": {
+        "0": 19,
+        "1": 54
+      },
+      "label_sources": {
+        "bbox+mask": 73
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    },
+    "seq9": {
+      "sequence_id": "seq9",
+      "image_count": 51,
+      "label_counts": {
+        "0": 9,
+        "1": 42
+      },
+      "label_sources": {
+        "bbox+mask": 51
+      },
+      "annotation_errors": [],
+      "center_as_reviewed": null,
+      "mapping_status": "unresolved"
+    }
+  },
+  "verified_subset_center_class_coverage": {
+    "C4": {
+      "label_counts": {
+        "0": 1445,
+        "1": 144
+      },
+      "sequence_count": 11,
+      "sequences_per_class": {
+        "0": 10,
+        "1": 4
+      },
+      "sequence_ids": [
+        "seq1",
+        "seq10",
+        "seq10_neg",
+        "seq1_neg",
+        "seq2",
+        "seq2_neg",
+        "seq3",
+        "seq3_neg",
+        "seq6",
+        "seq8_neg",
+        "seq9_neg"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": true,
+      "minimum_sequences_per_class": 4
+    },
+    "C3": {
+      "label_counts": {
+        "0": 92,
+        "1": 136
+      },
+      "sequence_count": 1,
+      "sequences_per_class": {
+        "0": 1,
+        "1": 1
+      },
+      "sequence_ids": [
+        "seq11"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": true,
+      "minimum_sequences_per_class": 1
+    },
+    "C5": {
+      "label_counts": {
+        "0": 782,
+        "1": 199
+      },
+      "sequence_count": 4,
+      "sequences_per_class": {
+        "0": 4,
+        "1": 1
+      },
+      "sequence_ids": [
+        "seq11_neg",
+        "seq12_neg",
+        "seq13_neg",
+        "seq5"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": true,
+      "minimum_sequences_per_class": 1
+    },
+    "C2": {
+      "label_counts": {
+        "0": 51,
+        "1": 449
+      },
+      "sequence_count": 2,
+      "sequences_per_class": {
+        "0": 1,
+        "1": 2
+      },
+      "sequence_ids": [
+        "seq12",
+        "seq13"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": true,
+      "minimum_sequences_per_class": 1
+    },
+    "C6": {
+      "label_counts": {
+        "0": 1863,
+        "1": 324
+      },
+      "sequence_count": 18,
+      "sequences_per_class": {
+        "0": 18,
+        "1": 8
+      },
+      "sequence_ids": [
+        "seq14_neg",
+        "seq15_neg",
+        "seq16",
+        "seq16_neg",
+        "seq17",
+        "seq17_neg",
+        "seq18",
+        "seq18_neg",
+        "seq19",
+        "seq19_neg",
+        "seq20",
+        "seq20_neg",
+        "seq21",
+        "seq21_neg",
+        "seq22",
+        "seq22_neg",
+        "seq23",
+        "seq23_neg"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": true,
+      "minimum_sequences_per_class": 8
+    },
+    "C1": {
+      "label_counts": {
+        "0": 223,
+        "1": 0
+      },
+      "sequence_count": 3,
+      "sequences_per_class": {
+        "0": 3,
+        "1": 0
+      },
+      "sequence_ids": [
+        "seq4_neg",
+        "seq5_neg",
+        "seq6_neg"
+      ],
+      "annotation_error_count": 0,
+      "has_both_classes": false,
+      "minimum_sequences_per_class": 0
+    }
+  },
+  "total_images": 6500,
+  "total_label_counts": {
+    "0": 4790,
+    "1": 1710
+  },
+  "annotation_error_count": 0,
+  "cross_sequence_duplicate_hash_groups": [],
+  "duplicate_label_conflicts": [],
+  "limitations": [
+    "Provisional center coverage uses partial reviewed mappings only and excludes disputed seq7_neg.",
+    "Sequence-level groups are not verified patient identities.",
+    "Verified subset is not a complete PolypGen benchmark and must not be silently presented as full dataset."
+  ]
+}

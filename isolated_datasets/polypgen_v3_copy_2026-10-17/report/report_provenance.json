@@ -1,0 +1,83 @@
+{
+  "protocol_sha256": "71daf180f996c597ee5858cf7bb9785e33800ade83e46570d15ac1067f9b210f",
+  "report_script_sha256": "118c4095bf5fccd401a089fc94bc2db86de77c726a8d233fbf4c0a6d8225de7a",
+  "runs": [
+    {
+      "seed": 17,
+      "directory": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed17",
+      "file_sha256": {
+        "COMPLETE": "cd8ca6ccc08acf4e4ec48fcfd04625c7a29020a6977b097521940bb94eed5d6a",
+        "predictions.csv": "1f68ca0dd21549699a24fbcc0499107382fe47044f0df2c91cc328abed28f879",
+        "metrics_by_center.json": "bb1c14991385440555c96c07dda1c0a38737dd093bc29cdf9b5773adb13cc939",
+        "experiment_config.json": "d3bfe99b3e19c200010d9085c841d3e9591826891d7e172db296ebfb451eafef",
+        "outer_splits.json": "88a604244be7fb89a78870f7fc39b41fdcf8a53ddcc2df6ae34a1d3a0f1d7156"
+      }
+    },
+    {
+      "seed": 29,
+      "directory": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed29",
+      "file_sha256": {
+        "COMPLETE": "cd8ca6ccc08acf4e4ec48fcfd04625c7a29020a6977b097521940bb94eed5d6a",
+        "predictions.csv": "5a6113e577e8055d455472acc0cd163aa1fbc1c507170fdcf8c521df1e5498cc",
+        "metrics_by_center.json": "ee80f754f3a05376fde07a198707ab0b1b245ebda44726302ed22a8f855ba6e0",
+        "experiment_config.json": "6ffa6e973ef1edaf48b6a4b0c3d703db16178f3b5929a7e672367b5fc58f6a98",
+        "outer_splits.json": "b6b6c0efb01001542decdc5ba7fe2937709b956ccc0ef8b73c50188af93dbeaa"
+      }
+    },
+    {
+      "seed": 43,
+      "directory": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed43",
+      "file_sha256": {
+        "COMPLETE": "cd8ca6ccc08acf4e4ec48fcfd04625c7a29020a6977b097521940bb94eed5d6a",
+        "predictions.csv": "eb87b45b1c447a8d3e5fc060462df9b4c664a3724bbd6c27be4053f79b8dd8ca",
+        "metrics_by_center.json": "dd72116d34dd99480df4175a2ec4e85462d03a01379e0d04ea7a5c3dafbdda43",
+        "experiment_config.json": "ffd6f54b11c71bab65a4511f4a18a622195d5568d3f8cd4babc8508207f42770",
+        "outer_splits.json": "51f80558570176d751003ff05262ffdaaf19b126687bebfbf4bf3d8f32c64c50"
+      }
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "target_centers": [
+    "C2",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "checks": [
+    "COMPLETE markers and required artifacts",
+    "identical snapshot tuning grids",
+    "identical manifest, encoder/checkpoint, audit, and code hashes across seeds",
+    "identical sample/center/label/group support across every seed/method",
+    "unique predictions and complete method/center metric coverage",
+    "both target classes at every center",
+    "groups confined to one target center",
+    "saved accuracy/bAcc/F1/AUROC/Brier agree with predictions"
+  ],
+  "scope": "Preliminary subset restricted to independently verified sequence-center mappings; not a complete-release evaluation",
+  "encoder": {
+    "feature_schema": 2,
+    "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+    "model_name": "resnet18_imagenet1k_v1",
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "normalized_features": true,
+    "resolved_model": "torchvision.resnet18.IMAGENET1K_V1",
+    "checkpoint_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)"
+  },
+  "candidate_counts": {
+    "cbmp": 12,
+    "multi_prototype_unbalanced": 4,
+    "linear_logistic": 5,
+    "trainable_cosine": 3,
+    "linear_group_center_weighted": 15,
+    "cosine_group_center_weighted": 9,
+    "single_centroid_group_weighted": 1,
+    "single_centroid_center_balanced": 1,
+    "single_centroid_image_weighted": 1
+  }
+}

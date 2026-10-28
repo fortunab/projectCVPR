@@ -1,0 +1,38 @@
+sequence_id,center,source
+seq2,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq3,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq6,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq10,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq5,C5,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq12,C2,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq13,C2,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq16,C6,Official v3 original filenames: every frame has explicit C6 token
+seq17,C6,Official v3 original filenames: every frame has explicit C6 token
+seq18,C6,Official v3 original filenames: every frame has explicit C6 token
+seq19,C6,Official v3 original filenames: every frame has explicit C6 token
+seq20,C6,Official v3 original filenames: every frame has explicit C6 token
+seq21,C6,Official v3 original filenames: every frame has explicit C6 token
+seq22,C6,Official v3 original filenames: every frame has explicit C6 token
+seq23,C6,Official v3 original filenames: every frame has explicit C6 token
+seq1_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq2_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq3_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq8_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq9_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq10_neg,C4,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq4_neg,C1,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq5_neg,C1,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq6_neg,C1,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq11_neg,C5,Official v3 original filenames: every frame has explicit C5 token
+seq12_neg,C5,Official v3 original filenames: every frame has explicit C5 token
+seq13_neg,C5,Official v3 original filenames: every frame has explicit C5 token
+seq14_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq15_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq16_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq17_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq18_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq19_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq20_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq21_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq22_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"
+seq23_neg,C6,"Ali et al. 2023 Figure 7, explicit label and center color; https://doi.org/10.1038/s41597-023-01981-y"

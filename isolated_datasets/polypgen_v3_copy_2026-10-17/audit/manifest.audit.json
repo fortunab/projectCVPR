@@ -1,0 +1,90 @@
+{
+  "schema_version": 3,
+  "data_root": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\extracted\\PolypGen2021_MultiCenterData_v3",
+  "manifest": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\audit\\manifest.csv",
+  "manifest_sha256": "8f1753aae483e2c4bab59b72c6ae47df91d7bd32c4bbc2819aa2b6de58726ec0",
+  "samples_indexed": 5444,
+  "samples_rejected": 13816,
+  "rejection_counts": {
+    "not_original_image_leaf": 11223,
+    "still_frame_excluded_by_sequence_only": 1537,
+    "sequence_excluded_by_verified_metadata_policy": 1056
+  },
+  "unresolved_sequences": [],
+  "sequence_only": true,
+  "verified_sequences_only": true,
+  "included_sequence_ids": [
+    "seq10",
+    "seq10_neg",
+    "seq11_neg",
+    "seq12",
+    "seq12_neg",
+    "seq13",
+    "seq13_neg",
+    "seq14_neg",
+    "seq15_neg",
+    "seq16",
+    "seq16_neg",
+    "seq17",
+    "seq17_neg",
+    "seq18",
+    "seq18_neg",
+    "seq19",
+    "seq19_neg",
+    "seq1_neg",
+    "seq2",
+    "seq20",
+    "seq20_neg",
+    "seq21",
+    "seq21_neg",
+    "seq22",
+    "seq22_neg",
+    "seq23",
+    "seq23_neg",
+    "seq2_neg",
+    "seq3",
+    "seq3_neg",
+    "seq4_neg",
+    "seq5",
+    "seq5_neg",
+    "seq6",
+    "seq6_neg",
+    "seq8_neg",
+    "seq9_neg"
+  ],
+  "scope": "Preliminary subset restricted to independently verified sequence-center mappings; not a complete-release evaluation",
+  "sequence_metadata": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\audit\\reviewed_sequence_centers.csv",
+  "sequence_metadata_sha256": "ac622dc38b81a7e0edd2f06f5e505d77ad53e8ca82b6b7c183ad78b8c0ee2eb6",
+  "mask_threshold": 127,
+  "min_foreground_pixels": 1,
+  "class_counts": {
+    "0": 4328,
+    "1": 1116
+  },
+  "center_class_counts": {
+    "C1": {
+      "0": 223,
+      "1": 0
+    },
+    "C2": {
+      "0": 51,
+      "1": 449
+    },
+    "C4": {
+      "0": 1409,
+      "1": 144
+    },
+    "C5": {
+      "0": 782,
+      "1": 199
+    },
+    "C6": {
+      "0": 1863,
+      "1": 324
+    }
+  },
+  "groups_without_sequence_metadata": 0,
+  "duplicate_content_groups": [],
+  "warning": "Frame labels describe annotated polyp presence. Sequence grouping does not establish independence between different sequences from the same patient.",
+  "blocking_rejections": 0
+}

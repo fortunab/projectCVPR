@@ -1,0 +1,72 @@
+Command: C:\Users\Lenovo\anaconda3\python.exe -u C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\code\run_cbmp.py --data-root C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\extracted\PolypGen2021_MultiCenterData_v3 --manifest C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\audit\manifest.csv --sequence-metadata C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\audit\reviewed_sequence_centers.csv --sequence-only --verified-sequences-only --model-name resnet18_imagenet1k_v1 --device cpu --batch-size 32 --workers 0 --threads 4 --feature-cache C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\features\resnet18_imagenet1k_v1.npz --results-dir C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\results\seed17 --seed 17
+Scope: Preliminary subset restricted to independently verified sequence-center mappings; not a complete-release evaluation
+Eligible held-out centers: ['C2', 'C4', 'C5', 'C6']
+
+Frozen resnet18_imagenet1k_v1:   0%|          | 0/171 [00:00<?, ?it/s]
+Frozen resnet18_imagenet1k_v1:   4%|3         | 6/171 [00:11<05:10,  1.88s/it]
+Frozen resnet18_imagenet1k_v1:   7%|7         | 12/171 [00:22<04:54,  1.85s/it]
+Frozen resnet18_imagenet1k_v1:  11%|#         | 18/171 [00:33<04:46,  1.87s/it]
+Frozen resnet18_imagenet1k_v1:  14%|#4        | 24/171 [00:45<04:38,  1.89s/it]
+Frozen resnet18_imagenet1k_v1:  18%|#7        | 30/171 [00:56<04:24,  1.88s/it]
+Frozen resnet18_imagenet1k_v1:  21%|##1       | 36/171 [01:07<04:09,  1.85s/it]
+Frozen resnet18_imagenet1k_v1:  25%|##5       | 43/171 [01:18<03:44,  1.76s/it]
+Frozen resnet18_imagenet1k_v1:  29%|##9       | 50/171 [01:28<03:20,  1.66s/it]
+Frozen resnet18_imagenet1k_v1:  33%|###3      | 57/171 [01:38<03:01,  1.60s/it]
+Frozen resnet18_imagenet1k_v1:  33%|###3      | 57/171 [01:50<03:01,  1.60s/it]
+Frozen resnet18_imagenet1k_v1:  37%|###7      | 64/171 [01:51<02:56,  1.65s/it]
+Frozen resnet18_imagenet1k_v1:  41%|####      | 70/171 [02:02<02:51,  1.70s/it]
+Frozen resnet18_imagenet1k_v1:  44%|####4     | 76/171 [02:12<02:43,  1.73s/it]
+Frozen resnet18_imagenet1k_v1:  48%|####7     | 82/171 [02:23<02:36,  1.76s/it]
+Frozen resnet18_imagenet1k_v1:  51%|#####1    | 88/171 [02:35<02:30,  1.81s/it]
+Frozen resnet18_imagenet1k_v1:  55%|#####4    | 94/171 [02:47<02:22,  1.85s/it]
+Frozen resnet18_imagenet1k_v1:  58%|#####8    | 100/171 [02:58<02:10,  1.84s/it]
+Frozen resnet18_imagenet1k_v1:  62%|######1   | 106/171 [03:09<02:01,  1.87s/it]
+Frozen resnet18_imagenet1k_v1:  62%|######1   | 106/171 [03:20<02:01,  1.87s/it]
+Frozen resnet18_imagenet1k_v1:  67%|######7   | 115/171 [03:21<01:31,  1.64s/it]
+Frozen resnet18_imagenet1k_v1:  72%|#######1  | 123/171 [03:35<01:21,  1.70s/it]
+Frozen resnet18_imagenet1k_v1:  75%|#######5  | 129/171 [03:45<01:11,  1.70s/it]
+Frozen resnet18_imagenet1k_v1:  80%|########  | 137/171 [03:57<00:54,  1.61s/it]
+Frozen resnet18_imagenet1k_v1:  84%|########4 | 144/171 [04:08<00:42,  1.59s/it]
+Frozen resnet18_imagenet1k_v1:  89%|########8 | 152/171 [04:19<00:28,  1.53s/it]
+Frozen resnet18_imagenet1k_v1:  89%|########8 | 152/171 [04:30<00:28,  1.53s/it]
+Frozen resnet18_imagenet1k_v1:  94%|#########3| 160/171 [04:30<00:16,  1.48s/it]
+Frozen resnet18_imagenet1k_v1:  98%|#########8| 168/171 [04:42<00:04,  1.50s/it]
+Frozen resnet18_imagenet1k_v1: 100%|##########| 171/171 [04:46<00:00,  1.68s/it]
+[SKIP] C1: excluded_target_missing_class
+[DONE] heldout=C2 method=cbmp source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.8358
+[DONE] heldout=C2 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.1} test_bAcc=0.7942
+[DONE] heldout=C2 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 0.01, 'beta': 0.0} test_bAcc=0.5989
+[DONE] heldout=C2 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 1.0} test_bAcc=0.6402
+[DONE] heldout=C2 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.5827
+[DONE] heldout=C2 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5871
+[DONE] heldout=C4 method=cbmp source-selected={'kind': 'prototype', 'k': 2, 'beta': 0.0} test_bAcc=0.6472
+[DONE] heldout=C4 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 2, 'beta': 0.0} test_bAcc=0.6472
+[DONE] heldout=C4 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.7098
+[DONE] heldout=C4 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.6650
+[DONE] heldout=C4 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} test_bAcc=0.6907
+[DONE] heldout=C4 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.7047
+[DONE] heldout=C4 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6295
+[DONE] heldout=C4 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.6435
+[DONE] heldout=C4 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6265
+[DONE] heldout=C5 method=cbmp source-selected={'kind': 'prototype', 'k': 2, 'beta': 1.0} test_bAcc=0.4214
+[DONE] heldout=C5 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} test_bAcc=0.5277
+[DONE] heldout=C5 method=linear_logistic source-selected={'kind': 'linear', 'C': 1.0} test_bAcc=0.5717
+[DONE] heldout=C5 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.5829
+[DONE] heldout=C5 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 1.0, 'beta': 1.0} test_bAcc=0.4717
+[DONE] heldout=C5 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.01, 'beta': 1.0} test_bAcc=0.4519
+[DONE] heldout=C5 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6116
+[DONE] heldout=C5 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.4763
+[DONE] heldout=C5 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5817
+[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.5} test_bAcc=0.6452
+[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815
+[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.6908
+[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6457
+[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 1.0} test_bAcc=0.7099
+[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.6794
+[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815
+[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7167
+[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6212
+Saved complete held-out-center results: C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\results\seed17

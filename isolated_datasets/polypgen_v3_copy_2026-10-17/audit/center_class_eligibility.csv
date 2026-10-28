@@ -1,0 +1,7 @@
+center,negative_frames,positive_frames,sequences,negative_sequences,positive_sequences,fold_status
+C1,223,0,3,3,0,excluded_target_missing_class
+C2,51,449,2,1,2,ready
+C3,0,0,0,0,0,absent_from_verified_subset
+C4,1409,144,10,9,4,ready
+C5,782,199,4,4,1,ready
+C6,1863,324,18,18,8,ready

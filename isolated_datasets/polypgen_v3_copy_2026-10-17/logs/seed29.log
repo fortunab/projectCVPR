@@ -1,0 +1,42 @@
+Command: C:\Users\Lenovo\anaconda3\python.exe -u C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\code\run_cbmp.py --data-root C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\extracted\PolypGen2021_MultiCenterData_v3 --manifest C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\audit\manifest.csv --sequence-metadata C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\audit\reviewed_sequence_centers.csv --sequence-only --verified-sequences-only --model-name resnet18_imagenet1k_v1 --device cpu --batch-size 32 --workers 0 --threads 4 --feature-cache C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\features\resnet18_imagenet1k_v1.npz --results-dir C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\results\seed29 --seed 29
+Scope: Preliminary subset restricted to independently verified sequence-center mappings; not a complete-release evaluation
+Eligible held-out centers: ['C2', 'C4', 'C5', 'C6']
+Reused feature cache: C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\features\resnet18_imagenet1k_v1.npz
+[SKIP] C1: excluded_target_missing_class
+[DONE] heldout=C2 method=cbmp source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.8358
+[DONE] heldout=C2 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.1} test_bAcc=0.5740
+[DONE] heldout=C2 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 0.01, 'beta': 0.0} test_bAcc=0.5989
+[DONE] heldout=C2 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.0} test_bAcc=0.7770
+[DONE] heldout=C2 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6034
+[DONE] heldout=C2 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.5827
+[DONE] heldout=C2 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5871
+[DONE] heldout=C4 method=cbmp source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.5} test_bAcc=0.6708
+[DONE] heldout=C4 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 2, 'beta': 0.0} test_bAcc=0.6365
+[DONE] heldout=C4 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.7098
+[DONE] heldout=C4 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6639
+[DONE] heldout=C4 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} test_bAcc=0.6907
+[DONE] heldout=C4 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.0} test_bAcc=0.6029
+[DONE] heldout=C4 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6295
+[DONE] heldout=C4 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.6435
+[DONE] heldout=C4 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6265
+[DONE] heldout=C5 method=cbmp source-selected={'kind': 'prototype', 'k': 2, 'beta': 1.0} test_bAcc=0.4214
+[DONE] heldout=C5 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.0} test_bAcc=0.5211
+[DONE] heldout=C5 method=linear_logistic source-selected={'kind': 'linear', 'C': 1.0} test_bAcc=0.5717
+[DONE] heldout=C5 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.5823
+[DONE] heldout=C5 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 1.0, 'beta': 1.0} test_bAcc=0.4717
+[DONE] heldout=C5 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.01, 'beta': 1.0} test_bAcc=0.4512
+[DONE] heldout=C5 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6116
+[DONE] heldout=C5 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.4763
+[DONE] heldout=C5 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.5817
+[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6686
+[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6686
+[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.6908
+[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.6472
+[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 1.0} test_bAcc=0.7099
+[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.0} test_bAcc=0.6789
+[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815
+[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7167
+[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6212
+Saved complete held-out-center results: C:\Users\Lenovo\Documents\Codex\2026-10-14\https-github-com-fortunab-family-baselines\isolated_datasets\polypgen_v3_copy_2026-10-17\results\seed29

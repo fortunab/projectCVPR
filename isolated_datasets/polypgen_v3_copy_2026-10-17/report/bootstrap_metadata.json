@@ -1,0 +1,17 @@
+{
+  "attempted_draws": 2000,
+  "valid_draws": 1026,
+  "invalid_class_incomplete_draws": 974,
+  "invalid_draws_by_center_nonexclusive": {
+    "C2": 490,
+    "C4": 7,
+    "C5": 622,
+    "C6": 0
+  },
+  "seed": 2027,
+  "confidence_level": 0.95,
+  "resampling": "Whole recorded sequence groups within each fixed target center; identical multiplicities across methods and all head seeds",
+  "estimand": "Equal mean of held-out-center balanced accuracies, averaged across the three fixed trained head seeds",
+  "conditioning": "Class-complete draws across every target center; fixed trained heads and fixed reviewed subset; no model refitting",
+  "patient_independence_established": false
+}

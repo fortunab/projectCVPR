@@ -1,0 +1,108 @@
+{
+  "scope": "Preliminary reviewed-sequence subset of PolypGen v3, not complete-release evaluation",
+  "archive_sha256": "a22f956a9f0fc3f941927108a3de8217fc61f1944c7eda598536dbabc27dbff3",
+  "mask_rule": "intensity >127, at least one foreground pixel; matching boxes must agree",
+  "inventory_originals": 8037,
+  "inventory_status_counts": {
+    "excluded_no_sequence_group": 1535,
+    "excluded_annotation_error": 2,
+    "included_verified_sequence": 5444,
+    "excluded_conflicting_center_sources": 435,
+    "excluded_pending_annotation_review": 36,
+    "excluded_unresolved_center": 585
+  },
+  "annotation_errors": [
+    {
+      "relative_path": "data_C2/images_C2/EndoCV2021_001010.jpg",
+      "sequence_id": "",
+      "center": "C2",
+      "label": "",
+      "label_source": "",
+      "status": "excluded_annotation_error",
+      "annotation_error": "Mask/bounding-box presence disagreement"
+    },
+    {
+      "relative_path": "data_C3/images_C3/C3_EndoCV2021_00489].jpg",
+      "sequence_id": "",
+      "center": "C3",
+      "label": "",
+      "label_source": "",
+      "status": "excluded_annotation_error",
+      "annotation_error": "Missing annotation; absence of a file is not a negative label"
+    }
+  ],
+  "verified_sequences": 37,
+  "included_frames": 5444,
+  "eligible_heldout_centers": [
+    "C2",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "centers": [
+    {
+      "center": "C1",
+      "negative_frames": 223,
+      "positive_frames": 0,
+      "sequences": 3,
+      "negative_sequences": 3,
+      "positive_sequences": 0,
+      "fold_status": "excluded_target_missing_class"
+    },
+    {
+      "center": "C2",
+      "negative_frames": 51,
+      "positive_frames": 449,
+      "sequences": 2,
+      "negative_sequences": 1,
+      "positive_sequences": 2,
+      "fold_status": "ready"
+    },
+    {
+      "center": "C3",
+      "negative_frames": 0,
+      "positive_frames": 0,
+      "sequences": 0,
+      "negative_sequences": 0,
+      "positive_sequences": 0,
+      "fold_status": "absent_from_verified_subset"
+    },
+    {
+      "center": "C4",
+      "negative_frames": 1409,
+      "positive_frames": 144,
+      "sequences": 10,
+      "negative_sequences": 9,
+      "positive_sequences": 4,
+      "fold_status": "ready"
+    },
+    {
+      "center": "C5",
+      "negative_frames": 782,
+      "positive_frames": 199,
+      "sequences": 4,
+      "negative_sequences": 4,
+      "positive_sequences": 1,
+      "fold_status": "ready"
+    },
+    {
+      "center": "C6",
+      "negative_frames": 1863,
+      "positive_frames": 324,
+      "sequences": 18,
+      "negative_sequences": 18,
+      "positive_sequences": 8,
+      "fold_status": "ready"
+    }
+  ],
+  "limitations": [
+    "Patient identities are unavailable; video grouping does not establish patient independence.",
+    "Still images have center IDs but no documented sequence/patient grouping and are excluded.",
+    "Unresolved positive seq4,7,8,9,14,15 and disputed seq11,seq7_neg are excluded.",
+    "seq1 is excluded pending annotation-quality review; all current masks and boxes label its36frames negative.",
+    "C2 negatives occur in only one sequence; C5 positives occur in only one sequence.",
+    "Center C1 is negative-only in this subset and is source-only; C3 is absent.",
+    "Current draft experiments use cached ImageNet ResNet18, not DINOv2 or an adapted encoder."
+  ],
+  "metadata_sha256": "ac622dc38b81a7e0edd2f06f5e505d77ad53e8ca82b6b7c183ad78b8c0ee2eb6"
+}
