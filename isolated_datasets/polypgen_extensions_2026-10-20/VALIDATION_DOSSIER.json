@@ -1,0 +1,292 @@
+{
+  "timestamp_generated": "2026-10-21T16:16:33.429077",
+  "cryptographic_audits": {
+    "polypgen_raw_zip_sha256": "a22f956a9f0fc3f941927108a3de8217fc61f1944c7eda598536dbabc27dbff3",
+    "polypgen_cohort": {
+      "total_samples": 5444,
+      "total_sequences": 37,
+      "target_centers": [
+        "C2",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "source_only_centers": [
+        "C1"
+      ],
+      "excluded_centers": [
+        "C3 (no masks / absent)"
+      ],
+      "zero_cross_center_content_duplicates": true,
+      "zero_cross_center_sequence_overlap": true
+    },
+    "camelyon17_cohort": {
+      "total_patches": 17200,
+      "total_patients": 43,
+      "max_patches_per_patient": 400,
+      "source_hospitals": [
+        0,
+        3,
+        4
+      ],
+      "target_hospitals": [
+        2,
+        1
+      ],
+      "shards_count": 0,
+      "all_shards_git_lfs_sha256_verified": true,
+      "zero_duplicate_patch_hashes": true
+    },
+    "frozen_encoders": {
+      "resnet18_weights_sha256": "f37072fd4a180120... (Torchvision Official ImageNet1K V1)",
+      "dinov2_vit_b14_revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+      "dinov2_safetensors_verified": true
+    },
+    "preservation_proof": {
+      "total_earlier_files_monitored": 51107,
+      "earlier_artifacts_verified": 1140,
+      "modified_files": 0,
+      "status_unchanged": true
+    },
+    "total_indexed_experiment_artifacts": 0
+  },
+  "execution_logs": {
+    "isolated_datasets/polypgen_v3_copy_2026-10-17/logs/dry_run.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_v3_copy_2026-10-17\\logs\\dry_run.log",
+      "size_bytes": 1462,
+      "modified_iso": "2026-10-17T15:49:11.080282",
+      "total_lines": 4,
+      "last_lines": [
+        "Command: C:\\Users\\Lenovo\\anaconda3\\python.exe -u C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\code\\run_cbmp.py --data-root C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\extracted\\PolypGen2021_MultiCenterData_v3 --manifest C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\audit\\manifest.csv --sequence-metadata C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\audit\\reviewed_sequence_centers.csv --sequence-only --verified-sequences-only --model-name resnet18_imagenet1k_v1 --device cpu --batch-size 32 --workers 0 --threads 4 --feature-cache C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\features\\resnet18_imagenet1k_v1.npz --results-dir C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\plan --seed 17 --dry-run",
+        "Scope: Preliminary subset restricted to independently verified sequence-center mappings; not a complete-release evaluation",
+        "Eligible held-out centers: ['C2', 'C4', 'C5', 'C6']",
+        "Dry run complete; no encoder extraction or classifier fitting."
+      ]
+    },
+    "isolated_datasets/polypgen_v3_copy_2026-10-17/logs/seed17.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_v3_copy_2026-10-17\\logs\\seed17.log",
+      "size_bytes": 8692,
+      "modified_iso": "2026-10-17T15:59:01.887241",
+      "total_lines": 72,
+      "last_lines": [
+        "[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 4, 'beta': 0.5} test_bAcc=0.6452",
+        "[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815",
+        "[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.6908",
+        "[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6457",
+        "[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 1.0} test_bAcc=0.7099",
+        "[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.6794",
+        "[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815",
+        "[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7167",
+        "[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6212",
+        "Saved complete held-out-center results: C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed17"
+      ]
+    },
+    "isolated_datasets/polypgen_v3_copy_2026-10-17/logs/seed29.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_v3_copy_2026-10-17\\logs\\seed29.log",
+      "size_bytes": 6446,
+      "modified_iso": "2026-10-17T16:03:39.795484",
+      "total_lines": 42,
+      "last_lines": [
+        "[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6686",
+        "[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6686",
+        "[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.6908",
+        "[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.01} test_bAcc=0.6472",
+        "[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 1.0} test_bAcc=0.7099",
+        "[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 0.0} test_bAcc=0.6789",
+        "[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815",
+        "[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7167",
+        "[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6212",
+        "Saved complete held-out-center results: C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed29"
+      ]
+    },
+    "isolated_datasets/polypgen_v3_copy_2026-10-17/logs/seed43.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_v3_copy_2026-10-17\\logs\\seed43.log",
+      "size_bytes": 6447,
+      "modified_iso": "2026-10-17T16:08:27.134230",
+      "total_lines": 42,
+      "last_lines": [
+        "[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6485",
+        "[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 8, 'beta': 0.0} test_bAcc=0.6485",
+        "[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 100.0} test_bAcc=0.6908",
+        "[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.6457",
+        "[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 1.0} test_bAcc=0.7099",
+        "[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.03, 'beta': 0.0} test_bAcc=0.6794",
+        "[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.6815",
+        "[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7167",
+        "[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.6212",
+        "Saved complete held-out-center results: C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-14\\https-github-com-fortunab-family-baselines\\isolated_datasets\\polypgen_v3_copy_2026-10-17\\results\\seed43"
+      ]
+    },
+    "isolated_datasets/polypgen_followups_2026-10-17/exp1_failure/processing.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_followups_2026-10-17\\exp1_failure\\processing.log",
+      "size_bytes": 12121,
+      "modified_iso": "2026-10-17T17:23:25.903039",
+      "total_lines": 109,
+      "last_lines": [
+        "[DONE] exp1 seed=43 center=C6 method=cbmp threshold=-0.0221443 source_ba=0.6398 seconds=4.6",
+        "[DONE] exp1 seed=43 center=C6 method=multi_prototype_unbalanced threshold=-0.0221443 source_ba=0.6398 seconds=0.1",
+        "[DONE] exp1 seed=43 center=C6 method=linear_logistic threshold=-0.841738 source_ba=0.6949 seconds=0.3",
+        "[DONE] exp1 seed=43 center=C6 method=trainable_cosine threshold=-0.000856366 source_ba=0.6453 seconds=4.0",
+        "[DONE] exp1 seed=43 center=C6 method=linear_group_center_weighted threshold=-0.460438 source_ba=0.7047 seconds=0.4",
+        "[DONE] exp1 seed=43 center=C6 method=cosine_group_center_weighted threshold=0.020348 source_ba=0.6757 seconds=4.0",
+        "[DONE] exp1 seed=43 center=C6 method=single_centroid_group_weighted threshold=0.00347365 source_ba=0.6178 seconds=0.4",
+        "[DONE] exp1 seed=43 center=C6 method=single_centroid_center_balanced threshold=0.0100878 source_ba=0.5595 seconds=0.4",
+        "[DONE] exp1 seed=43 center=C6 method=single_centroid_image_weighted threshold=-0.0055584 source_ba=0.6013 seconds=0.5",
+        "Experiment 1 complete in 192.6 seconds"
+      ]
+    },
+    "isolated_datasets/polypgen_followups_2026-10-17/logs/exp2_factorial.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_followups_2026-10-17\\logs\\exp2_factorial.log",
+      "size_bytes": 2994,
+      "modified_iso": "2026-10-17T17:24:10.081153",
+      "total_lines": 50,
+      "last_lines": [
+        "[EXP2] seed=43 target=C4 D_K4_beta1 BA=0.6611 AUC=0.7910",
+        "[EXP2] seed=43 target=C5 A_K1_beta0 BA=0.6116 AUC=0.6524",
+        "[EXP2] seed=43 target=C5 B_K1_beta1 BA=0.4763 AUC=0.3866",
+        "[EXP2] seed=43 target=C5 C_K4_beta0 BA=0.5306 AUC=0.6045",
+        "[EXP2] seed=43 target=C5 D_K4_beta1 BA=0.5174 AUC=0.5203",
+        "[EXP2] seed=43 target=C6 A_K1_beta0 BA=0.6815 AUC=0.8764",
+        "[EXP2] seed=43 target=C6 B_K1_beta1 BA=0.7167 AUC=0.8825",
+        "[EXP2] seed=43 target=C6 C_K4_beta0 BA=0.6313 AUC=0.8392",
+        "[EXP2] seed=43 target=C6 D_K4_beta1 BA=0.6991 AUC=0.8339",
+        "[EXP2] COMPLETE"
+      ]
+    },
+    "isolated_datasets/polypgen_followups_2026-10-17/logs/exp3_stress.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_followups_2026-10-17\\logs\\exp3_stress.log",
+      "size_bytes": 27401,
+      "modified_iso": "2026-10-17T17:35:47.844901",
+      "total_lines": 339,
+      "last_lines": [
+        "DONE C6_f025_composition_s307 single_centroid_group_weighted bAcc=0.6425",
+        "PROGRESS 47/48; elapsed=874.3s cache={'unique_fits': 3854, 'fit_cache_hits': 1363, 'score_cache_hits': 705, 'cached_models': 3854, 'cached_source_score_arrays': 4935}",
+        "DONE C6_f025_matched_scarcity_s307 cbmp bAcc=0.7495",
+        "DONE C6_f025_matched_scarcity_s307 multi_prototype_unbalanced bAcc=0.6713",
+        "DONE C6_f025_matched_scarcity_s307 linear_logistic bAcc=0.6928",
+        "DONE C6_f025_matched_scarcity_s307 trainable_cosine bAcc=0.6747",
+        "DONE C6_f025_matched_scarcity_s307 linear_group_center_weighted bAcc=0.6960",
+        "DONE C6_f025_matched_scarcity_s307 single_centroid_group_weighted bAcc=0.7071",
+        "PROGRESS 48/48; elapsed=881.6s cache={'unique_fits': 3930, 'fit_cache_hits': 1398, 'score_cache_hits': 720, 'cached_models': 3930, 'cached_source_score_arrays': 5040}",
+        "Experiment3 complete"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/logs/processing.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\exp4_dinov2\\logs\\processing.log",
+      "size_bytes": 14724,
+      "modified_iso": "2026-10-20T20:16:52.375388",
+      "total_lines": 166,
+      "last_lines": [
+        "[FACTORIAL] seed=43 target=C4 D_K4_beta1 BA=0.6103",
+        "[FACTORIAL] seed=43 target=C5 A_K1_beta0 BA=0.5387",
+        "[FACTORIAL] seed=43 target=C5 B_K1_beta1 BA=0.5153",
+        "[FACTORIAL] seed=43 target=C5 C_K4_beta0 BA=0.7619",
+        "[FACTORIAL] seed=43 target=C5 D_K4_beta1 BA=0.5196",
+        "[FACTORIAL] seed=43 target=C6 A_K1_beta0 BA=0.7770",
+        "[FACTORIAL] seed=43 target=C6 B_K1_beta1 BA=0.7220",
+        "[FACTORIAL] seed=43 target=C6 C_K4_beta0 BA=0.7592",
+        "[FACTORIAL] seed=43 target=C6 D_K4_beta1 BA=0.7770",
+        "[EXP4] FITS COMPLETE"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/logs/parallel_seed43.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\exp4_dinov2\\logs\\parallel_seed43.log",
+      "size_bytes": 4815,
+      "modified_iso": "2026-10-20T20:09:22.211579",
+      "total_lines": 40,
+      "last_lines": [
+        "[DONE] heldout=C6 method=cbmp source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770",
+        "[DONE] heldout=C6 method=multi_prototype_unbalanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770",
+        "[DONE] heldout=C6 method=linear_logistic source-selected={'kind': 'linear', 'C': 10.0} test_bAcc=0.7006",
+        "[DONE] heldout=C6 method=trainable_cosine source-selected={'kind': 'cosine', 'learning_rate': 0.03} test_bAcc=0.7099",
+        "[DONE] heldout=C6 method=linear_group_center_weighted source-selected={'kind': 'linear', 'C': 100.0, 'beta': 0.5} test_bAcc=0.6973",
+        "[DONE] heldout=C6 method=cosine_group_center_weighted source-selected={'kind': 'cosine', 'learning_rate': 0.1, 'beta': 1.0} test_bAcc=0.6522",
+        "[DONE] heldout=C6 method=single_centroid_group_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0} test_bAcc=0.7770",
+        "[DONE] heldout=C6 method=single_centroid_center_balanced source-selected={'kind': 'prototype', 'k': 1, 'beta': 1.0} test_bAcc=0.7220",
+        "[DONE] heldout=C6 method=single_centroid_image_weighted source-selected={'kind': 'prototype', 'k': 1, 'beta': 0.0, 'image_weighted': True} test_bAcc=0.7405",
+        "[WORKER] seed43 COMPLETE"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/exp4_dinov2/logs/report.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\exp4_dinov2\\logs\\report.log",
+      "size_bytes": 18406,
+      "modified_iso": "2026-10-20T20:17:10.960411",
+      "total_lines": 428,
+      "last_lines": [
+        "      \"mean_center_auroc\": 0.6317757401150035,",
+        "      \"mean_center_macro_f1\": 0.5634019042369938,",
+        "      \"optimization_seed_sd\": 0.007183096305040273,",
+        "      \"conditional_ci_low\": 0.5269885731876734,",
+        "      \"conditional_ci_high\": 0.7025537423227681,",
+        "      \"conditional_worst_ci_low\": 0.3229405211780858,",
+        "      \"conditional_worst_ci_high\": 0.5998948993332677",
+        "    }",
+        "  ]",
+        "}"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/exp5_camelyon/run.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\exp5_camelyon\\run.log",
+      "size_bytes": 8397,
+      "modified_iso": "2026-10-20T20:11:54.490920",
+      "total_lines": 113,
+      "last_lines": [
+        "[TARGET] seed43 linear_group_center_weighted hospital1 BA=0.8267",
+        "[TARGET] seed43 cosine_group_center_weighted hospital2 BA=0.8604",
+        "[TARGET] seed43 cosine_group_center_weighted hospital1 BA=0.8186",
+        "[TARGET] seed43 single_centroid_group_weighted hospital2 BA=0.7342",
+        "[TARGET] seed43 single_centroid_group_weighted hospital1 BA=0.7455",
+        "[TARGET] seed43 single_centroid_center_balanced hospital2 BA=0.7521",
+        "[TARGET] seed43 single_centroid_center_balanced hospital1 BA=0.7511",
+        "[TARGET] seed43 single_centroid_image_weighted hospital2 BA=0.8252",
+        "[TARGET] seed43 single_centroid_image_weighted hospital1 BA=0.7548",
+        "[EXP5] ALL54 TARGET RECORDS COMPLETE; report separately"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/exp5_camelyon/test_validation.log": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\exp5_camelyon\\test_validation.log",
+      "size_bytes": 2863,
+      "modified_iso": "2026-10-20T19:35:06.445746",
+      "total_lines": 30,
+      "last_lines": [
+        "test_unused_id_validation_excluded (test_exp5_camelyon.ProspectiveSampling.test_unused_id_validation_excluded) ... ok",
+        "test_class_incomplete_auc_undefined (test_exp5_report.PatientBootstrapNumerics.test_class_incomplete_auc_undefined) ... ok",
+        "test_exact_weighted_tie_auc (test_exp5_report.PatientBootstrapNumerics.test_exact_weighted_tie_auc) ... ok",
+        "test_patient_bootstrap_all_ones_reconstructs_mean_seed_metrics (test_exp5_report.PatientBootstrapNumerics.test_patient_bootstrap_all_ones_reconstructs_mean_seed_metrics) ... ok",
+        "test_patient_draw_duplicates_whole_patient (test_exp5_report.PatientBootstrapNumerics.test_patient_draw_duplicates_whole_patient) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 25 tests in 7.232s",
+        "",
+        "OK"
+      ]
+    },
+    "isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/observed_environment_pip_check.txt": {
+      "exists": true,
+      "path": "isolated_datasets\\polypgen_extensions_2026-10-20\\reproducibility\\environment\\observed_environment_pip_check.txt",
+      "size_bytes": 560,
+      "modified_iso": "2026-10-20T19:55:48.698938",
+      "total_lines": 6,
+      "last_lines": [
+        "googleapis-common-protos 1.75.2 has requirement protobuf<8.0.0,>=6.33.5, but you have protobuf 5.29.6.",
+        "grpcio-health-checking 1.81.1 has requirement protobuf<7.0.0,>=6.33.5, but you have protobuf 5.29.6.",
+        "opencv-python 5.0.0.93 has requirement numpy>=2; python_version >= \"3.9\", but you have numpy 1.26.4.",
+        "pyopenssl 24.2.1 has requirement cryptography<44,>=41.0.5, but you have cryptography 46.0.7.",
+        "streamlit 1.37.1 has requirement pandas<3,>=1.3.0, but you have pandas 3.0.5.",
+        "streamlit 1.37.1 has requirement rich<14,>=10.14.0, but you have rich 14.3.4."
+      ]
+    }
+  }
+}

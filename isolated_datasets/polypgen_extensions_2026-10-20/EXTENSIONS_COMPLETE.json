@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "main_second_encoder_evaluations": 108,
+  "second_encoder_factorial_evaluations": 48,
+  "independent_hospital_evaluations": 54,
+  "selected_camelyon_patches": 17200,
+  "selected_camelyon_patients": 43,
+  "previous_project_files_unchanged": true,
+  "indexed_artifacts": 413,
+  "artifacts_manifest_sha256": "38e2b9c60c203c4ae4f49b015e144c1536072b93c9c27eae969af156266d85b4",
+  "combined_report_sha256": "8b3a7a603e640bfd9001ac139230959342886cd929585b1c797a392942b600f0"
+}
