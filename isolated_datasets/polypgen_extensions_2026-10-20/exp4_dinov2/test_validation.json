@@ -1,0 +1,19 @@
+{
+  "checks_passed": 16,
+  "runs": [
+    {
+      "command": "python -m pytest -q test_exp4_dinov2.py",
+      "passed": 12,
+      "seconds": 7.53
+    },
+    {
+      "command": "python -m pytest -q test_exp4_report.py",
+      "passed": 4,
+      "seconds": 8.21
+    }
+  ],
+  "test_source_sha256": {
+    "test_exp4_dinov2.py": "31a9d5c676d1c8a84aa5edbcf3588ebf43cceaf6f34e05918c7f74e5eea68d47",
+    "test_exp4_report.py": "d51b0f3945dabd9a590c67664d125a4a51ff5589f34130f46148549af93330bc"
+  }
+}

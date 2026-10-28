@@ -1,0 +1,86 @@
+{
+  "feature_schema": "dinov2_paired_v1",
+  "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+  "model_id": "facebook/dinov2-base",
+  "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "checkpoint_sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+  "config_sha256": "f7ff4cfa73d2f70647dbf6950541ad25d73082d54c2e7e9bded160c7656b2a70",
+  "processor_config_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+  "processor_config": {
+    "crop_size": {
+      "height": 224,
+      "width": 224
+    },
+    "do_center_crop": true,
+    "do_convert_rgb": true,
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "BitImageProcessor",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resample": 3,
+    "rescale_factor": 0.00392156862745098,
+    "size": {
+      "shortest_edge": 256
+    }
+  },
+  "processor_class_policy": "AutoImageProcessor,use_fast=False,local_files_only=True",
+  "representation": "Dinov2Model.pooler_output: final layer-normalized CLS,768 dimensions; verified equal to last_hidden_state[:,0]",
+  "normalized_features": true,
+  "precision": "float32",
+  "eval_mode": true,
+  "requires_grad": false,
+  "image_mode": "PIL RGB",
+  "device": "cpu",
+  "torch": "2.13.0+cpu",
+  "transformers": "5.14.1",
+  "processor_resolved": {
+    "crop_size": {
+      "height": 224,
+      "width": 224
+    },
+    "do_center_crop": true,
+    "do_convert_rgb": true,
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "BitImageProcessor",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resample": 3,
+    "rescale_factor": 0.00392156862745098,
+    "size": {
+      "shortest_edge": 256
+    }
+  },
+  "benchmark": {
+    "batch_size": 16,
+    "pixel_shape": [
+      16,
+      3,
+      224,
+      224
+    ],
+    "seconds": 6.532833600009326,
+    "estimated_extraction_seconds": 2222.796632403173,
+    "deterministic_repeated_output": true,
+    "threads": 4
+  }
+}

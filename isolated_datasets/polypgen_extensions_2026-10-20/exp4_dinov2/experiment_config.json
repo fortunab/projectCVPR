@@ -1,0 +1,361 @@
+{
+  "encoder": {
+    "feature_schema": "dinov2_paired_v1",
+    "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+    "model_id": "facebook/dinov2-base",
+    "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+    "checkpoint_sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+    "config_sha256": "f7ff4cfa73d2f70647dbf6950541ad25d73082d54c2e7e9bded160c7656b2a70",
+    "processor_config_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "processor_config": {
+      "crop_size": {
+        "height": 224,
+        "width": 224
+      },
+      "do_center_crop": true,
+      "do_convert_rgb": true,
+      "do_normalize": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "BitImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "shortest_edge": 256
+      }
+    },
+    "processor_class_policy": "AutoImageProcessor,use_fast=False,local_files_only=True",
+    "representation": "Dinov2Model.pooler_output: final layer-normalized CLS,768 dimensions; verified equal to last_hidden_state[:,0]",
+    "normalized_features": true,
+    "precision": "float32",
+    "eval_mode": true,
+    "requires_grad": false,
+    "image_mode": "PIL RGB",
+    "device": "cpu",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.14.1"
+  },
+  "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+  "n_frames": 5444,
+  "n_sequences": 37,
+  "target_centers": [
+    "C2",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "candidate_methods": {
+    "cbmp": [
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 0.5
+      },
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 1.0
+      },
+      {
+        "kind": "prototype",
+        "k": 2,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 2,
+        "beta": 0.5
+      },
+      {
+        "kind": "prototype",
+        "k": 2,
+        "beta": 1.0
+      },
+      {
+        "kind": "prototype",
+        "k": 4,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 4,
+        "beta": 0.5
+      },
+      {
+        "kind": "prototype",
+        "k": 4,
+        "beta": 1.0
+      },
+      {
+        "kind": "prototype",
+        "k": 8,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 8,
+        "beta": 0.5
+      },
+      {
+        "kind": "prototype",
+        "k": 8,
+        "beta": 1.0
+      }
+    ],
+    "multi_prototype_unbalanced": [
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 2,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 4,
+        "beta": 0.0
+      },
+      {
+        "kind": "prototype",
+        "k": 8,
+        "beta": 0.0
+      }
+    ],
+    "linear_logistic": [
+      {
+        "kind": "linear",
+        "C": 0.01
+      },
+      {
+        "kind": "linear",
+        "C": 0.1
+      },
+      {
+        "kind": "linear",
+        "C": 1.0
+      },
+      {
+        "kind": "linear",
+        "C": 10.0
+      },
+      {
+        "kind": "linear",
+        "C": 100.0
+      }
+    ],
+    "trainable_cosine": [
+      {
+        "kind": "cosine",
+        "learning_rate": 0.01
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.03
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.1
+      }
+    ],
+    "linear_group_center_weighted": [
+      {
+        "kind": "linear",
+        "C": 0.01,
+        "beta": 0.0
+      },
+      {
+        "kind": "linear",
+        "C": 0.1,
+        "beta": 0.0
+      },
+      {
+        "kind": "linear",
+        "C": 1.0,
+        "beta": 0.0
+      },
+      {
+        "kind": "linear",
+        "C": 10.0,
+        "beta": 0.0
+      },
+      {
+        "kind": "linear",
+        "C": 100.0,
+        "beta": 0.0
+      },
+      {
+        "kind": "linear",
+        "C": 0.01,
+        "beta": 0.5
+      },
+      {
+        "kind": "linear",
+        "C": 0.1,
+        "beta": 0.5
+      },
+      {
+        "kind": "linear",
+        "C": 1.0,
+        "beta": 0.5
+      },
+      {
+        "kind": "linear",
+        "C": 10.0,
+        "beta": 0.5
+      },
+      {
+        "kind": "linear",
+        "C": 100.0,
+        "beta": 0.5
+      },
+      {
+        "kind": "linear",
+        "C": 0.01,
+        "beta": 1.0
+      },
+      {
+        "kind": "linear",
+        "C": 0.1,
+        "beta": 1.0
+      },
+      {
+        "kind": "linear",
+        "C": 1.0,
+        "beta": 1.0
+      },
+      {
+        "kind": "linear",
+        "C": 10.0,
+        "beta": 1.0
+      },
+      {
+        "kind": "linear",
+        "C": 100.0,
+        "beta": 1.0
+      }
+    ],
+    "cosine_group_center_weighted": [
+      {
+        "kind": "cosine",
+        "learning_rate": 0.01,
+        "beta": 0.0
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.03,
+        "beta": 0.0
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.1,
+        "beta": 0.0
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.01,
+        "beta": 0.5
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.03,
+        "beta": 0.5
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.1,
+        "beta": 0.5
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.01,
+        "beta": 1.0
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.03,
+        "beta": 1.0
+      },
+      {
+        "kind": "cosine",
+        "learning_rate": 0.1,
+        "beta": 1.0
+      }
+    ],
+    "single_centroid_group_weighted": [
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 0.0
+      }
+    ],
+    "single_centroid_center_balanced": [
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 1.0
+      }
+    ],
+    "single_centroid_image_weighted": [
+      {
+        "kind": "prototype",
+        "k": 1,
+        "beta": 0.0,
+        "image_weighted": true
+      }
+    ]
+  },
+  "factorial_cells": [
+    [
+      "A_K1_beta0",
+      1,
+      0.0
+    ],
+    [
+      "B_K1_beta1",
+      1,
+      1.0
+    ],
+    [
+      "C_K4_beta0",
+      4,
+      0.0
+    ],
+    [
+      "D_K4_beta1",
+      4,
+      1.0
+    ]
+  ],
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "batch_size": 16,
+  "head_threads": 4,
+  "encoder_threads": 8,
+  "workers": 0,
+  "scope": "Exploratory paired encoder replication on reviewed partial PolypGen sequence subset; patient independence unverified",
+  "source_selection": "unchanged copied evaluate_loco implementation and original exact outer/inner splits",
+  "feature_extraction_independent_of_labels": true,
+  "source_code_sha256": "91e7ee504b353baf93e371a9c873497dc0d94662b0ff36b22b627d66fbcb88d6"
+}

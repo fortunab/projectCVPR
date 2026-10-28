@@ -1,0 +1,8 @@
+{
+  "main_evaluations": 108,
+  "factorial_evaluations": 48,
+  "elapsed_seconds": 2990.276585799991,
+  "manifest_digest": "8a0b340e84aa28bab4d96011a38fc985d896291586b95afb4d67a2843cee5e44",
+  "protocol_sha256": "a819fc57228fb9be05f3a5b1be1b8a0cdc4b7a85a208fc878801572318e5ae28",
+  "complete": true
+}

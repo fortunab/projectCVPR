@@ -1,0 +1,42 @@
+{
+  "benchmark": [
+    {
+      "threads": 4,
+      "batch_size": 16,
+      "timed_seconds": 4.681283399986569,
+      "images_per_second": 3.4178661347539663,
+      "images": 5444,
+      "estimated_full_forward_seconds": 1592.80667684543
+    },
+    {
+      "threads": 8,
+      "batch_size": 16,
+      "timed_seconds": 2.511011900001904,
+      "images_per_second": 6.371933163673126,
+      "images": 5444,
+      "estimated_full_forward_seconds": 854.3717989756478
+    },
+    {
+      "threads": 4,
+      "batch_size": 32,
+      "timed_seconds": 9.039937099994859,
+      "images_per_second": 3.5398476389861386,
+      "images": 5444,
+      "estimated_full_forward_seconds": 1537.9192991366253
+    },
+    {
+      "threads": 8,
+      "batch_size": 32,
+      "timed_seconds": 5.35084490000736,
+      "images_per_second": 5.980363960830931,
+      "images": 5444,
+      "estimated_full_forward_seconds": 910.3124886137521
+    }
+  ],
+  "selected_threads": 8,
+  "selected_batch_size": 16,
+  "head_threads": 4,
+  "policy": "Fixed first32 manifest images, same pinned preprocessing/checkpoint; warmup then one measured forward per resource cell; select throughput,preferoriginal4threads/batch16ifimprovementbelow5percent; no labels used, head fitting fixed4threads.",
+  "workers": 0,
+  "feature_precision": "float32"
+}
