@@ -4,7 +4,7 @@ This README documents the verified PolypGen baseline, follow-ups 1-3, DINOv2 exp
 
 The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. The existing root `.venv-cbmp` currently contains torch 2.14.1+cpu; that is a different software condition. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
 
-## Results and provenance for the Overleaf draft
+## Results and provenance for the paper content
 
 The result text, tables, and native TikZ charts in `outputs/introduction.tex` were assembled from the saved experiment reports below. LaTeX does not load these files automatically; the values in the manuscript were transcribed from the reports.
 
