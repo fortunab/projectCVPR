@@ -6,7 +6,7 @@ The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.2
 
 ## Results and provenance for the paper content
 
-The result text, tables, and native TikZ charts in `outputs/introduction.tex` were assembled from the saved experiment reports below. LaTeX does not load these files automatically; the values in the manuscript were transcribed from the reports.
+The result text, tables, and native TikZ charts were assembled from the saved experiment reports below. 
 
 - **PolypGen / ResNet18:** raw per-example predictions are in `isolated_datasets/polypgen_v3_copy_2026-10-17/results/seed{17,29,43}/predictions.csv`. The report summaries are `.../report/summary_metrics.csv` and `.../report/per_center_metrics.csv`; run logs are `.../logs/seed17.log`, `seed29.log`, and `seed43.log`.
 - **PolypGen follow-ups:** threshold control: `isolated_datasets/polypgen_followups_2026-10-17/exp1_failure/summary.json`; factorial: `.../exp2_factorial/summary_metrics.csv`; source-composition stress: `.../exp3_stress/summary.csv`. Interpretation and caveats are in the `RESULTS.md` files under each follow-up directory; run logs are `.../exp1_failure/processing.log`, `.../logs/exp2_factorial.log`, and `.../logs/exp3_stress.log`.
