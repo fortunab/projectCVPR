@@ -2,7 +2,7 @@
 
 This README documents the verified PolypGen baseline, follow-ups 1-3, DINOv2 experiment 4, and CAMELYON17 experiment 5.
 
-The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. The existing root `.venv-cbmp` currently contains torch 2.14.1+cpu; that is a different software condition. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
+The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. The existing root `venv-cbmp` currently contains torch 2.14.1+cpu; that is a different software condition. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
 
 ## Results and provenance for the paper content
 
@@ -26,11 +26,11 @@ PowerShell:
 ```powershell
 Set-Location 'C:\Users\your_path'
 # Activation is optional; direct invocation also works when scripts are restricted.
-$Python = (Resolve-Path '.\.venv-cbmp\Scripts\python.exe').Path
+$Python = (Resolve-Path '.\venv-cbmp\Scripts\python.exe').Path
 & $Python --version
 & $Python -B .\scripts\check_environment.py
 # Optional activation:
-. .\.venv-cbmp\Scripts\Activate.ps1
+. .\venv-cbmp\Scripts\Activate.ps1
 # Leave an activated venv with: deactivate
 ```
 
@@ -41,7 +41,7 @@ Bash on Linux/WSL:
 cd /mnt/c/Users/your_path
 # Native Linux or a different checkout: replace this with that checkout's path.
 # A Windows venv cannot be reused on Linux: create a Linux venv first.
-source .venv-cbmp/bin/activate
+source venv-cbmp/bin/activate
 python --version
 python -B scripts/check_environment.py
 # Leave with: deactivate
@@ -54,16 +54,16 @@ Strict checking is expected to reject the existing torch 2.14 environment. Use a
 ```powershell
 Set-Location 'C:\Users\your_path'
 # This selects the available Python 3.12 installation on this computer.
-& 'C:\Users\Lenovo\anaconda3\python.exe' -m venv .venv-cbmp-reference
-$Python = (Resolve-Path '.\.venv-cbmp-reference\Scripts\python.exe').Path
+& 'C:\Users\Lenovo\anaconda3\python.exe' -m venv venv-cbmp-reference
+$Python = (Resolve-Path '.\venv-cbmp-reference\Scripts\python.exe').Path
 ```
 
-On another computer, replace the base interpreter with its Python 3.12 executable, or use `py -3.12 -m venv .venv-cbmp-reference`. Optional activation: `. .\.venv-cbmp-reference\Scripts\Activate.ps1`.
+On another computer, replace the base interpreter with its Python 3.12 executable, or use `py -3.12 -m venv venv-cbmp-reference`. Optional activation: `. .\venv-cbmp-reference\Scripts\Activate.ps1`.
 
 The automated equivalent, including the pinned installation in section 2, is:
 
 ```powershell
-.\setup_venv.ps1 -PythonExecutable 'C:\Users\Lenovo\anaconda3\python.exe' -VenvPath "$PWD\.venv-cbmp-reference"
+.\setup_venv.ps1 -PythonExecutable 'C:\Users\Lenovo\anaconda3\python.exe' -VenvPath "$PWD\venv-cbmp-reference"
 ```
 
 If local policy blocks script execution, use the explicit Python commands; there is no need to change a machine-wide execution policy.
@@ -74,14 +74,14 @@ If local policy blocks script execution, use the explicit Python commands; there
 # WSL on the same Windows computer:
 cd /mnt/c/Users/your_path
 # Native Linux or a different checkout: replace this with that checkout's path.
-python3.12 -m venv .venv-cbmp-reference
-source .venv-cbmp-reference/bin/activate
+python3.12 -m venv venv-cbmp-reference
+source venv-cbmp-reference/bin/activate
 ```
 
 The automated equivalent is:
 
 ```bash
-CBMP_VENV_DIR="$PWD/.venv-cbmp-reference" bash setup_venv.sh
+CBMP_VENV_DIR="$PWD/venv-cbmp-reference" bash setup_venv.sh
 ```
 
 These commands target 64-bit Linux/WSL x86_64 with Python 3.12 and CPU wheels. Linux installation/full raw-data execution has not been validated on this Windows host. On Ubuntu, a missing venv module requires the matching `python3.12-venv` system package. macOS/ARM is not claimed as a tested CPU-wheel target.
