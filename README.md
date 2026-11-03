@@ -2,7 +2,7 @@
 
 This README documents the verified PolypGen baseline, follow-ups 1-3, DINOv2 experiment 4, and CAMELYON17 experiment 5.
 
-The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. The existing root `venv-cbmp` currently contains torch 2.14.1+cpu; that is a different software condition. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
+The reference experiments use **Python 3.12.3, torch 2.13.0+cpu, torchvision 0.28.0+cpu, NumPy 1.26.4 and scikit-learn 1.5.1**. Package pins are under `isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/environment/`. Historical Windows environments may contain torch 2.14.1+cpu; that is a different software condition from the recorded torch 2.13.0 reference. A version-drift flag records permission to use different software; it does not establish numerical equivalence.
 
 ## Results and provenance for the paper content
 
@@ -15,6 +15,82 @@ The result text, tables, and native TikZ charts were assembled from the saved ex
 
 For the final cross-check, see `outputs/revision_2026-10-23/generated_results/verification.json`. It records prediction-file hashes and confirms that point metrics were recomputed from the saved predictions. The generated table snapshots are in the same directory: `table_polypgen.tex`, `table_factorial.tex`, and `table_camelyon.tex`. The TikZ graphs are coded inline in `outputs/introduction.tex`; their coordinates and labels are transcribed from the corresponding summaries. `work/cbmp_smoke_run/` and `outputs/histology_pilot/` contain smoke-test and pilot artifacts, not the final paper results.
 
+## Start here: repository, operating system, and reproduction level
+
+This repository supports a controlled comparison of CBMP with linear, cosine, and centroid heads. CBMP is the implementation used in this study; the results do not establish a consistent advantage over learned classifiers. The experiments freeze the image encoder and select settings from source data.
+
+Clone the existing project, then run commands **from its root directory**:
+
+```bash
+git clone https://github.com/fortunab/projectCVPR.git
+cd projectCVPR
+git rev-parse HEAD
+```
+
+The same `git clone`, `cd`, and revision command work in PowerShell. Record the commit SHA with each run. If the repository is already cloned, use that checkout and record its revision before changing files.
+
+**Platform assumptions.** The Bash instructions target native Linux or WSL2, x86_64, with Python 3.12 and CPU PyTorch. The recorded reference interpreter was Python **3.12.3**. The checker accepts the Python 3.12 family and compares package versions; it does not enforce the Python patch version, CPU/JPEG/BLAS build, or numerical equality. Record those separately. No fresh Linux installation or full Linux reconstruction was performed for this documentation update. Windows venv directories included in a checkout cannot be activated on Linux: create a new OS-specific environment.
+
+| Goal | Command family | Inputs needed | What is checked |
+|---|---|---|---|
+| Check the paper's point estimates | `verify` / `reports` | Saved prediction CSVs and summaries already in the checkout | BA/AUROC, paired support, expected evaluation grid, hashes |
+| Recompute prediction-level reports | `level1` | Saved predictions | Group bootstrap, metrics, tables, figures; no fitting |
+| Refit classifiers | `level2` | Matching audited manifest and cached embeddings | Source selection and nine heads for one encoder/seed |
+| Reconstruct from raw images | `reproduce.py stage/assets/preflight/run` | Original PolypGen ZIP, checkpoint assets, network/data access, storage | Fresh audit, features, fitting, diagnostics, reports |
+
+`all` combines `verify`, `level1`, and one `level2` configuration. It is **not** the raw-data reconstruction. Saved-result verification needs no dataset download, GPU, TensorFlow, or LaTeX installation. For `level2` on a relocated checkout, use the matching cache/manifest checks; full reconstruction builds fresh paths locally.
+
+### Native Linux/Bash: shortest complete route to verification
+
+Install Git and a Python 3.12 interpreter with its `venv` module using your distribution's package manager, or use the separate conda route in section 1. If `python3.12` is unavailable, choose that route instead of silently substituting a different Python version.
+
+From the cloned repository root:
+
+```bash
+python3.12 --version
+CBMP_BASE_PYTHON=python3.12 CBMP_VENV_DIR="$PWD/.venv-cbmp-reference" bash setup_venv.sh
+source .venv-cbmp-reference/bin/activate
+export CBMP_PYTHON="$VIRTUAL_ENV/bin/python"
+python -m pip check
+python -B scripts/check_environment.py --output "$PWD/run_records/environment-linux.json"
+python -m pip freeze --all > "$PWD/run_records/installed-linux.txt"
+git rev-parse HEAD > "$PWD/run_records/code-revision.txt"
+bash run_pipeline.sh verify
+```
+
+`setup_venv.sh` installs the pinned installer, CPU torch, and scientific packages, then stops on an error. Supply another **Python 3.12** executable with `CBMP_BASE_PYTHON=/absolute/path/to/python3.12` if needed. The verification command creates a new timestamped directory under `reproduction_runs/` and prints its path; it does not train models. Inspect its `verified_tables/verification.json` and generated `.tex` tables.
+
+To use the environment without activation:
+
+```bash
+export CBMP_PYTHON="$PWD/.venv-cbmp-reference/bin/python"
+"$CBMP_PYTHON" -B scripts/check_environment.py
+bash run_pipeline.sh verify
+```
+
+`run_pipeline.sh` chooses `CBMP_PYTHON` first, then an active venv, then conda, then its `.venv-cbmp/bin/python` default. Setting `CBMP_PYTHON` explicitly avoids ambiguity when a checkout contains more than one environment. Calling `bash run_pipeline.sh` does not require an executable file-mode bit.
+
+### Windows/PowerShell: equivalent fresh-environment route
+
+```powershell
+py -3.12 -m venv .venv-cbmp-reference
+$CbmpPython = (Resolve-Path '.\.venv-cbmp-reference\Scripts\python.exe').Path
+.\setup_venv.ps1 -PythonExecutable $CbmpPython -VenvPath "$PWD\.venv-cbmp-reference"
+& $CbmpPython -B .\scripts\check_environment.py --output "$PWD\run_records\environment-windows.json"
+if ($LASTEXITCODE -ne 0) { throw 'Environment check failed' }
+& $CbmpPython -m pip freeze --all | Set-Content -Encoding utf8 "$PWD\run_records\installed-windows.txt"
+git rev-parse HEAD | Set-Content -Encoding utf8 "$PWD\run_records\code-revision.txt"
+.\run_pipeline.ps1 -Step verify -PythonExecutable $CbmpPython
+```
+
+If local policy blocks `.ps1` execution, use the explicit interpreter and pip commands in section 2, then `& $CbmpPython -B .\scripts\run_project.py verify`. Activation and a machine-wide policy change are unnecessary.
+
+### WSL paths are distinct from native Linux paths
+
+Native Linux examples use a Linux checkout and `/srv/datasets/...` as an illustrative data location. Under WSL, a Windows archive such as `D:\datasets\PolypGen2021_MultiCenterData_v3 (1).zip` is typically addressed as `/mnt/d/datasets/PolypGen2021_MultiCenterData_v3 (1).zip`. Replace that path for your machine and quote it. Do not pass a `C:\...` path to Linux Python or reuse `Scripts/python.exe` as the Linux interpreter.
+
+In the detailed PowerShell commands below, `$Python` denotes the selected environment interpreter (for the quick start, set `$Python = $CbmpPython`).
+
 ## 1. Choose an environment
 
 Choose **venv OR conda**. Activation changes the current shell; it does not install dependencies. Calling an environment's Python directly is sufficient. Keep earlier environments and result directories.
@@ -24,24 +100,23 @@ Choose **venv OR conda**. Activation changes the current shell; it does not inst
 PowerShell:
 
 ```powershell
-Set-Location 'C:\Users\your_path'
+Set-Location 'C:\work\projectCVPR'
 # Activation is optional; direct invocation also works when scripts are restricted.
-$Python = (Resolve-Path '.\venv-cbmp\Scripts\python.exe').Path
+$Python = (Resolve-Path '.\.venv-cbmp-reference\Scripts\python.exe').Path
 & $Python --version
 & $Python -B .\scripts\check_environment.py
 # Optional activation:
-. .\venv-cbmp\Scripts\Activate.ps1
+. .\.venv-cbmp-reference\Scripts\Activate.ps1
 # Leave an activated venv with: deactivate
 ```
 
 Bash on Linux/WSL:
 
 ```bash
-# WSL on the same Windows computer:
-cd /mnt/c/Users/your_path
-# Native Linux or a different checkout: replace this with that checkout's path.
+# Replace this with the checkout's path on the current Linux/WSL filesystem:
+cd /absolute/path/to/projectCVPR
 # A Windows venv cannot be reused on Linux: create a Linux venv first.
-source venv-cbmp/bin/activate
+source .venv-cbmp-reference/bin/activate
 python --version
 python -B scripts/check_environment.py
 # Leave with: deactivate
@@ -52,18 +127,18 @@ Strict checking is expected to reject the existing torch 2.14 environment. Use a
 ### A. New reference venv: PowerShell
 
 ```powershell
-Set-Location 'C:\Users\your_path'
+Set-Location 'C:\work\projectCVPR'
 # This selects the available Python 3.12 installation on this computer.
-& 'C:\Users\Lenovo\anaconda3\python.exe' -m venv venv-cbmp-reference
-$Python = (Resolve-Path '.\venv-cbmp-reference\Scripts\python.exe').Path
+& 'C:\path\to\python312\python.exe' -m venv .venv-cbmp-reference
+$Python = (Resolve-Path '.\.venv-cbmp-reference\Scripts\python.exe').Path
 ```
 
-On another computer, replace the base interpreter with its Python 3.12 executable, or use `py -3.12 -m venv venv-cbmp-reference`. Optional activation: `. .\venv-cbmp-reference\Scripts\Activate.ps1`.
+On another computer, replace the base interpreter with its Python 3.12 executable, or use `py -3.12 -m venv .venv-cbmp-reference`. Optional activation: `. .\.venv-cbmp-reference\Scripts\Activate.ps1`.
 
 The automated equivalent, including the pinned installation in section 2, is:
 
 ```powershell
-.\setup_venv.ps1 -PythonExecutable 'C:\Users\Lenovo\anaconda3\python.exe' -VenvPath "$PWD\venv-cbmp-reference"
+.\setup_venv.ps1 -PythonExecutable 'C:\path\to\python312\python.exe' -VenvPath "$PWD\.venv-cbmp-reference"
 ```
 
 If local policy blocks script execution, use the explicit Python commands; there is no need to change a machine-wide execution policy.
@@ -71,17 +146,16 @@ If local policy blocks script execution, use the explicit Python commands; there
 ### B. New reference venv: Bash
 
 ```bash
-# WSL on the same Windows computer:
-cd /mnt/c/Users/your_path
-# Native Linux or a different checkout: replace this with that checkout's path.
-python3.12 -m venv venv-cbmp-reference
-source venv-cbmp-reference/bin/activate
+# Replace this with the checkout's path on the current Linux/WSL filesystem:
+cd /absolute/path/to/projectCVPR
+python3.12 -m venv .venv-cbmp-reference
+source .venv-cbmp-reference/bin/activate
 ```
 
 The automated equivalent is:
 
 ```bash
-CBMP_VENV_DIR="$PWD/venv-cbmp-reference" bash setup_venv.sh
+CBMP_VENV_DIR="$PWD/.venv-cbmp-reference" bash setup_venv.sh
 ```
 
 These commands target 64-bit Linux/WSL x86_64 with Python 3.12 and CPU wheels. Linux installation/full raw-data execution has not been validated on this Windows host. On Ubuntu, a missing venv module requires the matching `python3.12-venv` system package. macOS/ARM is not claimed as a tested CPU-wheel target.
@@ -91,7 +165,7 @@ These commands target 64-bit Linux/WSL x86_64 with Python 3.12 and CPU wheels. L
 Use a conda-enabled PowerShell session (for example the Anaconda PowerShell Prompt):
 
 ```powershell
-Set-Location 'C:\Users\your_path'
+Set-Location 'C:\work\projectCVPR'
 conda env create -f .\environment-cbmp.yml
 conda activate cbmp-repro
 $Python = (Get-Command python).Source
@@ -105,9 +179,8 @@ For an existing environment, skip creation and run `conda activate cbmp-repro`. 
 ### D. Conda separately: Bash
 
 ```bash
-# WSL on the same Windows computer:
-cd /mnt/c/Users/your_path
-# Native Linux or a different checkout: replace this with that checkout's path.
+# Replace this with the checkout's path on the current Linux/WSL filesystem:
+cd /absolute/path/to/projectCVPR
 conda env create -f environment-cbmp.yml
 conda activate cbmp-repro
 python --version
@@ -211,6 +284,36 @@ For an explicitly disclosed software-portability experiment only, add `-AllowVer
 
 `all` means sections 3-5 for one chosen encoder/seed. It does **not** mean the full raw-data reconstruction.
 
+### Run all three fitting seeds on Linux
+
+With the reference environment active, each invocation below creates a distinct new output directory and preserves previous results:
+
+```bash
+CBMP_RUN_TAG="$(date -u +%Y%m%dT%H%M%SZ)"
+for CBMP_ENCODER in resnet18 dinov2; do
+  for CBMP_SEED in 17 29 43; do
+    bash run_pipeline.sh level2 \
+      --encoder "$CBMP_ENCODER" \
+      --seed "$CBMP_SEED" \
+      --output-dir "$PWD/reproduction_runs/${CBMP_RUN_TAG}_${CBMP_ENCODER}_seed${CBMP_SEED}"
+  done
+done
+```
+
+PowerShell equivalent:
+
+```powershell
+$CbmpRunTag = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ')
+foreach ($CbmpEncoder in @('resnet18', 'dinov2')) {
+    foreach ($CbmpSeed in @(17, 29, 43)) {
+        $CbmpOut = Join-Path $PWD "reproduction_runs\${CbmpRunTag}_${CbmpEncoder}_seed${CbmpSeed}"
+        .\run_pipeline.ps1 -Step level2 -PythonExecutable $Python -Encoder $CbmpEncoder -Seed $CbmpSeed -OutputDir $CbmpOut
+    }
+}
+```
+
+This refits only the main heads from cached features. A cache from one encoder, manifest, or preprocessing revision must not be substituted for another. Use `reproduce.py` below to regenerate raw-data features and every diagnostic family.
+
 ## 6. Level 3: reconstruct all five experiments from raw data
 
 Prerequisites: the exact local PolypGen v3 archive, reviewed mapping included in the reproduction source snapshot, network access for pinned public assets/CAMELYON, and approximately 30 GiB free plus environment space. The original PolypGen archive is 3,419,253,506 bytes with SHA-256:
@@ -224,7 +327,7 @@ PowerShell:
 ```powershell
 $Bundle = Join-Path $PWD 'isolated_datasets\polypgen_extensions_2026-10-20\reproducibility'
 $Run = Join-Path $PWD 'reproduction_runs\full_reference_01'
-$Archive = 'C:\Users\Lenovo\Downloads\PolypGen2021_MultiCenterData_v3 (1).zip' # replace if needed
+$Archive = 'D:\datasets\PolypGen2021_MultiCenterData_v3 (1).zip' # replace if needed
 & $Python -B "$Bundle\reproduce.py" stage --run-dir $Run --polypgen-zip $Archive
 if ($LASTEXITCODE -ne 0) { throw 'Staging failed' }
 & $Python -B "$Bundle\reproduce.py" assets --run-dir $Run --download
@@ -240,7 +343,7 @@ Bash:
 ```bash
 BUNDLE="$PWD/isolated_datasets/polypgen_extensions_2026-10-20/reproducibility"
 RUN="$PWD/reproduction_runs/full_reference_01"
-ARCHIVE='/mnt/c/Users/Lenovo/Downloads/PolypGen2021_MultiCenterData_v3 (1).zip' # WSL path; replace if stored elsewhere
+ARCHIVE='/srv/datasets/PolypGen2021_MultiCenterData_v3 (1).zip' # Native Linux example; use /mnt/... only under WSL
 python -B "$BUNDLE/reproduce.py" stage --run-dir "$RUN" --polypgen-zip "$ARCHIVE"
 python -B "$BUNDLE/reproduce.py" assets --run-dir "$RUN" --download
 python -B "$BUNDLE/reproduce.py" preflight --run-dir "$RUN"
@@ -270,7 +373,7 @@ CAMELYON uses 17,200 selected patches/43 patients, including 26 source patients 
 
 ## 8. Manuscript and exploratory analyses
 
-The revised manuscript source is `outputs/introduction.tex`; it now reconciles sections 1-3 with the implemented protocol and adds a fourth, results-based section. The supplied CVPR PDF still contains the template abstract instructions and title placeholder. This revision does not yet write the abstract, conclusion, or mandatory contribution statement. The numerical tables were regenerated from the saved prediction CSVs by `scripts/build_paper_results.py`; `outputs/revision_2026-10-23/generated_results/verification.json` records the input hashes and checks. The result tables in the manuscript were independently checked against these reconstructed values. No new training was run for the manuscript revision.
+The manuscript fragment is `outputs/introduction.tex`. Keep its numbers tied to the saved prediction/report revision; a local or Overleaf paper may have newer wording than the checked-in export. `scripts/build_paper_results.py` regenerates the point-estimate tables from saved predictions, and `outputs/revision_2026-10-23/generated_results/verification.json` records the checked inputs. This documentation does not claim a full official WILDS evaluation or new training. Use the current conference template and anonymization requirements for a submission; the local preview wrapper is not a compliance check.
 
 Later `cvpr_dissection/` and `multi_backbone/` files remain available as exploratory development artifacts. They are **not pooled into the matched confirmatory tables**. The five-backbone script excludes source C1, fixes different classifier settings, and its "trainable cosine" is actually a centroid-based fixed cosine rule. The dissection's PSRP operates on center support, while the other script uses sequence support; they are different interventions. Its LaTeX table contains literal numbers inconsistent with measured CSVs. Purity and t-SNE do not identify acquisition artifacts or prove causation. See `outputs/revision_2026-10-23/SCIENTIFIC_AUDIT.md` before reusing those tables or claims.
 
@@ -287,3 +390,30 @@ python -B isolated_datasets/polypgen_extensions_2026-10-20/reproducibility/test_
 Archive Python/OS/build versions, installation and `pip check` logs, package snapshot, code/checkpoint/data hashes, exact sample IDs/splits, source-search records, settings, all predictions and models, and completion markers. Keep optimization-seed SD separate from patient/sequence uncertainty. A checksum proves file identity, not absence of leakage or validity of a causal claim.
 
 Historical `preservation_check.json` files describe their original runs. This authorized manuscript/documentation revision does not rewrite those historical records or rerun full training. New checks write to fresh directories. No launcher removes old outputs, automatically accepts version drift, or announces success after a failed native command.
+
+
+## 10. Linux troubleshooting and a reviewer checklist
+
+| Symptom | Check / action |
+|---|---|
+| `python3.12: command not found` | Install/select Python 3.12 or create `cbmp-repro` with the conda YAML; do not substitute `python3` without checking its version. |
+| `ensurepip` / `venv` unavailable | Install the venv support matching the chosen Python interpreter, or use conda; recreate the new environment after fixing the prerequisite. |
+| `.venv-cbmp/bin/python` missing | Activate `.venv-cbmp-reference`, or set `CBMP_PYTHON` to its absolute `bin/python` path. The launcher default is a different path. |
+| A pinned wheel cannot be found | Preserve the installer log. Check Python version, x86_64 platform, and CPU-wheel index. Do not label changed pins as exact reference reproduction. |
+| Environment checker reports drift | Confirm `python -c 'import sys; print(sys.executable)'`, then `python -m pip check`. Use `--allow-version-drift` only for an explicitly recorded portability run. |
+| `FileNotFoundError` for a prediction/cache/manifest | Confirm the checkout includes that artifact and that the command runs at its root. For raw-data reconstruction, complete staging/audit/assets first. |
+| Windows paths appear in old audit CSVs | Use the raw staging/reconstruction route, which rebuilds and checks paths locally. Do not silently edit recorded manifests and claim their old hash. |
+| Output directory already exists | Select a new destination; the tools intentionally refuse to overwrite earlier evidence. |
+| Download/source endpoint unavailable | Preserve the failure log and use the documented local asset options. Do not replace a dataset/checkpoint with another source without recording and validating it. |
+
+Before comparing a new run with the paper, retain:
+
+1. Git commit SHA, Python/OS/CPU details, package snapshot, `pip check` and environment-check output.
+2. Data archive, checkpoint, manifest, feature-cache, and source-snapshot hashes.
+3. Center/class/group counts and exclusion decisions; group IDs and patient linkage limitations.
+4. Full source-validation searches, selected settings, fitting seeds, raw predictions, and output logs.
+5. Per-center/per-seed metrics and probability metrics, keeping seed SD distinct from group-bootstrap intervals.
+
+The standard CAMELYON17-WILDS benchmark uses H1 as OOD validation and H2 as test. This project's custom source-only experiment keeps H1 as a secondary test and does not tune on it. Run and label these protocols separately if adding an official benchmark comparison. The current paper's recorded results must not be presented as the official full benchmark.
+
+The reference experiment checks in this project are the completed Windows runs and saved-artifact validations. The Linux commands are a documented reproduction route; the presence of Bash scripts or a successful syntax check alone is not evidence of a completed Linux training run.
