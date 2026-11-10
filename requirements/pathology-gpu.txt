@@ -1,0 +1,18 @@
+# Optional CPython 3.10 CUDA-11.7 provider environment; kept separate from CPU/head environments.
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==2.0.1+cu117
+torchvision==0.15.2+cu117
+timm==0.9.8
+transformers==4.35.2
+tokenizers==0.15.2
+huggingface-hub==0.26.5
+safetensors==0.4.5
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.1
+pandas==2.2.3
+h5py==3.12.1
+Pillow==10.4.0
+regex==2024.11.6
+ftfy==6.3.1
+conch @ git+https://github.com/mahmoodlab/CONCH.git@141cc09c7d4ff33d8eda562bd75169b457f71a62
